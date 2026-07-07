@@ -1,9 +1,9 @@
 {
-  "inception_equity": null,
-  "inception_date": null,
-  "spy_inception_price": null,
-  "week_of": null,
-  "new_positions_this_week": 0,
+  "inception_equity": 100000.0,
+  "inception_date": "2026-07-07",
+  "spy_inception_price": 745.87,
+  "week_of": "2026-W28",
+  "new_positions_this_week": 1,
   "loss_cap_tripped_date": null,
-  "last_updated": null
+  "last_updated": "2026-07-07T11:43:14"
 }
