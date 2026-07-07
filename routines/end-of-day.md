@@ -18,6 +18,6 @@ You are the **desk journalist** closing out the session. Reconcile, record the n
 
 ## Write back, then commit
 - Save the journal entry and the reconciled `memory/STATE.md`.
-- Commit memory to main: `python3 scripts/commit_memory.py "eod: recap $(date +%F)"` (uses the GitHub API in the cloud, git locally).
+- Save memory — run exactly `python3 scripts/commit_memory.py "eod: recap $(date +%F)"`. If it prints `[commit] FAILED`, STOP and report the output verbatim; do NOT push manually, to a session branch, or via a PR, and do NOT change commit signing.
 
 Be specific and numeric. Report losses and skipped steps plainly — the honesty of this record is the whole point.

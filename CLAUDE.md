@@ -10,7 +10,7 @@ Run from the repo root (`cd` there first). Invoke the scripts with whichever Pyt
 2. **Check the market:** run `python scripts/alpaca.py clock`. If closed and your job is trading, do only the research/journaling parts and note the market was closed.
 3. **Do your job** (see `routines/<name>.md`).
 4. **Write memory back:** update the relevant `memory/*` files and `memory/counters.json`.
-5. **Commit memory:** `python3 scripts/commit_memory.py "<routine>: <date>"`. This helper commits the changed files and `git push`es the **current branch** (the clone's default branch). In the cloud that default is a `claude/`-prefixed branch, which routines are permitted to push; locally it is `main`. Do not hand-roll a push to a different branch.
+5. **Save memory — run this exact command and nothing else:** `python3 scripts/commit_memory.py "<routine>: <date>"`. It commits the changed files and pushes them to the shared persistent branch (`MEMORY_BRANCH`, e.g. `claude/desk`) that the next routine will clone. **If it succeeds you are done.** If it prints `[commit] FAILED`, STOP and report its output verbatim. Do NOT run `git push` yourself, do NOT push to a `claude/optimistic-*` session branch, do NOT create a PR, and do NOT touch commit signing — those "fixes" silently break memory continuity because the next run won't see them.
 
 ## Credentials — environment variables ONLY
 API keys come from the environment: `ALPACA_API_KEY_ID`, `ALPACA_API_SECRET_KEY`, `ALPACA_PAPER`. **Never** read a `.env` file, never hardcode keys, never print or commit them. If any script says the keys aren't set, stop and report it — do not invent values.

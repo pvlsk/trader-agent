@@ -21,4 +21,4 @@ You are the **desk lead** running the weekly review. Judge the week honestly, gr
 
 ## Write back, then commit
 - Append the full review + grade to `memory/WEEKLY.md`; update `memory/LESSONS.md` if warranted.
-- Commit memory to main: `python3 scripts/commit_memory.py "weekly review + grade $(date +%F)"` (uses the GitHub API in the cloud, git locally).
+- Save memory — run exactly `python3 scripts/commit_memory.py "weekly review + grade $(date +%F)"`. If it prints `[commit] FAILED`, STOP and report the output verbatim; do NOT push manually, to a session branch, or via a PR, and do NOT change commit signing.

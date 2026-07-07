@@ -122,12 +122,18 @@ def commit_via_git(message):
         return
     _git("commit", "-m", message)
     target = _persistent_branch()
-    # First push attempt; if the persistent branch moved (a concurrent run), rebase onto it and retry.
+    print(f"[commit] target persistent branch: {target}")
     push = _git("push", "origin", f"HEAD:{target}", check=False, capture=True)
     if push.returncode != 0:
+        # maybe the branch advanced (a concurrent run) -- rebase onto it and retry once
         _git("fetch", "origin", target, check=False)
         _git("rebase", f"origin/{target}", check=False)
-        _git("push", "origin", f"HEAD:{target}")
+        push = _git("push", "origin", f"HEAD:{target}", check=False, capture=True)
+    if push.returncode != 0:
+        raise SystemExit(
+            f"[commit] FAILED to push memory to '{target}'. Do NOT push manually, do NOT create a "
+            f"different branch, and do NOT touch commit signing -- report this output verbatim so it "
+            f"can be fixed.\n--- git stderr ---\n{push.stderr}")
     print(f"[commit] pushed to {target} via git")
 
 

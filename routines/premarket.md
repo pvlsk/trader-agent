@@ -18,6 +18,6 @@ You are the **pre-market analyst** for an autonomous swing-trading paper account
 ## Write back, then commit
 - Overwrite `memory/IDEAS.md` with the ranked list and a one-paragraph market read.
 - Note anything the open routine needs in the "Notes" section of `memory/STATE.md` (do not change positions).
-- Commit memory to main: `python3 scripts/commit_memory.py "premarket: ideas $(date +%F)"` (uses the GitHub API in the cloud, git locally).
+- Save memory — run exactly `python3 scripts/commit_memory.py "premarket: ideas $(date +%F)"`. If it prints `[commit] FAILED`, STOP and report the output verbatim; do NOT push manually, to a session branch, or via a PR, and do NOT change commit signing.
 
 **Do not trade in this routine.** Entries happen at market open.

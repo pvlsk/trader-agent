@@ -22,4 +22,4 @@ You are the **execution desk**. Turn the pre-market ideas into positions, safely
 ## Write back, then commit
 - Update `memory/STATE.md`: every position with size, entry, trail %, edge, and one-line thesis. Update the core row.
 - (`counters.json` is updated by the buy script automatically.)
-- Commit memory to main: `python3 scripts/commit_memory.py "open: executed $(date +%F)"` (uses the GitHub API in the cloud, git locally).
+- Save memory — run exactly `python3 scripts/commit_memory.py "open: executed $(date +%F)"`. If it prints `[commit] FAILED`, STOP and report the output verbatim; do NOT push manually, to a session branch, or via a PR, and do NOT change commit signing.

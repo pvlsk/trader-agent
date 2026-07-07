@@ -22,4 +22,4 @@ You are the **risk manager** on the midday shift. Cut what's broken, protect wha
 
 ## Write back, then commit
 - Update `memory/STATE.md` (remove exits, adjust stops/notes, keep theses honest).
-- Commit memory to main: `python3 scripts/commit_memory.py "midday: managed $(date +%F)"` (uses the GitHub API in the cloud, git locally).
+- Save memory — run exactly `python3 scripts/commit_memory.py "midday: managed $(date +%F)"`. If it prints `[commit] FAILED`, STOP and report the output verbatim; do NOT push manually, to a session branch, or via a PR, and do NOT change commit signing.
