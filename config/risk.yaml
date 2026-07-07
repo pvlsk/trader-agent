@@ -1,0 +1,14 @@
+# trader-agent hard risk limits -- the SINGLE SOURCE OF TRUTH, enforced by scripts/risk.py.
+# Changing a number here changes what the execution script will physically allow.
+# No routine prompt can override these. Keep it flat (this file is parsed without PyYAML).
+
+max_position_pct: 5            # max % of total equity in any one SATELLITE position
+daily_loss_cap_pct: 3          # if day P&L <= -3%, no new entries for the rest of the day
+max_new_positions_per_week: 3  # max brand-new satellite positions opened per ISO week
+allow_options: false           # option / non-equity symbols are hard-blocked, always
+
+core_symbol: SPY               # the passive core holding (exempt from the 5% and weekly caps)
+core_target_pct: 70            # target % of equity held in the core
+satellite_target_pct: 30       # target % for the tactical sleeve
+rebalance_band_pct: 10         # allowed core drift; core hard-capped at 70 + 10 = 80%
+default_trail_percent: 10      # trailing-stop % attached to every satellite entry

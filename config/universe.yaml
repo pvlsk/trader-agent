@@ -1,0 +1,45 @@
+# Tradable universe for the tactical sleeve. Research routines pick candidates from here.
+# Liquid US ETFs / large-cap stocks only. No options, no leveraged/inverse ETFs, no crypto.
+# Parsed by scripts/risk.load_yaml (flat keys + single-level lists only).
+
+core:
+  - SPY
+
+# The 11 SPDR sector ETFs -- used for relative-strength rotation vs SPY.
+sector_etfs:
+  - XLK
+  - XLF
+  - XLE
+  - XLV
+  - XLI
+  - XLY
+  - XLP
+  - XLU
+  - XLB
+  - XLRE
+  - XLC
+
+# Large, liquid single names for momentum / catalyst swing trades.
+momentum_watchlist:
+  - AAPL
+  - MSFT
+  - NVDA
+  - AMZN
+  - GOOGL
+  - META
+  - AVGO
+  - AMD
+  - TSLA
+  - JPM
+  - V
+  - COST
+  - LLY
+  - NFLX
+
+# Broad ETFs usable as lower-volatility satellite expressions.
+theme_etfs:
+  - QQQ
+  - IWM
+  - SMH
+  - XBI
+  - GLD
