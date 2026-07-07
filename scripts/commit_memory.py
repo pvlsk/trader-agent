@@ -98,20 +98,37 @@ def commit_via_api(message, files, token):
     print(f"[commit] pushed to {REPO}@{BRANCH} via API: {commit['sha'][:9]}  ({len(tree)} files)")
 
 
+def _git(*args, check=True, capture=False):
+    return subprocess.run(["git", "-C", str(REPO_ROOT), *args],
+                          check=check, capture_output=capture, text=True)
+
+
+def _persistent_branch():
+    """The repo's default branch (e.g. claude/desk) -- the one every run clones from.
+    Cloud routines run on an ephemeral claude/<random> session branch, so memory must be
+    pushed to this persistent branch, not the session HEAD. Overridable with MEMORY_BRANCH.
+    """
+    env = os.environ.get("MEMORY_BRANCH", "").strip()
+    if env:
+        return env
+    r = _git("rev-parse", "--abbrev-ref", "origin/HEAD", check=False, capture=True).stdout.strip()
+    return r.split("/", 1)[1] if r.startswith("origin/") else (r or BRANCH)
+
+
 def commit_via_git(message):
-    subprocess.run(["git", "-C", str(REPO_ROOT), "add", "-A"], check=True)
-    status = subprocess.run(["git", "-C", str(REPO_ROOT), "status", "--porcelain"],
-                            capture_output=True, text=True).stdout.strip()
-    if not status:
+    _git("add", "-A")
+    if not _git("status", "--porcelain", capture=True).stdout.strip():
         print("[commit] no changes; nothing to commit")
         return
-    subprocess.run(["git", "-C", str(REPO_ROOT), "commit", "-m", message], check=True)
-    # Push the CURRENT branch (the clone's default branch). In the cloud that is a
-    # claude/-prefixed branch, which routines are permitted to push; locally it is main.
-    branch = subprocess.run(["git", "-C", str(REPO_ROOT), "rev-parse", "--abbrev-ref", "HEAD"],
-                            capture_output=True, text=True).stdout.strip() or BRANCH
-    subprocess.run(["git", "-C", str(REPO_ROOT), "push", "origin", f"HEAD:{branch}"], check=True)
-    print(f"[commit] pushed to {branch} via git")
+    _git("commit", "-m", message)
+    target = _persistent_branch()
+    # First push attempt; if the persistent branch moved (a concurrent run), rebase onto it and retry.
+    push = _git("push", "origin", f"HEAD:{target}", check=False, capture=True)
+    if push.returncode != 0:
+        _git("fetch", "origin", target, check=False)
+        _git("rebase", f"origin/{target}", check=False)
+        _git("push", "origin", f"HEAD:{target}")
+    print(f"[commit] pushed to {target} via git")
 
 
 def main():
