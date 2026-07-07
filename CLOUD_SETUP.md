@@ -1,50 +1,54 @@
-# Running trader-agent truly 24/7 (Claude Code for web)
+# Running trader-agent truly 24/7 (Claude Code on the web — Routines)
 
-The local desktop scheduler only fires while the app is open. To run genuinely 24/7, independent of your machine, host the five routines as **scheduled cloud agents on Claude Code for web** (claude.ai/code). The repo, scripts, skills, and routine prompts already run unchanged there. This is a UI-driven, one-time setup you perform with your own GitHub login.
+The local desktop scheduler only fires while the app is open. To run genuinely 24/7, host the five routines as **cloud Routines** on Claude Code (claude.ai/code). The repo, scripts, skills, and routine prompts already run unchanged there. This is a one-time UI setup you do with your own GitHub login.
 
-> ⚠️ **Do not run local and cloud at the same time.** Both would trade the same account and both push to `main`, causing duplicate orders and git conflicts. The **last step** here is to disable the five local scheduled tasks. Keep them on only until the cloud version is confirmed working.
+> ⚠️ **Do not run local and cloud at the same time.** Both would trade the same account and both push to `main`. The five local Desktop scheduled tasks have been **disabled** already; leave them off while the cloud routines run.
 
-## 1. Connect the repo
-1. Go to **claude.ai/code** and sign in.
-2. Connect **GitHub** and grant access to the private repo **`pvlsk/trader-agent`**.
-3. Create a **cloud environment** for that repo (it clones the repo into a Linux sandbox with network access).
+## 1. Connect GitHub and create an environment
+1. Go to **claude.ai/code** and sign in with your Anthropic account.
+2. When prompted, **install the Claude GitHub App** and grant it access (it is enough that your GitHub account can see **`pvlsk/trader-agent`**; installing the App on that repo also works and is needed only if you later want PR auto-fix).
+3. When prompted to **Create your environment**, give it a name (e.g. `trader-agent`) and click **Create environment**. You will configure it in the next step.
 
-## 2. Add the secrets (this is where your keys live in the cloud)
-In the environment's **Secrets / Environment variables** settings, add the same three values currently in your local `.env`:
-- `ALPACA_API_KEY_ID`
-- `ALPACA_API_SECRET_KEY`
-- `ALPACA_PAPER` = `1`
+## 2. Configure the environment (this is the part that makes or breaks it)
+Open the environment settings (on a routine's edit form, click the cloud icon showing the environment name, hover the environment, click the settings gear — the **Update cloud environment** dialog).
 
-These live in the cloud secret store, never in the repo. The scripts read them from the environment automatically.
+**a) Environment variables** — add these three (`.env` format, one per line, **no quotes**, same values as your local `.env`). Note: these are visible to anyone who can edit the environment; there is no separate secret vault yet.
+```
+ALPACA_API_KEY_ID=your_paper_key
+ALPACA_API_SECRET_KEY=your_paper_secret
+ALPACA_PAPER=1
+```
 
-## 3. Create the five scheduled routines
-Create one scheduled routine per file below. For each, the **prompt** is simply:
+**b) Network access** — set **Network access** to **Custom**, and under **Allowed domains** add:
+```
+paper-api.alpaca.markets
+data.alpaca.markets
+```
+Check **"Also include default list of common package managers"** to keep GitHub and registries reachable. (Without this step, every Alpaca call fails with `403 host_not_allowed`.) Then **Save changes**. No setup script is needed — the scripts are standard-library Python.
 
-> Follow the instructions in `routines/<file>` exactly. Read the memory and config files first, do the job, update memory, then commit and push to `main`.
+## 3. Create the five routines
+At **claude.ai/code/routines** (or Desktop app → **Routines** in the sidebar → **New routine** → **Remote**), create one routine per file below. For each:
 
-Set the schedule in the **America/New_York** timezone if the UI offers a timezone (recommended — it handles daylight saving automatically). If it only accepts **UTC** cron, use the UTC column, and note the DST caveat below.
+- **Name:** e.g. `trader-premarket`.
+- **Prompt/Instructions:** `Follow the instructions in routines/<file> exactly. Read the config and memory files first, do the job, update memory, then commit and push to main.` Pick a strong model in the model selector (Opus or Sonnet).
+- **Repositories:** add **`pvlsk/trader-agent`**.
+- **Environment:** select the `trader-agent` environment from step 2.
+- **Trigger → Schedule:** enter the New-York time below. Times are entered in your local zone and auto-converted, so no UTC math. Use **Weekdays** for the first four and **Weekly (Friday)** for the review.
+- **Permissions tab:** enable **"Allow unrestricted branch pushes"** for `pvlsk/trader-agent` (otherwise Claude can only push `claude/`-prefixed branches, not `main`).
+- **Connectors tab:** remove all connectors (these routines need none).
 
-| Routine | Prompt file | New York time | Cron (America/New_York) | Cron (UTC, EDT) |
-|---|---|---|---|---|
-| Pre-market | `routines/premarket.md` | 08:05 Mon–Fri | `5 8 * * 1-5` | `5 12 * * 1-5` |
-| Market open | `routines/market-open.md` | 09:33 Mon–Fri | `33 9 * * 1-5` | `33 13 * * 1-5` |
-| Midday | `routines/midday.md` | 12:25 Mon–Fri | `25 12 * * 1-5` | `25 16 * * 1-5` |
-| End-of-day | `routines/end-of-day.md` | 15:50 Mon–Fri | `50 15 * * 1-5` | `50 19 * * 1-5` |
-| Weekly review | `routines/friday-review.md` | 16:15 Fri | `15 16 * * 5` | `15 20 * * 5` |
+| Routine | Prompt file | Schedule (New York time) |
+|---|---|---|
+| trader-premarket | `routines/premarket.md` | Weekdays 08:05 |
+| trader-market-open | `routines/market-open.md` | Weekdays 09:33 |
+| trader-midday | `routines/midday.md` | Weekdays 12:25 |
+| trader-eod | `routines/end-of-day.md` | Weekdays 15:50 |
+| trader-friday-review | `routines/friday-review.md` | Weekly, Friday 16:15 |
 
-**DST caveat:** the UTC column is for Eastern Daylight Time (mid-March to early November). During Eastern Standard Time (winter), add one hour to each UTC value. Using the America/New_York timezone avoids this entirely.
+If the schedule form only offers coarse presets, set the closest one, then from a terminal `claude` session run `/schedule update` to set the exact cron (America/New_York): `5 8 * * 1-5`, `33 9 * * 1-5`, `25 12 * * 1-5`, `50 15 * * 1-5`, and `15 16 * * 5`. Routines have a **one-hour minimum interval** (fine here) and draw on your subscription's daily routine-run allowance.
 
-## 4. Grant push permission per routine
-In each routine's **permissions**, enable **"allow unrestricted branch pushes"** so it can commit its memory updates back to `main`. Also allow it to run shell/Python commands (the routines call `python3 scripts/...` and `git`).
+## 4. Test each one before trusting the schedule
+On each routine's detail page click **Run now** (pre-market first) and confirm in the opened session that it: reads memory, calls Alpaca without 403s, and pushes a commit to `main` (check GitHub history). A green run status only means no infra error — open the run to confirm the task actually did what you expect.
 
-## 5. Test each one before trusting the schedule
-Use **Run now** on each routine, in order (pre-market first), and confirm:
-- It reads memory, runs the scripts against Alpaca paper, and prints sensible output.
-- It pushes a commit to `main` (check the GitHub commit history).
-- The market-open run respects the guardrails (rejections logged, no more than the weekly cap).
-
-## 6. Turn off the local scheduler (prevents double-trading)
-Once the cloud routines are confirmed committing to `main`, disable the five local scheduled tasks so only the cloud runs the account:
-- In the desktop app's **Scheduled** panel, disable `trader-premarket`, `trader-market-open`, `trader-midday`, `trader-eod`, `trader-friday-review`.
-
-From then on the desk runs entirely in the cloud, on schedule, whether or not your machine is on.
+## 5. Done
+Once all five are green and committing to `main`, the desk runs entirely in the cloud on schedule, machine-independent. Keep the local Desktop tasks disabled.
