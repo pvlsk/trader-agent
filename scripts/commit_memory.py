@@ -105,8 +105,15 @@ def main():
     files = [Path(a) if Path(a).is_absolute() else REPO_ROOT / a for a in sys.argv[2:]]
     files = files or _default_files()
     token = os.environ.get("GH_TOKEN", "").strip()
+    in_cloud = os.environ.get("CLAUDE_CODE_REMOTE", "").lower() == "true"
     if token:
         commit_via_api(message, files, token)
+    elif in_cloud:
+        raise SystemExit(
+            "ERROR: running in a cloud routine but GH_TOKEN is not set. The cloud cannot "
+            "`git push` to main, so memory cannot be saved. Add GH_TOKEN (a fine-grained PAT "
+            "with Contents:read/write on this repo) as an environment variable, and allowlist "
+            "api.github.com in the environment's network settings. See CLOUD_SETUP.md.")
     else:
         commit_via_git(message)
 
