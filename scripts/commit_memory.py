@@ -52,12 +52,22 @@ def _api(method, path, token, body=None):
             raw = resp.read().decode()
             return json.loads(raw) if raw else {}
     except urllib.error.HTTPError as e:
-        raise SystemExit(f"GitHub API {e.code} on {method} {path}: {e.read().decode()}")
+        deny = e.headers.get("x-deny-reason") if e.headers else None
+        body = e.read().decode()
+        if deny:  # blocked by the cloud network allowlist, not by GitHub
+            raise SystemExit(f"NETWORK BLOCK {e.code} on {method} {path} [x-deny-reason: {deny}] "
+                             f"-> api.github.com is NOT allowlisted in this environment. Add it to Allowed domains.")
+        raise SystemExit(f"GitHub API {e.code} on {method} {path}: {body}")
     except urllib.error.URLError as e:
         raise SystemExit(f"Network error on {method} {path} (is api.github.com allowlisted?): {e.reason}")
 
 
 def commit_via_api(message, files, token):
+    # 0. identity probe -- proves whether OUR token is honored end-to-end
+    print(f"[diag] GH_TOKEN present (len {len(token)}); probing api.github.com/user ...")
+    me = _api("GET", "/user", token)
+    print(f"[diag] authenticated as: {me.get('login')!r} (if this is your GitHub login, the token is honored)")
+
     # 1. current branch head + base tree
     ref = _api("GET", f"/repos/{REPO}/git/ref/heads/{BRANCH}", token)
     base_sha = ref["object"]["sha"]
