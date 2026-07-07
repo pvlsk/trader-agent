@@ -106,24 +106,25 @@ def commit_via_git(message):
         print("[commit] no changes; nothing to commit")
         return
     subprocess.run(["git", "-C", str(REPO_ROOT), "commit", "-m", message], check=True)
-    subprocess.run(["git", "-C", str(REPO_ROOT), "push", "origin", BRANCH], check=True)
-    print(f"[commit] pushed to {BRANCH} via git")
+    # Push the CURRENT branch (the clone's default branch). In the cloud that is a
+    # claude/-prefixed branch, which routines are permitted to push; locally it is main.
+    branch = subprocess.run(["git", "-C", str(REPO_ROOT), "rev-parse", "--abbrev-ref", "HEAD"],
+                            capture_output=True, text=True).stdout.strip() or BRANCH
+    subprocess.run(["git", "-C", str(REPO_ROOT), "push", "origin", f"HEAD:{branch}"], check=True)
+    print(f"[commit] pushed to {branch} via git")
 
 
 def main():
     message = sys.argv[1] if len(sys.argv) > 1 else f"memory update {date.today().isoformat()}"
     files = [Path(a) if Path(a).is_absolute() else REPO_ROOT / a for a in sys.argv[2:]]
     files = files or _default_files()
+    # Default path is `git push` of the current branch, which works both locally and in
+    # cloud routines (via the /web-setup-synced token) as long as the branch is claude/-prefixed
+    # in the cloud. The GitHub-API path is opt-in only (set USE_GH_API=1); it is blocked by the
+    # cloud GitHub proxy for repo writes, so it is not the default.
     token = os.environ.get("GH_TOKEN", "").strip()
-    in_cloud = os.environ.get("CLAUDE_CODE_REMOTE", "").lower() == "true"
-    if token:
+    if token and os.environ.get("USE_GH_API", "").lower() in ("1", "true"):
         commit_via_api(message, files, token)
-    elif in_cloud:
-        raise SystemExit(
-            "ERROR: running in a cloud routine but GH_TOKEN is not set. The cloud cannot "
-            "`git push` to main, so memory cannot be saved. Add GH_TOKEN (a fine-grained PAT "
-            "with Contents:read/write on this repo) as an environment variable, and allowlist "
-            "api.github.com in the environment's network settings. See CLOUD_SETUP.md.")
     else:
         commit_via_git(message)
 
