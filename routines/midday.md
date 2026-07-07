@@ -22,4 +22,4 @@ You are the **risk manager** on the midday shift. Cut what's broken, protect wha
 
 ## Write back, then commit
 - Update `memory/STATE.md` (remove exits, adjust stops/notes, keep theses honest).
-- Commit: `git add -A && git commit -m "midday: managed $(date +%F)" && git push origin main`.
+- Commit memory to main: `python3 scripts/commit_memory.py "midday: managed $(date +%F)"` (uses the GitHub API in the cloud, git locally).

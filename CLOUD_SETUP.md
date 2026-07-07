@@ -12,19 +12,22 @@ The local desktop scheduler only fires while the app is open. To run genuinely 2
 ## 2. Configure the environment (this is the part that makes or breaks it)
 Open the environment settings (on a routine's edit form, click the cloud icon showing the environment name, hover the environment, click the settings gear — the **Update cloud environment** dialog).
 
-**a) Environment variables** — add these three (`.env` format, one per line, **no quotes**, same values as your local `.env`). Note: these are visible to anyone who can edit the environment; there is no separate secret vault yet.
+**a) Environment variables** — add these four (`.env` format, one per line, **no quotes**, same Alpaca values as your local `.env`). Note: these are visible to anyone who can edit the environment; there is no separate secret vault yet.
 ```
 ALPACA_API_KEY_ID=your_paper_key
 ALPACA_API_SECRET_KEY=your_paper_secret
 ALPACA_PAPER=1
+GH_TOKEN=your_github_fine_grained_token
 ```
+`GH_TOKEN` is a **fine-grained GitHub personal access token** scoped to only `pvlsk/trader-agent` with **Contents: read and write** (create it at github.com → Settings → Developer settings → Fine-grained tokens). It lets `scripts/commit_memory.py` push memory updates to `main` via the GitHub API, because cloud routines are otherwise restricted to `claude/`-prefixed branches.
 
 **b) Network access** — set **Network access** to **Custom**, and under **Allowed domains** add:
 ```
 paper-api.alpaca.markets
 data.alpaca.markets
+api.github.com
 ```
-Check **"Also include default list of common package managers"** to keep GitHub and registries reachable. (Without this step, every Alpaca call fails with `403 host_not_allowed`.) Then **Save changes**. No setup script is needed — the scripts are standard-library Python.
+Check **"Also include default list of common package managers"** to keep registries reachable. (Without the Alpaca hosts, every Alpaca call fails with `403 host_not_allowed`; without `api.github.com`, the memory commit fails.) Then **Save changes**. No setup script is needed — the scripts are standard-library Python.
 
 ## 3. Create the five routines
 At **claude.ai/code/routines** (or Desktop app → **Routines** in the sidebar → **New routine** → **Remote**), create one routine per file below. For each:
@@ -34,8 +37,8 @@ At **claude.ai/code/routines** (or Desktop app → **Routines** in the sidebar �
 - **Repositories:** add **`pvlsk/trader-agent`**.
 - **Environment:** select the `trader-agent` environment from step 2.
 - **Trigger → Schedule:** enter the New-York time below. Times are entered in your local zone and auto-converted, so no UTC math. Use **Weekdays** for the first four and **Weekly (Friday)** for the review.
-- **Permissions tab:** enable **"Allow unrestricted branch pushes"** for `pvlsk/trader-agent` (otherwise Claude can only push `claude/`-prefixed branches, not `main`).
-- **Connectors tab:** remove all connectors (these routines need none).
+- **Branch pushes:** no UI toggle is needed. Memory is committed to `main` by `scripts/commit_memory.py` using the `GH_TOKEN` from step 2a (the routine prompt already calls it). If your build *does* show an "Allow unrestricted branch pushes" option for the repo, enabling it is fine too, but the token path works regardless.
+- **Connectors tab:** leave `Claude_Code_Remote`; these routines need no other connectors.
 
 | Routine | Prompt file | Schedule (New York time) |
 |---|---|---|

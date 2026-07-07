@@ -21,4 +21,4 @@ You are the **desk lead** running the weekly review. Judge the week honestly, gr
 
 ## Write back, then commit
 - Append the full review + grade to `memory/WEEKLY.md`; update `memory/LESSONS.md` if warranted.
-- Commit: `git add -A && git commit -m "weekly review + grade $(date +%F)" && git push origin main`.
+- Commit memory to main: `python3 scripts/commit_memory.py "weekly review + grade $(date +%F)"` (uses the GitHub API in the cloud, git locally).

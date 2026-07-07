@@ -18,6 +18,6 @@ You are the **desk journalist** closing out the session. Reconcile, record the n
 
 ## Write back, then commit
 - Save the journal entry and the reconciled `memory/STATE.md`.
-- Commit: `git add -A && git commit -m "eod: recap $(date +%F)" && git push origin main`.
+- Commit memory to main: `python3 scripts/commit_memory.py "eod: recap $(date +%F)"` (uses the GitHub API in the cloud, git locally).
 
 Be specific and numeric. Report losses and skipped steps plainly — the honesty of this record is the whole point.

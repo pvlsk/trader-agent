@@ -10,7 +10,7 @@ Run from the repo root (`cd` there first). Invoke the scripts with whichever Pyt
 2. **Check the market:** run `python scripts/alpaca.py clock`. If closed and your job is trading, do only the research/journaling parts and note the market was closed.
 3. **Do your job** (see `routines/<name>.md`).
 4. **Write memory back:** update the relevant `memory/*` files and `memory/counters.json`.
-5. **Commit:** `git add -A && git commit -m "<routine>: <date>" && git push origin main`.
+5. **Commit memory to `main`:** `python3 scripts/commit_memory.py "<routine>: <date>"`. This helper commits the changed `memory/` files to `main` via the GitHub API when `GH_TOKEN` is set (cloud), or via normal `git push` locally. Do not use a bare `git push origin main` in the cloud — a routine may only `git push` to `claude/`-prefixed branches there.
 
 ## Credentials — environment variables ONLY
 API keys come from the environment: `ALPACA_API_KEY_ID`, `ALPACA_API_SECRET_KEY`, `ALPACA_PAPER`. **Never** read a `.env` file, never hardcode keys, never print or commit them. If any script says the keys aren't set, stop and report it — do not invent values.
