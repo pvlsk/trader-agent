@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-07-07 (initial deploy + validation trades)_
+_Last updated: 2026-07-08 (pre-market notes; positions unchanged)_
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
@@ -17,7 +17,8 @@ _Last updated: 2026-07-07 (initial deploy + validation trades)_
 
 ## Notes for the next routine
 - Account initialized 2026-07-07. Inception baseline: $100,000; SPY $745.87 (see counters.json).
-- 1 of 3 weekly satellite slots used (ISO week 2026-W28).
+- 1 of 3 weekly satellite slots used (ISO week 2026-W28); 2 remain.
 - XLV was a system-validation entry grounded in a real momentum/RS probe; it is a legitimate on-thesis position, not a throwaway — manage it normally (trailing stop, cut if healthcare loses leadership).
-- Next pre-market run should generate fresh ideas; ~2 satellite slots remain this week.
-- Other names flagged strong in the 2026-07-07 probe (for context): LLY, V, JPM, AAPL, and sectors XLF/XLV at new highs.
+- **2026-07-08 pre-market read:** a sharp rotation out of tech into defensives/value confirmed this week — XLK hit an extreme negative reading (NVDA -8.6% on the week), while XLV printed one of the best sector signals in years, directly reinforcing our existing XLV thesis (no action needed, keep the 10% trailing stop live). Financials (XLF) are also picking up rotation flow and are the top new idea in `memory/IDEAS.md` for the open routine to consider (near 52-wk high, MACD turned positive 2026-06-05). Energy fading, materials momentum turned negative in early June — passed on both.
+- Bank earnings season kicks off 2026-07-14 (JPM before the open) — a catalyst to watch for next week, not yet actionable.
+- Market was closed at the time of this routine (next open 2026-07-08 09:30 ET) — research only, no trades placed.
