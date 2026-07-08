@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-07-08 (pre-market notes; positions unchanged)_
+_Last updated: 2026-07-08 (pre-market notes, second look; positions unchanged)_
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
@@ -22,3 +22,5 @@ _Last updated: 2026-07-08 (pre-market notes; positions unchanged)_
 - **2026-07-08 pre-market read:** a sharp rotation out of tech into defensives/value confirmed this week — XLK hit an extreme negative reading (NVDA -8.6% on the week), while XLV printed one of the best sector signals in years, directly reinforcing our existing XLV thesis (no action needed, keep the 10% trailing stop live). Financials (XLF) are also picking up rotation flow and are the top new idea in `memory/IDEAS.md` for the open routine to consider (near 52-wk high, MACD turned positive 2026-06-05). Energy fading, materials momentum turned negative in early June — passed on both.
 - Bank earnings season kicks off 2026-07-14 (JPM before the open) — a catalyst to watch for next week, not yet actionable.
 - Market was closed at the time of this routine (next open 2026-07-08 09:30 ET) — research only, no trades placed.
+- **Second pre-market look, same morning:** overnight the tape turned risk-off — Trump declared the Iran ceasefire "over," oil jumped ~6%, and tech fell further (AAPL/AMZN/NVDA/IBM/PLTR all down premarket) on the shock plus a negative Samsung read-through for AI chips. Two effects: (1) XLE is popping on the oil headline but its own trend has been choppy since mid-June — treat as a blow-off-gap risk, not a buy, unless the move holds on its own merits for several sessions. (2) The XLF rotation thesis from earlier today is now in question — one technical source claims XLF is sharply broken down (below its 200-day MA), directly contradicting the earlier "near 52-week high, MACD turning positive" read, even though the last quote ($56.04) is still close to the cited high ($56.52). Downgraded to Medium conviction pending same-day chart verification by the open routine — see `memory/IDEAS.md` for full detail. Do not mechanically execute XLF without checking the actual 50/200-day MA picture first.
+- XLV relative strength just crossed above 70 (overbought) per one technical read — thesis still intact, but flag for the open/midday routine to consider a modestly tighter trailing stop if the position extends further, rather than adding size.
