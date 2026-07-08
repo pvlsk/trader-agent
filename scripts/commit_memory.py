@@ -107,18 +107,12 @@ DEFAULT_MEMORY_BRANCH = "claude/desk"  # the shared persistent branch every rout
 
 
 def _persistent_branch():
-    """The shared branch memory is pushed to (so the next run's fresh clone sees it).
-    Cloud routines run on an ephemeral claude/<random> session branch and their shallow
-    clone has no usable origin/HEAD, so we default to a hardcoded persistent branch rather
-    than guessing. Override with MEMORY_BRANCH if the branch is ever renamed.
+    """The shared branch memory is pushed to, so the next run's fresh clone sees it.
+    Hardcoded, not detected: the cloud's shallow clone has no reliable origin/HEAD (git even
+    echoes the literal 'origin/HEAD' on failure, which is easy to misread as a real ref).
+    Override with MEMORY_BRANCH only if the branch is ever renamed.
     """
-    env = os.environ.get("MEMORY_BRANCH", "").strip()
-    if env:
-        return env
-    r = _git("rev-parse", "--abbrev-ref", "origin/HEAD", check=False, capture=True).stdout.strip()
-    if r.startswith("origin/"):
-        return r.split("/", 1)[1]
-    return DEFAULT_MEMORY_BRANCH
+    return os.environ.get("MEMORY_BRANCH", "").strip() or DEFAULT_MEMORY_BRANCH
 
 
 def commit_via_git(message):
