@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-07-08 (market-open routine, executed)_
+_Last updated: 2026-07-08 (end-of-day routine, reconciled — no changes)_
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
@@ -18,6 +18,7 @@ _Last updated: 2026-07-08 (market-open routine, executed)_
 - XLF: trailing_stop sell, 10%, GTC (order 4c22f833), qty 71. Live.
 
 ## Notes for the next routine
+- **2026-07-08 end-of-day, reconciled:** positions and orders confirmed unchanged from market-open — SPY 93 sh, XLV 24 sh (10% trail live), XLF 71 sh (10% trail live). No stop-outs. Day P&L -0.33%, since inception -0.17% vs SPY -0.09% (alpha -0.08%). No guardrail events; loss cap not tripped. Watch bank earnings starting 2026-07-14 (XLF catalyst) and whether XLV/XLF hold their uptrends after today's pullback. 1 of 3 weekly satellite slots remains.
 - **2026-07-08 market-open, executed:** verified XLF's conflicting technical reads via WebSearch before entering — confirmed price ($55.44-55.55) is well above both the 50-day (~$52.42) and 200-day (~$52.60) MAs with a new 52-week high this week, so the bullish rotation thesis stands. Bought XLF, ~3.95% (71 sh @ ~$55.55), 10% trailing stop attached (order 4c22f833).
 - Passed on XLE (blow-off-gap risk from the Iran-ceasefire oil spike, not a confirmed trend) and on the momentum watchlist (all under pressure from the geopolitical + AI-chip sentiment shock) — consistent with `memory/IDEAS.md`.
 - XLV unchanged today (down slightly, not extending further) — left its 10% trailing stop as-is; RS >70 overbought flag from pre-market still applies if it runs further on a later session.

@@ -4,6 +4,15 @@ Each end-of-day entry: what we did and why, fills/stops, day P&L, return vs SPY 
 
 ---
 
+## 2026-07-08 (Wed) — Quiet close, no new trades
+- **Actions:** No trades this routine — pure reconciliation. Market-open routine already used today's action (bought XLF, self-corrected a duplicate-order incident — see `memory/LESSONS.md`). Positions confirmed unchanged since then: SPY core 93 sh @ avg $745.88 (no stop), XLV satellite 24 sh @ avg $164.87 (10% trailing stop, order `1d53e9c2`, live), XLF satellite 71 sh @ avg $55.55 (10% trailing stop, order `4c22f833`, live). No fills, no stop-outs, no positions removed. `memory/STATE.md` matched live `positions`/`orders` exactly.
+- **Guardrail checks:** None triggered. Day P&L -0.33% is well inside the -3% daily loss cap (no halt). No new entries attempted, so the weekly-cap and position-cap checks weren't exercised today. `counters.json` (new_positions_this_week: 2, week_of 2026-W28) matches reality — no correction needed.
+- **P&L:** Day -0.33%. Since inception -0.17% (from 2026-07-07). SPY same period -0.09%. **Alpha vs SPY: -0.08%** — satellite sleeve (XLF -0.9%, XLV -1.5%) underperformed the core today, a soft start for the rotation thesis but only one day old.
+- **State:** Unchanged from market-open — SPY core + XLV + XLF satellites, both satellite stops resting live. Equity $99,828.26, cash $22,726.93.
+- **Watch next:** Bank earnings season kicks off 2026-07-14 (JPM/WFC/BAC/C) — the catalyst underpinning the XLF thesis; watch whether XLF and XLV hold their uptrends or extend today's pullback. 1 of 3 weekly satellite slots remains for 2026-W28.
+
+---
+
 ## 2026-07-07 (Tue) — Deploy day / desk goes live
 - **Actions:** Initialized the paper account and set the inception baseline (equity $100,000; SPY $745.87). Established the **SPY core** at ~69.4% (93 sh @ $745.88, buy-and-hold, no stop). Opened one **satellite** starter, **XLV** ~4% (24 sh @ $164.87) with a 10% trailing stop, on a relative-strength rotation thesis (XLV = top RS SPDR sector at new highs).
 - **Guardrail checks (live):** 6%-of-equity order correctly REJECTED (position cap); 4% accepted. Weekly counter at 1/3. Loss cap tracking at 0.00%. Options/crypto symbols hard-blocked in testing.
