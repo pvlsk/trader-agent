@@ -1,23 +1,26 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-07-09 (pre-market routine — research only, no position changes)_
+_Last updated: 2026-07-09 (market-open routine — executed)_
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
 |---|---|---|---|
-| SPY | 70% | ~69.4% | 93 sh @ $745.88 avg. Buy-and-hold, no trailing stop. Established 2026-07-07. Within band, no top-up needed today. |
+| SPY | 70% | ~69.5% | 93 sh @ $745.88 avg. Buy-and-hold, no trailing stop. Established 2026-07-07. Within band, no top-up needed today. |
 
 ## Satellite positions
 | Symbol | Entry date | Size % | Entry $ | Trail % | Edge | One-line thesis | Status |
 |---|---|---|---|---|---|---|---|
 | XLV | 2026-07-07 | ~3.9% | $164.87 | 10% | Relative-strength rotation | XLV is the #1 relative-strength SPDR sector, at new highs (+10.4% 60d, +7.8% 20d) — healthcare leadership. RS crossed above 70 (overbought) as of 2026-07-08; watch for a tighter trail at midday if it extends further. | Open, trailing stop live |
 | XLF | 2026-07-08 | ~3.95% | $55.55 | 10% | Relative-strength rotation | Rotation out of tech into financials into bank earnings season (JPM/WFC/BAC/C report 2026-07-14); verified same-day that price ($55.44-55.55) trades well above both the 50-day (~$52.42) and 200-day (~$52.60) MAs with a new 52-week high this week, resolving yesterday's conflicting technical reads in favor of the bullish thesis. | Open, trailing stop live |
+| XLK | 2026-07-09 | ~4.4% | $184.98 avg | 10% | Momentum/trend + relative-strength rotation | XLK is the sole leader in the relative-rotation "leading" quadrant this week, price ($181-185) above both a rising 50-day (~$178.6) and 200-day (~$151.6) MA, fresh 52-week high (~$198.73) this week on continued AI-infrastructure capex. Falsifiable: thesis breaks if XLK closes back below its 50-day MA. | Open, trailing stop live |
 
 ## Open stops / orders
 - XLV: trailing_stop sell, 10%, GTC (order 1d53e9c2), qty 24. Live.
 - XLF: trailing_stop sell, 10%, GTC (order 4c22f833), qty 71. Live.
+- XLK: trailing_stop sell, 10%, GTC (order 2c9bb5cd), qty 24. Live.
 
 ## Notes for the next routine
+- **2026-07-09 market-open, executed:** Market open confirmed via `clock`. Core SPY at ~69.5%, within band, no top-up. Risk status: day P&L +0.11-0.24%, loss cap not tripped, 1/3 weekly slot remaining. Bought XLK per `memory/IDEAS.md` top idea, 24 sh (~4.4% of equity, ~$4,449, avg fill $184.98). The initial `buy XLK --pct 4.5 --trail-percent 10` command exited non-zero after "submitted" appeared (order 36cc1bc8), same 403 "cannot open a short sell while a long buy order is open" race noted in `memory/LESSONS.md` on 2026-07-08. Per that lesson, did **not** retry the buy — instead checked live `orders`/`positions` directly. This time the cause was a genuinely slow paper-market fill (order sat `new` → `partially_filled` (21/24) → `filled` (24/24) over ~30s, not a duplicate submission), and `counters.json` correctly shows `new_positions_this_week: 3` (no double-count). Once the order showed `filled`, manually attached the trailing stop with `python3 scripts/alpaca.py stop XLK --trail-percent 10` (order 2c9bb5cd) — confirmed live via `orders`. All 4 positions (SPY core + XLV/XLF/XLK satellites) now have correct stops/no-stop status. 3/3 weekly satellite slots now used (2026-W28) — no further new satellite entries until next ISO week. XLI remains the natural #2 idea for next week if leadership holds. Existing XLV (overbought RS flag) and XLF (ahead of 7/14 bank earnings) unchanged, still holding.
 - **2026-07-09 pre-market:** research only, no trades made. Market opens 09:30 ET; loss cap not tripped (day P&L +0.15% pre-open, equity ~$100,002). 1 of 3 weekly satellite slots remains (2026-W28: XLV 7/7, XLF 7/8). Top idea in `memory/IDEAS.md`: **XLK** (technology sector) — sole leader in relative-strength rotation this week, confirmed uptrend (price above rising 50-day/200-day MA, fresh 52-week high), momentum edge from continued AI-infrastructure capex. Only this one idea is flagged actionable, matching the 1 remaining slot. XLI is a legitimate #2 (also a confirmed uptrend, new 52-week high) but not actionable purely due to the slot limit. XLE passed again (blow-off-gap risk from renewed US-Iran airstrikes and oil spike, not a confirmed trend) — same call as yesterday. AVGO/AMD/NVDA passed at the single-name level (AVGO still below its 50-day MA despite the Apple-deal catalyst; NVDA/AMD reports describe them as lagging/extended respectively) — theme better expressed via XLK. Existing XLV/XLF satellites unaffected by this read, no changes suggested; watch bank earnings starting 2026-07-14 (XLF catalyst) and XLV's overbought RS flag from 7/8.
 - **2026-07-08 end-of-day, reconciled:** positions and orders confirmed unchanged from market-open — SPY 93 sh, XLV 24 sh (10% trail live), XLF 71 sh (10% trail live). No stop-outs. Day P&L -0.33%, since inception -0.17% vs SPY -0.09% (alpha -0.08%). No guardrail events; loss cap not tripped. Watch bank earnings starting 2026-07-14 (XLF catalyst) and whether XLV/XLF hold their uptrends after today's pullback. 1 of 3 weekly satellite slots remains.
 - **2026-07-08 market-open, executed:** verified XLF's conflicting technical reads via WebSearch before entering — confirmed price ($55.44-55.55) is well above both the 50-day (~$52.42) and 200-day (~$52.60) MAs with a new 52-week high this week, so the bullish rotation thesis stands. Bought XLF, ~3.95% (71 sh @ ~$55.55), 10% trailing stop attached (order 4c22f833).
