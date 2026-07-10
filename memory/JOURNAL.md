@@ -4,6 +4,15 @@ Each end-of-day entry: what we did and why, fills/stops, day P&L, return vs SPY 
 
 ---
 
+## 2026-07-10 (Fri) — Quiet close, SPY outpaces satellites, XLV keeps sliding
+- **Actions:** No trades this routine — pure reconciliation. Weekly satellite cap (3/3) has been hit since 2026-07-09, so no new entries were possible today regardless. Positions confirmed unchanged from market-open and matching `memory/STATE.md` exactly: SPY core 93 sh @ avg $745.88 (no stop, +1.3% today), XLF satellite 71 sh @ avg $55.55 (10% trailing stop, order `4c22f833`, live, +0.3%), XLK satellite 24 sh @ avg $184.98 (10% trailing stop, order `2c9bb5cd`, live, +0.5%), XLV satellite 24 sh @ avg $164.87 (10% trailing stop, order `1d53e9c2`, live, -2.4%). All three satellite trailing stops confirmed `status new` (resting, untriggered) via `orders`. No fills, no stop-outs, no positions removed.
+- **Guardrail checks:** None triggered. Day P&L +0.34% is well inside the -3% daily loss cap (no halt). `counters.json` (new_positions_this_week: 3, week_of 2026-W28) matches reality — 3/3 weekly satellite slots used, no correction needed. No rejected orders today.
+- **P&L:** Day +0.34%. Since inception +0.82% (from 2026-07-07). SPY same period +1.27%. **Alpha vs SPY: -0.46%** — worse than yesterday (-0.29%); SPY had a strong day that the satellite sleeve didn't match, with XLV (-2.4%) the main drag and XLF/XLK both lagging the core's move.
+- **State:** Unchanged from market-open — SPY core + XLF/XLK/XLV satellites, all three satellite stops resting live. Equity $100,816.92, cash $18,287.30.
+- **Watch next:** 2026-W29 opens Monday 2026-07-13, freeing 3 new satellite slots — XLI and AMD are the queued ideas in `memory/IDEAS.md`. Watch XLV closely — now the weakest satellite at -2.4% (was flagged overbought RS on 7/8; this looks like that pullback playing out), a further slide risks triggering its 10% trailing stop. Bank earnings (JPM/WFC/BAC/C) start 2026-07-14 — the catalyst underpinning the XLF thesis.
+
+---
+
 ## 2026-07-09 (Thu) — Quiet close, XLK settles in, no new trades
 - **Actions:** No trades this routine — pure reconciliation of a day whose only action (buying XLK) already happened in the market-open routine. Positions confirmed unchanged since then and matching `memory/STATE.md` exactly: SPY core 93 sh @ avg $745.88 (no stop, +0.7%), XLV satellite 24 sh @ avg $164.87 (10% trailing stop, order `1d53e9c2`, live, -1.8%), XLF satellite 71 sh @ avg $55.55 (10% trailing stop, order `4c22f833`, live, -0.2%), XLK satellite 24 sh @ avg $184.98 (10% trailing stop, order `2c9bb5cd`, live, +0.2%). All three satellite trailing stops confirmed `status new` (resting, untriggered) via `orders`. No fills, no stop-outs, no positions removed.
 - **Guardrail checks:** None triggered. Day P&L +0.57-0.58% is well inside the -3% daily loss cap (no halt). `counters.json` (new_positions_this_week: 3, week_of 2026-W28) matches reality — 3/3 weekly satellite slots used, no further new entries possible until next ISO week. No rejected orders today.
