@@ -4,6 +4,18 @@ Each end-of-day entry: what we did and why, fills/stops, day P&L, return vs SPY 
 
 ---
 
+## 2026-07-30 (Thu) — Rebound extends into the close, alpha narrows to -0.08%, book unchanged
+
+- **Actions:** No trades this routine — pure reconciliation. `clock` confirmed the market had been open all session (checked 15:50 ET, closes 16:00 ET; next open tomorrow 09:30 ET). Positions/orders confirmed unchanged since midday and matching `memory/STATE.md` exactly: SPY core 93 sh (no stop, -0.6% today), AAPL 12 sh (8% trail, order `54f22517`, +1.6%), IWM 13 sh (10% trail, order `23bc36dd`, -0.8%), V 11 sh (10% trail, order `36e05a68`, +2.2%), XLE 70 sh (10% trail, order `1b112315`, +3.4% — best), XLF 71 sh (10% trail, order `4c22f833`, +2.6%), XLI 24 sh (10% trail, order `477a7747`, -2.1% — weakest), XLV 24 sh (10% trail, order `1d53e9c2`, -0.9%). All 7 satellite trailing stops confirmed `status new` (resting), quantities match positions exactly. No fills, no stop-outs since midday.
+  - **IWM re-checked per midday's flag.** Live close-time quote $292.63, above the *stale* ~$290.80 50-day-MA reference tracked at its 2026-07-20 entry, and further clear than midday's $291.05 read — thesis not broken, the earlier soft patch (flagged 2026-07-29) continues to resolve.
+  - **XLI** re-verified at $178.16, comfortably above its ~$173.6 50-day MA — on-thesis, not broken, and improved from midday's $176.71 despite still being the day's weakest satellite mark-to-market.
+- **Guardrail checks:** Loss cap not tripped (day P&L -0.18%, well inside -3%, no halt). `risk.py status`: 3/3 weekly satellite slots available (2026-W31), 0 used — no new entries attempted (EOD doesn't add). No rejected orders this routine (none attempted).
+- **P&L:** Day **-0.18%** — the broad-tape rebound that began mid-morning extended through the close. Since inception **-0.67%** (equity $99,331.71, from $100,000 on 2026-07-07). SPY same period **-0.59%**. **Alpha vs SPY: -0.08%**, narrower than midday's -0.14% as every satellite strengthened into the close — the satellite sleeve clawed back some of the drag rather than the passive core running further ahead.
+- **State:** Unchanged — SPY core + 7 satellites, all stops live. `memory/STATE.md` updated with the EOD reconciliation; trimmed its "Notes for the next routine" section back down to 5 recent entries per the standing housekeeping lesson.
+- **Watch tomorrow:** IWM's and XLI's 50-day-MA cushions both improved today and are worth confirming they hold rather than being a one-session bounce. No earnings or major macro catalysts flagged for tomorrow's session at this writing — a good day to let the book run unless a fresh idea clears the bar in pre-market research.
+
+---
+
 ## 2026-07-29 (Wed) — FOMC-day selloff widens the loss, alpha widens too, IWM still un-cuttable
 
 - **Actions:** No trades this routine — pure reconciliation. `clock` confirmed the market had been open all session (checked 17:01 ET, after the 16:00 ET close; next open tomorrow 09:30 ET). Positions/orders confirmed unchanged since midday and matching `memory/STATE.md` exactly: SPY core 93 sh (no stop, -2.4% today), AAPL 12 sh (8% trail, order `54f22517`, +3.5% — best), V 11 sh (10% trail, order `36e05a68`, +3.1%, down from midday's +4.0%), XLE 70 sh (10% trail, order `1b112315`, +2.8%), XLF 71 sh (10% trail, order `4c22f833`, +2.0%), XLV 24 sh (10% trail, order `1d53e9c2`, +1.3%), IWM 13 sh (10% trail, order `23bc36dd`, -2.6% — weakest, widened from midday's -2.0%), XLI 24 sh (10% trail, order `477a7747`, -3.1%, widened from midday's -2.9%). All 7 satellite trailing stops confirmed `status new` (resting), quantities match positions exactly. No fills, no stop-outs since midday.
