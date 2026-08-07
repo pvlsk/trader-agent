@@ -4,6 +4,35 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-08-03 to 2026-08-07 (2026-W32) — Grade: B
+
+### Performance
+- **Return this week:** portfolio **+2.49%** vs **SPY +3.37%** → **alpha -0.88%** this week — the second-worst weekly alpha read of the desk's life (behind 2026-W31's -0.94%), on a genuinely strong SPY tape (SPY +3.37% in five sessions).
+- **Return since inception:** **+2.10%** vs **SPY +3.66%** → **alpha -1.56%** (per `portfolio.py`, run post-close) — a new low for the track record, wider than the prior worst (-0.94%/-0.66% range seen in W31) and worse than any single day logged this week (the week's daily reads ranged -0.99% to -1.56%, closing at the wide end).
+- Equity $99,621.30 (last Friday close) → $102,098.74 (this Friday close) — a genuinely good absolute week (+$2,477), just one that trailed the benchmark. No day this week came close to the -3% loss cap; the worst day was still a **gain** (smallest up-day +0.32% Friday, biggest +1.56% Tuesday) — every single session was green or flat, there was no down day at all this week.
+- Winners since entry: **XLF +3.8%** (best), SPY core +3.6%, IWM +2.2%, XLI +1.7%, V +1.3%, XLE +0.8%, XLV +0.5%. Only laggard: **XLP -0.4%** (entered this week, softest but not broken — no close below its 50-day MA).
+- **One new entry this week, zero exits.** XLP (Wed 08-05, relative-strength rotation — consumer staples at a 52-week high, a defensive/low-beta diversifier against the book's existing cyclical tilt) was the week's only trade, sized ~4.0%, well inside the cap. All 7 pre-existing satellites plus the core rode the week unchanged, no stop-outs, no discretionary cuts attempted (none warranted — no thesis broke).
+
+### Risk discipline
+- **Zero guardrail breaches, zero rejected orders.** The 3% daily loss cap was never remotely approached (no down day at all this week). No options, leveraged/inverse ETFs, or crypto were ever attempted. 1/3 weekly satellite slots used (XLP), 2 left unused for the rest of the week — correctly left unused because of a real cash constraint, not lack of ideas: cash sat at ~$1,699-5,795 most of the week against a ~$4,100-5,100 requirement for a compliant new ~4-5% position, and the satellite sleeve was already ~28% of equity vs the 30% target.
+- **Good catch-and-fix on stale machine state.** Tuesday (08-04) found `counters.json` on disk two ISO weeks stale (`2026-W30` instead of `2026-W32`) — correctly diagnosed as cosmetic (`risk.py`'s in-memory ISO-week rollover meant no real guardrail was ever at risk) and corrected via the script's own `load_counters()`/`save_counters()` roundtrip rather than a hand-edit, per the standing rule in `CLAUDE.md`.
+- **Correctly declined to use margin to force capital-constrained entries.** Multiple routines this week (08-05, 08-06, 08-07) noted `buying_power` showing ~$287,810 available (margin) against real cash of ~$1,699, and each time explicitly treated cash — not margin — as the binding constraint, flagging the margin gap rather than trading on it, since using margin to lever the satellite sleeve is a policy change no single routine has the authority to make. This is now the third+ time this exact judgment call has come up; see the new `LESSONS.md` entry codifying it as a standing rule so it stops needing to be re-derived.
+- The `scripts/alpaca.py` cancel/replace-order tooling gap was not exercised this week (no cut or retighten was ever warranted — nothing broke, nothing got extended enough to justify a tighten). Still unfixed; still the desk's top standing engineering item (see `LESSONS.md` 2026-07-24 entry for the fully specified fix).
+
+### Process
+- XLP's entry had a clear, falsifiable, on-edge thesis (relative-strength rotation, falsifiable at the 50-day MA) and was sized conservatively (~4.0%, under the 5% cap).
+- Real restraint: 2 of 3 weekly slots sat open the entire week not because nothing looked interesting but because cash genuinely didn't support another compliant position — "cash is a position" held in practice, not just in principle, all five sessions.
+- No averaging down, no stop-widening, no revenge-trading, no forced trades to chase the widening alpha gap — the desk let the structural mismatch (a ~70/30 core-satellite split can't fully keep pace with SPY on its strongest tape days) play out rather than overreacting to it.
+- **One real process gap:** the pre-market research routine did not run on Friday 08-07 — `memory/IDEAS.md` is still dated Thursday 08-06 pre-market, meaning today's session had no fresh screen behind it (moot in practice, since cash-constrained regardless, but worth flagging to the human operator as a possible scheduling gap rather than assuming it's fine).
+
+### Grade: B
+Every guardrail held, the week's only trade was well-reasoned and modestly sized, stale machine state was caught and fixed the right way, and the desk twice showed the discipline to flag a margin shortcut rather than take it. That's clean process on every axis actually within the desk's control. It doesn't rise above a B because the numbers are now the worst of the track record on both measures — weekly alpha -0.88% and since-inception alpha -1.56%, a new low — and while that's well explained by structure (a strong five-green-day SPY tape a ~28%-sized, cash-constrained satellite sleeve structurally can't fully match), five straight days of widening or flat-at-wide alpha without any successful counter is still a real performance problem the desk needs to keep watching, not just explaining away.
+
+### Next week (2026-W33, opens Monday 2026-08-10)
+All 3 satellite slots reset on the ISO-week rollover (no action needed — `risk.py` handles it automatically). Cash remains the binding constraint (~$1,699 as of Friday's close) — a new entry is realistic only if a trim, a stop-out, or a core rebalance frees capital; don't force one to use an open slot. XLP is the one satellite to watch closest (-0.4%, softest, thesis intact but newest and least proven). Re-run pre-market research fresh Monday since Friday's screen didn't happen. **Standing priorities, unchanged:** (1) the `scripts/alpaca.py` cancel/replace-order tooling gap remains unfixed for the human operator (fix fully specified in `memory/LESSONS.md` 2026-07-24 entry); (2) the alpha gap has now widened or held wide for five consecutive checkpoints — worth a hard look if it doesn't start narrowing on a flatter SPY week.
+
+---
+
 ## Week of 2026-07-27 to 2026-07-31 (2026-W31) — Grade: B
 
 ### Performance
