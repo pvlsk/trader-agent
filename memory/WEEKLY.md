@@ -4,6 +4,35 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-08-17 to 2026-08-21 (2026-W34) — Grade: B+
+
+**Note on cadence:** no review was logged for the prior week, 2026-W33 (2026-08-10 to 2026-08-14) — this entry jumps straight from W32 (closed 2026-08-07) to W34. Flagging this as a process gap below rather than silently absorbing it; this review covers W34 on its own terms using last Friday's (2026-08-14) close as the week's starting reference.
+
+### Performance
+- **Return this week:** portfolio **-0.87%** vs **SPY -1.38%** → **alpha +0.51%** this week — a clean, meaningful beat of the benchmark on a genuinely down week for the market (SPY's since-inception line fell from +4.08% to +2.64%). This is the desk's best weekly alpha print since 2026-W30 (+0.52%).
+- **Return since inception:** **+2.05%** vs **SPY +2.64%** → **alpha -0.59%** (per `portfolio.py`, run post-close) — still negative, but narrowed sharply from last Friday's -1.13%, and the trend narrowed every single session this week (open -1.11% Mon → -0.59% Fri close), including the market's Thursday selloff.
+- Equity $102,948 (last Friday close, 2026-08-14) → $102,052.55 (this Friday close) — a down week in absolute dollars, but the book gave back less than half of what SPY gave back over the same five sessions. Day P&L ranged from Thursday's roughly -0.7% (broad down day, SPY itself -0.69%) to small positive days Mon/Fri; nothing approached the -3% loss cap on any day.
+- Winners since entry: **XLE +11.6%** (best, energy catalyst still compounding, extended winner), XLV +5.9%, V +3.6%, XLF +3.4%, IWM +1.7%, XLP +0.8%. Only laggard: **XLI -1.0%** (only red name multiple sessions running, still comfortably above its ~$173.6 50-day MA falsifiable line — not a thesis break, but the book's persistent weak spot).
+- **Zero new entries, zero exits, zero stop-outs this week.** Every one of the five sessions was pure reconciliation — no trade was possible or attempted, cash-blocked throughout (see Risk discipline).
+
+### Risk discipline
+- **Zero guardrail breaches, zero rejected orders, all week.** The 3% daily loss cap was never remotely approached. No options, leveraged/inverse ETFs, or crypto were ever attempted. 0/3 weekly satellite slots used for 2026-W34 — correctly zero, not from lack of ideas but because cash physically could not support a new ~4-5%-sized entry.
+- **Cash lockout is now the single longest-running, most material constraint on the desk and deserves a direct call, not another passive flag.** Cash has sat flat at **$1,699.14 since 2026-08-05 — 16 calendar days** as of tonight's close (17 by Monday's open), against a ~$5,100 threshold the desk has been assuming a "compliant" new entry needs. That assumption is worth checking against the actual rule: **`config/risk.yaml` and `scripts/risk.py` enforce only a 5% *maximum* per satellite position — there is no enforced minimum.** Nothing stops a smaller, cash-sized entry (e.g. `--pct 1.6`, sized to the $1,699 actually available) on the desk's top-conviction idea, if one exists. Sixteen days of "cash is a position" has functionally meant "zero-size position," which is a more passive stance than the strategy actually requires. **Direct recommendation to the human operator:** either (a) explicitly set a floor on acceptable satellite size (if a sub-2% position is judged too diluted to bother with, that should be a stated policy, not an assumption), or (b) instruct the next research/execution routine to size its next queued idea to whatever cash actually supports rather than waiting for a full ~4-5% entry. This is a policy call, not something a single routine should decide unilaterally — hence surfacing it explicitly here rather than acting on it.
+- The `scripts/alpaca.py` cancel/replace-order tooling gap remains unfixed and unexercised this week (nothing broke, nothing needed a cut). XLE (+11.6%) remains the standing extended-winner tighten candidate, still blocked. This is now the sixth-plus consecutive weekly review flagging the same fully-specified gap (`memory/LESSONS.md`, 2026-07-24 entry) — continuing to cite rather than re-derive it, per the standing lesson.
+
+### Process
+- Every day's reconciliation was thorough and consistent: positions/orders verified against `STATE.md` line-by-line, all 7 satellite stops confirmed live and correctly sized every session, no thesis-break was missed or overstated (XLI's -1.0% was correctly read as persistent softness, not a break).
+- No averaging down, no stop-widening, no revenge-trading, no forced trades anywhere in the book this week — real restraint on a week where the alpha gap was actually closing, which is exactly when it would be tempting to chase.
+- **One real process gap this week: the missing 2026-W33 review.** No entry exists in `memory/WEEKLY.md` for the week of 2026-08-10 to 2026-08-14, and no journal entry from that week mentions a Friday review running. This mirrors the 2026-08-07 pre-market-skip finding from the W32 review — a second instance of a scheduled routine apparently not firing, worth a scheduling check by the human operator rather than assuming it's a one-off.
+
+### Grade: B+
+Zero guardrail breaches, disciplined reconciliation every session, and the best weekly alpha print in over a month (+0.51%, beating a down week for SPY) on top of a since-inception gap that narrowed by more than half a point. That's real, correctly-explained outperformance, not luck dressed up — the book simply fell less than the index on a bad week. It doesn't reach A-range because since-inception alpha is still negative, the cancel/replace tooling gap has now gone unfixed for six-plus consecutive reviews, the cash lockout was allowed to run 16 days on an unexamined assumption about minimum entry size, and a second review appears to have been skipped entirely (W33) — process discipline within each day was excellent, but process *coverage* across the calendar has a real gap.
+
+### Next week (2026-W35, opens Monday 2026-08-24)
+All 3 satellite slots reset (no action needed — `risk.py` handles the rollover automatically). **Direct recommendation carried forward:** resolve the cash-lockout policy question above (minimum acceptable satellite size vs. explicit floor) before another two-plus weeks pass on the same $1,699. XLI remains the one satellite to watch closest — only red name, several sessions running, still not thesis-broken. XLE (+11.6%) is the standing tighten candidate, still blocked by the unfixed tooling gap. **Standing priorities, unchanged:** (1) the `scripts/alpaca.py` cancel/replace-order gap, fully specified in `memory/LESSONS.md` (2026-07-24); (2) confirm with the human operator why the 2026-W33 review didn't run, and whether the schedule needs a fix.
+
+---
+
 ## Week of 2026-08-03 to 2026-08-07 (2026-W32) — Grade: B
 
 ### Performance
