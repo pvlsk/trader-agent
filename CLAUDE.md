@@ -21,12 +21,12 @@ API keys come from the environment: `ALPACA_API_KEY_ID`, `ALPACA_API_SECRET_KEY`
 - Max **3 new** satellite positions per ISO week.
 - **3% daily loss cap** — no new entries once the day is down ≥3%.
 - **No options, ever.** No leveraged/inverse ETFs, no crypto.
-- The **SPY core** (~70%) is the only intentionally large position.
+- The **SPY core** (~60%, tilted down from 70% on 2026-08-28) is the only intentionally large position.
 
 ## How to act (use the scripts, not raw calls)
 - Snapshot: `python scripts/portfolio.py` and `python scripts/alpaca.py positions`
 - Price: `python scripts/alpaca.py quote SYMBOL`
-- Enter core: `python scripts/alpaca.py buy SPY --pct 70`
+- Enter core: `python scripts/alpaca.py buy SPY --pct 60` (or trim toward 60% with `sell SPY --qty <n>` when above band)
 - Enter satellite: `python scripts/alpaca.py buy SYMBOL --pct 4 --trail-percent 10`
 - Tighten a winner: `python scripts/alpaca.py stop SYMBOL --trail-percent 8`
 - Cut a loser: `python scripts/alpaca.py sell SYMBOL --all`

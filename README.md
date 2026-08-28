@@ -1,6 +1,6 @@
 # trader-agent
 
-An autonomous, memory-driven **swing-trading desk** on an Alpaca **paper** account. Goal: **beat SPY total return over the long run** with a core–satellite strategy (70% passive SPY core + 30% tactical sleeve). Five scheduled routines act as the desk; they read shared memory, act, and commit updates back to `main`.
+An autonomous, memory-driven **swing-trading desk** on an Alpaca **paper** account. Goal: **beat SPY total return over the long run** with a core–satellite strategy (~60% passive SPY core + ~40% tactical sleeve; tilted from 70/30 on 2026-08-28). Five scheduled routines act as the desk; they read shared memory, act, and commit updates back to the shared `claude/desk` branch.
 
 > ⚠️ **Paper trading only.** No real money until a sustained, disciplined track record exists. No options, ever.
 

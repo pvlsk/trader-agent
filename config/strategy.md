@@ -6,10 +6,12 @@
 
 | Sleeve | Target | What it is |
 |---|---|---|
-| **Core** | ~70% | Buy-and-hold **SPY**. This structurally guarantees we nearly match the index. No trailing stop. Rebalanced toward 70% only when it drifts outside the band. |
-| **Satellite** | ~30% | Tactical swing trades that try to add alpha on top of the core. Every satellite entry gets a trailing stop. |
+| **Core** | ~60% | Buy-and-hold **SPY**. This structurally keeps us close to the index. No trailing stop. Rebalanced toward 60% when it drifts outside the band — **including trimming it down when it sits above the band, which frees cash to fund the satellite sleeve.** |
+| **Satellite** | ~40% | Tactical swing trades that try to add alpha on top of the core. Every satellite entry gets a trailing stop. |
 
-Because 70% is passive index, the most we can *underperform* by is roughly the drag of the satellite sleeve — and the upside is real if the satellite adds alpha. That asymmetry is the whole point.
+Because 60% is passive index, the most we can *underperform* by is roughly the drag of the satellite sleeve — and the upside is real if the satellite adds alpha. That asymmetry is the whole point.
+
+> **Allocation note (2026-08-28, bullish tilt):** the split moved from 70/30 to **60/40**, shifting ~10% of the book from the passive core into the active sleeve. This is a deliberate lean into the tactical edges. Honest caveat for whoever reads this next: at the time of the change the satellite sleeve was *trailing* SPY (alpha ~-0.9% since inception), so this tilt only pays off if the sleeve's future picks beat the index. Thesis quality and sizing discipline matter more now, not less.
 
 ## The three edges (satellite only)
 
@@ -19,7 +21,7 @@ Because 70% is passive index, the most we can *underperform* by is roughly the d
 
 ## Position sizing & cadence
 
-- **Max 5% of equity per satellite position** (~$5k on $100k) → satellite holds ~6 names at full size. Diversified by design.
+- **Max 5% of equity per satellite position** (~$5k on $100k) → at the 40% target the satellite holds ~8 names at full size. Diversified by design.
 - **Max 3 new satellite positions per ISO week.** (`scripts/risk.py` enforces both.)
 - **Trailing stop on every satellite entry**, default 10% (tighten to ~6–8% on extended winners at midday).
 - **3% daily loss cap:** if the account is down ≥3% on the day, no new entries until the next session. Existing stops still work.
