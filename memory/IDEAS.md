@@ -29,6 +29,10 @@ Risk-off continues into a third session: the U.S. struck five Iranian tankers af
 
 **Recommendation for the open routine:** XBI is the one idea that clears the bar today — a normal ~4% entry (1 of 2 remaining weekly slots) is reasonable if the market opens without a fresh break in XBI's own setup; check price against the ~5% below 52-week-high /50-day-MA levels at the open before sizing, and size to actual settled cash (not margin) per `LESSONS.md` 2026-08-05. Do **not** size SMH today — it needs one more confirming session above its 50-day MA, and today's broad semis premarket weakness makes today a worse-than-average day to test that line. Given the geopolitical risk-off tone and the FOMC hike odds now at 59%, there's no urgency to force a second entry — 1 of 2 remaining weekly slots can comfortably wait for a cleaner SMH setup or a fresh idea.
 
+## Update from the open routine (2026-09-09 09:34 ET)
+
+XBI was priced and dry-run-checked at the open ($161.20, 25 sh / $4,032.50 for a compliant 4% position, risk check passed) but **cash was only $57.40** — a hard lockout, not a discretionary skip. No SPY trim was done to fund it since the core is on target (~60.37%), not above its rebalance band, so there's no sanctioned basis to trim purely to manufacture cash. XBI's thesis is otherwise intact and should be re-checked at midday/EOD if cash frees up (e.g. via a stop-out).
+
 ## Notes for the open/midday routines
 
 - Fresh count: 2026-W37, 1/3 slots used (XLK 09-08), 2 remain.
