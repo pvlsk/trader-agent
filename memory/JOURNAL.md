@@ -1,5 +1,15 @@
 # JOURNAL — daily recaps (append-only, newest at top)
 
+## 2026-09-29 (Tue) — EOD: book reconciled, no trades all session, day -0.28%, alpha -1.91%
+- **Actions:** No trades — desk-journalist EOD shift. `clock`: is_open true at 15:51 ET, close 16:00. `positions` and `orders` match `memory/STATE.md` share-for-share and order-for-order: SPY core 80 sh (~60.8%, in band) plus 10 satellites, all 10 trailing stops `new` and qty-matched (AMD `3827eac2` q7, XLK `66aa7dde` q19, XLB `a0547543` q76, JPM `63972ebe` q11, XLP `588fa70d` q48, IWM `23bc36dd` q13, V `36e05a68` q11, XLE `1b112315` q70, XLF `4c22f833` q71, XLV `1d53e9c2` q24). No fills, no stop-outs.
+- **No new entry:** cash $263.05 (flat since 09-18) is a hard lockout; W40 stays 0/3 slots used.
+- **Positions:** AMD +10.5%, XLE +7.7% (extended; tighten blocked by cancel/replace tooling gap, not re-attempted). XLB -8.0% (thesis broken since 09-10; own stop only). JPM -6.7%, IWM -5.5% weak, no confirmed 50-day break. V +2.4%, XLK +3.3%, XLV +3.4%, XLF -2.8%, XLP -4.2% left alone.
+- **Guardrail checks:** None triggered. Day P&L -0.27/-0.28% vs -3% cap, no halt. `counters.json` still shows stale week_of 2026-W38 (lazy write; risk.py computes ISO week live) — left as is.
+- **P&L:** Equity $100,586.74, day -0.28%. Since inception **+0.59%** vs SPY **+2.50%** → **alpha -1.91%** (Mon EOD -1.75%; new all-time low for the record).
+- **Watch next:** JPM/IWM near possible 50-day breaks; XLB stop; oil/Iran headlines for XLE. Tooling gap still needs the operator's fix.
+
+---
+
 ## 2026-09-28 (Mon) — EOD: book reconciled, no trades all session, day -0.79% (worst of the week), alpha -1.75%
 - **Actions:** No trades — desk-journalist EOD shift. `clock`: is_open true, checked 15:51 ET, next close 16:00 ET, next open Tue 2026-09-29 09:30 ET. `positions` and `orders` match `memory/STATE.md`'s midday handoff share-for-share and order-for-order: SPY core 80 sh (~60.7% of equity, in band, no trim) plus 10 satellites, all 10 trailing stops `new` and qty-matched (AMD `3827eac2` q7, XLK `66aa7dde` q19, XLB `a0547543` q76, JPM `63972ebe` q11, XLP `588fa70d` q48, IWM `23bc36dd` q13, V `36e05a68` q11, XLE `1b112315` q70, XLF `4c22f833` q71, XLV `1d53e9c2` q24). No fills, no stop-outs.
 - **No new entry:** cash $263.05 (unchanged since 09-18) is a hard lockout. Week 2026-W40 stays 0/3 slots used.

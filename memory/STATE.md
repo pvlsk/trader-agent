@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-09-29 12:26 ET (midday — risk-manager shift, **no trades**). Equity **$100,468.28**, cash $263.05, day P&L **-0.39%** (cap -3% ok), week 2026-W40 0/3 slots used. Core SPY 80 sh ≈60.8%, in band. All 10 satellite trailing stops verified live, same IDs/qty as the open; no fills/stop-outs. AMD +11.6%, XLE +8.0% (extended, tighten blocked), XLK +3.4%, XLV +2.7%, V +2.0%, XLF -3.2%, XLP -4.3%, IWM -5.8%, JPM -7.0% (weakest, no confirmed 50-day break), XLB -7.9% (thesis broken, own stop only). Tooling gap still blocks tighten/cut. Since inception **+0.47%** vs SPY **+2.34%** → alpha **-1.87%**. Detail in Notes below._
+_Last updated: 2026-09-29 15:55 ET (EOD reconcile, **no trades**). Equity **$100,586.74**, cash $263.05, day P&L **-0.28%** (cap ok), W40 0/3 slots used. Core SPY 80 sh ≈60.8%, in band. All 10 satellite trailing stops verified live, same IDs/qty. AMD +10.5%, XLE +7.7%, XLV +3.4%, XLK +3.3%, V +2.4%, XLF -2.8%, XLP -4.2%, IWM -5.5%, JPM -6.7%, XLB -8.0% (thesis broken, own stop only). Tooling gap still blocks tighten/cut. Since inception **+0.59%** vs SPY **+2.50%** → alpha **-1.91%**._
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
