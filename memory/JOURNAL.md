@@ -717,3 +717,10 @@ Each end-of-day entry: what we did and why, fills/stops, day P&L, return vs SPY 
 
 ## 2026-09-30 09:34 ET — market open (execution desk)
 No trades. Market open; equity $100,811.84, cash $263.05, day P&L +0.23%, W40 0/3 slots. Core SPY in band (~60.8%). No ranked ideas and cash funds nothing. All 10 trailing stops verified live. Alpha -1.92%.
+
+## 2026-09-30 (Wed) — EOD recap
+- **Actions:** No trades. Reconciled `positions`/`orders` to STATE: SPY 80 sh + 10 satellites, all 10 trailing stops live (`status new`), no fills or stop-outs.
+- **Guardrails:** None triggered; day P&L -0.23% vs -3% cap. No rejected orders. W40 slots 0/3 used (counters.json week_of still shows W38 — stale, risk.py status reports W40 correctly; harmless).
+- **P&L:** Equity $100,356.39, cash $263.05, day -0.23%. Since inception +0.36% vs SPY +2.47% → alpha -2.11%. Book faded from +0.24% at midday to -0.23% into the close.
+- **Movers:** AMD +11.6%, XLE +7.7%, XLK +4.2%, XLV +2.2%, V +0.5%; XLF -3.8%, XLP -5.4%, IWM -5.6%, JPM -7.7%, XLB -8.6% (thesis broken since 09-10). Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow:** XLB and JPM closest to stop triggers; cash too low to fund entries.
