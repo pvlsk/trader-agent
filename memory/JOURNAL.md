@@ -724,3 +724,10 @@ No trades. Market open; equity $100,811.84, cash $263.05, day P&L +0.23%, W40 0/
 - **P&L:** Equity $100,356.39, cash $263.05, day -0.23%. Since inception +0.36% vs SPY +2.47% → alpha -2.11%. Book faded from +0.24% at midday to -0.23% into the close.
 - **Movers:** AMD +11.6%, XLE +7.7%, XLK +4.2%, XLV +2.2%, V +0.5%; XLF -3.8%, XLP -5.4%, IWM -5.6%, JPM -7.7%, XLB -8.6% (thesis broken since 09-10). Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** XLB and JPM closest to stop triggers; cash too low to fund entries.
+
+## 2026-10-01 (Thu) — EOD recap
+- **Actions:** No trades at EOD. Earlier today JPM (~-9.0%) and XLB (~-9.9%) were stopped out via their own trailing stops (combined ≈-$759), freeing $7,238.83 cash. Positions/orders reconcile to STATE: SPY 80 sh + 8 satellites, all 8 stops live.
+- **Guardrails:** None triggered; day P&L +0.31% vs -3% cap. No rejected orders. W40 slots 0/3 used.
+- **P&L:** Equity $100,495.48, cash $7,501.88, day +0.31%. Since inception +0.50% vs SPY +2.64% → alpha -2.14%.
+- **Movers:** AMD +12.6%, XLE +9.9%, XLK +5.3%; IWM -5.3%, XLP -5.7%, XLF -3.7%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow:** $7.5k idle cash and 3 open slots with no vetted ideas; satellite sleeve underweight (~31%).
