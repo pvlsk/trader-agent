@@ -1,19 +1,11 @@
-# IDEAS — 2026-10-02 pre-market (08:08 ET)
+# IDEAS — 2026-10-05 pre-market (08:08 ET)
 
-_Market closed at 08:06 ET; next open 09:30 ET. Equity $100,703.07, day P&L +0.40% (cap ok), SPY core 80 sh + 8 satellites, **week 2026-W40, 0/3 slots used.** Cash **$7,501.72** (freed by 10-01 JPM/XLB stop-outs). **Actionable today: none.**_
+_Market closed at 08:07 ET; next open 09:30 ET. Equity $100,943.25, day P&L -0.04% (cap ok), SPY core 80 sh + 8 satellites, **week 2026-W41, 0/3 slots used.** Cash **$7,501.72**. **Actionable today: none.**_
 
 ## Market read
-Thursday 10-01 close: S&P 500 +0.2% to 7,666 (snapped a 3-day losing streak after bouncing 60+ pts off morning lows), Nasdaq +0.04%, Dow +0.04%. Energy was the strongest sector (~+2%, Brent +$4 after China suspended fuel exports); tech and industrials led the intraday recovery; Treasury yields spiked, then gave back gains. Pre-market for 10-02 I could not verify futures levels or any jobs-data/Fed headline (searches returned stale prior-year pages) — treat today's tape as unknown. Quotes (last): SPY $767.42, XLK $197.88, XLE $62.69, XLV $166.19, XLF $53.48, XLP $80.35, XLC $109.96, XLY $108.83, XLU $39.67, XLB $48.54, SMH $617.85. Leadership by our holdings' P&L: energy (XLE +8.8%) and tech/semis (AMD +14.6%, XLK +5.7%); laggards are defensives/financials/small caps (XLP -5.6%, IWM -4.8%, XLF -3.6%).
+Web searches for 10-05 futures, jobs data and upgrades returned only stale prior-year pages, so no catalyst can be verified. Indicative pre-market quotes: SPY $769.72, QQQ $749.20, XLK $199.86, SMH $630.62, XLE $62.85, XLV $166.15, XLF $53.47, XLP $80.54, XLI $169.94, XLY $110.04, XLU $39.82, XLB $48.88, XLRE $40.80, XLC $110.31. Versus the 10-02 pre-market read, SPY is +0.3% (767.42→769.72) and XLK is +1.0% (197.88→199.86), SMH +2.1% (617.85→630.62). Tech/semis are leading, which we already own via XLK and AMD. Held laggards are XLP, IWM and XLF.
 
 ## Ranked candidates
-**None actionable.** No candidate has a verified, dated catalyst plus confirmed trend that I could cite this morning, and the sector read is mostly what we already own (XLE, XLK, AMD). Adding more of the same would just concentrate the book in names already extended. Per the discipline rules, cash is a position; hold all 3 W40 slots open.
+**None actionable.** There is no verified, dated catalyst, and the leading sectors are ones we already hold. Adding more tech/semis would concentrate the book in extended names. Cash is a position; keep all 3 W41 slots open.
 
-Conditional ideas for the open routine only if confirmed with live data:
-1. **SMH (semis ETF)** — momentum/trend; thesis: AI/semi bid post-Micron persists, price holds above its 50-day. Overlaps AMD + XLK, so size ≤3% and only if it isn't gapping >2% at the open. Low conviction.
-2. **XLC** — RS rotation; only if it ranks top-3 vs SPY on a 1–3 month basis (not verified this morning). Low conviction.
-
-## Watch list
-- Satellite sleeve is ~31% vs 40% target with $7.5k idle cash; underweight is a consequence of two stop-outs, not a signal to force entries.
-- XLE: new high on China fuel-export suspension; extended — tighten still blocked by the cancel/replace tooling gap (LESSONS 2026-07-24).
-- Weak holders (XLP, IWM, XLF) — own stops only.
-- Alpha vs SPY -2.19% (since inception +0.70% vs SPY +2.89%).
+Conditional (low conviction, only if the open confirms strength): SMH ≤3% with a 10% trail, only if semis hold the gap through 10:30 ET. This would be a momentum add to the AMD/XLK theme, so it needs a written thesis. XLC only if it ranks top-3 on RS vs SPY. Neither is a priority.
