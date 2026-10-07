@@ -752,3 +752,10 @@ No trades. Market open; equity $100,811.84, cash $263.05, day P&L +0.23%, W40 0/
 - **P&L:** Equity $102,203.00, cash $7,501.72, day +0.54%. Since inception +2.20% vs SPY +4.49% → alpha -2.29%.
 - **Movers:** AMD +18.5%, XLE +11.8%, XLK +7.3%; IWM -4.8%, XLP -4.2%, XLF -2.8%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** $7.5k idle cash, 3 open slots, no vetted ideas; check that all 8 stops are still live (XLV's vanished once).
+
+## 2026-10-07 (Wed) — EOD recap
+- **Actions:** No trades today. Earlier: XLF stop `4c22f833` found missing at the open (no fill) and re-placed as `9d41c3f6`. Positions/orders reconcile to STATE: SPY 80 sh + 8 satellites (AMD 7, IWM 13, V 11, XLE 70, XLF 71, XLK 19, XLP 48, XLV 24), all 8 trailing stops live (`new`), same IDs/qty. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L -0.20% vs -3% cap. No rejected orders. W41 slots 0/3 used.
+- **P&L:** Equity $101,971.86, cash $7,501.72, day -0.20%. Since inception +1.97% vs SPY +4.22% → alpha -2.24%.
+- **Movers:** AMD +17.6%, XLE +11.2%, XLK +6.9%; IWM -5.9%, XLP -4.2%, XLF -3.2%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow:** $7.5k idle cash, 3 open slots, no vetted ideas; stops vanished twice this week (XLV 10-06, XLF 10-07) — verify all 8 each shift.
