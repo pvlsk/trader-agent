@@ -759,3 +759,10 @@ No trades. Market open; equity $100,811.84, cash $263.05, day P&L +0.23%, W40 0/
 - **P&L:** Equity $101,971.86, cash $7,501.72, day -0.20%. Since inception +1.97% vs SPY +4.22% → alpha -2.24%.
 - **Movers:** AMD +17.6%, XLE +11.2%, XLK +6.9%; IWM -5.9%, XLP -4.2%, XLF -3.2%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** $7.5k idle cash, 3 open slots, no vetted ideas; stops vanished twice this week (XLV 10-06, XLF 10-07) — verify all 8 each shift.
+
+## 2026-10-08 (Thu) — EOD recap
+- **Actions:** No discretionary trades. IWM (13 sh, weakest holder) stopped out this morning via its own 10% trailing stop (order `23bc36dd`), realized ≈-6.9% (fill ≈$274.66, ≈-$265, derived from the $3,570.58 cash delta). Positions/orders reconcile to STATE: SPY 80 sh + 7 satellites (AMD 7, V 11, XLE 70, XLF 71, XLK 19, XLP 48, XLV 24), all 7 trailing stops live (`new`), same IDs/qty. No other fills.
+- **Guardrails:** None triggered; day P&L -0.33% vs -3% cap. No rejected orders. W41 slots 0/3 used.
+- **P&L:** Equity $101,621.96, cash $11,072.30, day -0.33%. Since inception +1.62% vs SPY +3.72% → alpha -2.10%.
+- **Movers:** AMD +12.6%, XLE +14.3%, XLK +4.9%; XLF -2.4%, XLP -2.2%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow (Fri):** $11.1k idle cash (~10.9%), 3 open slots, no vetted ideas; satellite sleeve ~28% vs 40% target — don't force fills. Friday weekly review due; verify all 7 stops (XLV/XLF vanished earlier this week).
