@@ -769,3 +769,10 @@ No trades. Market open; equity $100,811.84, cash $263.05, day P&L +0.23%, W40 0/
 
 ## 2026-10-09 09:34 ET — Market open
 No trades. Equity $101,966, cash $11,072, day +0.29%, alpha -2.17%. SPY core ~60.9% in band. All 7 trailing stops verified live. IDEAS had no actionable candidates; cash held.
+
+## 2026-10-09 (Fri) — EOD recap
+- **Actions:** No trades today. Positions/orders reconcile to STATE: SPY 80 sh + 7 satellites (AMD 7, V 11, XLE 70, XLF 71, XLK 19, XLP 48, XLV 24), all 7 trailing stops live (`new`), same IDs/qty, no vanishes. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L +0.48% vs -3% cap. No rejected orders. W41 slots 0/3 used.
+- **P&L:** Equity $102,162.66, cash $11,072.21, day +0.48%. Since inception +2.16% vs SPY +4.36% → alpha -2.20%.
+- **Movers:** XLE +13.9%, AMD +10.7%, V +8.0%; XLP -2.3%, XLF -1.4%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch Monday:** ~$11.1k idle cash (~10.8%), 3 open W42 slots, no vetted ideas; satellite sleeve ~28% vs 40% target — don't force fills. Verify all 7 stops (XLV/XLF vanished earlier in W41).
