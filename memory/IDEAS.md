@@ -1,11 +1,11 @@
-# IDEAS — 2026-10-08 pre-market (08:07 ET)
+# IDEAS — 2026-10-09 pre-market (08:07 ET)
 
-_Market closed at 08:06 ET; next open 09:30 ET. Equity $101,637.11, day P&L -0.31% (cap ok), 9 open positions (SPY core + 8 satellites), **week 2026-W41, 0/3 slots used.** Cash ~$7.5k. Alpha vs SPY -2.58%. **Actionable today: none.**_
+_Market closed at 08:07 ET; next open 09:30 ET. Equity $102,017.27, day P&L +0.34% (cap ok), 8 open positions (SPY core + 7 satellites; IWM stopped out 10-08), **week 2026-W41, 0/3 slots used.** Cash ~$11.07k (~10.9%). Alpha vs SPY -2.22%. **Actionable today: none.**_
 
 ## Market read
-News search again returned nothing dated 10-08; newest verifiable item is a single-source 10-06 preview (Treasury yields at multi-year highs, 10y ~5.3%, some Fed-hike pricing — unconfirmed, treat with caution). Indicative pre-market quotes: SPY $777.30 (-0.2% vs 10-07 pre), XLK $201.18, SMH $625.19, XLE $63.38, XLV $168.80, XLU $41.16, XLY $111.39, XLC $111.30, XLRE $40.57, XLI $167.87, XLB $48.98. Slightly softer tape: semis -1.1%, XLI -2.2%, XLRE -1.3% vs yesterday's pre-market read; XLV +1%. No clear new sector leadership; history bars unavailable to rank RS rigorously. All 8 satellite trailing stops verified live (same IDs/qty).
+News search again returned nothing dated 10-09; newest verifiable item is a 10-07 preview (S&P 500 at its 28th record close of the year; 10y Treasury ~5.32%, highest close since 2002 — yields are the main macro overhang). Indicative pre-market quotes: SPY $777.51, XLK $198.21 (-1.5% vs 10-08 pre), SMH $607.69 (-2.8%), QQQ $748.40, XLE $65.18 (+2.8%), XLF $54.23, XLV $168.13, XLI $168.38, XLY $111.69, XLP $83.39, XLU $41.06, XLB $49.26, XLRE $40.84, XLC $112.05, GLD $378.63. Pattern: semis/tech softening, energy firming, rest flat. No history bars available, so the 11-sector RS ranking vs SPY is only a pre-market-delta read, not rigorous. All 7 satellite stops confirmed live (same IDs/qty).
 
 ## Ranked candidates
-**None actionable.** No verified dated catalyst; leaders (tech/semis) already held via XLK/AMD and softening. Keep all 3 W41 slots open. Cash is a position.
+**None actionable.** No verified dated catalyst; leaders (tech/semis, energy) are already held via XLK/AMD/XLE and tech is softening. Keep all 3 W41 slots open. Cash is a position; don't force fills just because the sleeve (~28%) is below the 40% target.
 
-Conditional (low conviction, unchanged): XLU only if it confirms top-3 RS vs SPY after the open (needs written thesis). SMH dropped from consideration — semis weakening and overlap AMD/XLK.
+Conditional (low conviction, unchanged): XLU only if it confirms top-3 RS vs SPY after the open (needs written thesis, <=3-4% size, 10% trail).
