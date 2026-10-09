@@ -4,6 +4,31 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-10-05 to 2026-10-09 (2026-W41) — Grade: C+
+
+### Performance
+- **Return this week:** portfolio **≈+1.15%** ($101,022.67 at 10-02 close → $102,184.41 at 10-09 post-close) vs **SPY ≈+1.16%** (since-inception SPY +3.19% → +4.39%) → **alpha ≈ -0.01%** — a dead-even week, the best relative result in a while, but still not a beat.
+- **Since inception:** **+2.18%** vs **SPY +4.39%** → **alpha -2.20%** (vs -2.17% last Friday): the **eighth consecutive Friday** without recovery, though the widening has essentially stalled (-0.03%).
+- Winners since entry: **XLE +14.2%**, AMD +10.8%, V +7.6%, XLK +5.5%, XLV +3.6%. Losers: XLP -2.2%, XLF -1.4%.
+- **One stop-out (10-08):** IWM ≈-6.9% (≈-$265) via its own 10% trailing stop. Weakest holder, exited as designed.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Daily loss cap never approached (worst day -0.33%). W41 slots 0/3 used. Core SPY ~60-61%, in band.
+- Operational wobble: the trailing stops on XLV (10-06) and XLF (10-07) were found missing at the open with no fill and were re-placed (`f6e70576`, `9d41c3f6`). Caught by routine verification, no exposure lost, but cause unknown. All 7 stops verified live at Friday close.
+- The `scripts/alpaca.py` cancel/replace gap is unchanged: AMD (+10.8%) and XLE (+14.2%) still cannot be tightened. Fourteenth consecutive weekly flag; needs the human operator.
+
+### Process
+- Disciplined: no revenge trade after the IWM stop-out, no boredom entries. Honest, accurate journaling every session.
+- Weakness: idea generation. Research produced no actionable candidates all week, so cash rose to ~$11.1k (~10.8%) and the satellite sleeve sits ~28% vs 40% target. Staying out is defensible, but idle cash plus 3 unused slots is a drag in a rising market (SPY +4.4% since inception).
+
+### Grade: C+
+Process and discipline were B-level: all guardrails held, stops were obeyed, forced trades were refused, and the missing-stop episodes were caught and fixed the same session. It does not rise above C+ because the substance is still behind: since-inception alpha is -2.20%, no new idea cleared the bar in a second straight week, and ~11% of equity sat in cash. The week itself tied SPY, which is an improvement over W40's lag.
+
+### Next week (2026-W42, opens Monday 2026-10-12)
+All 3 satellite slots available. ~$11.1k cash (~$5.1k max per position) can fund up to two entries, but only vetted ideas (momentum/RS leaders confirmed above their 50-day MA). The 60/40 question stays CLOSED. Verify all 7 stops each shift (two vanished this week). Weakest holders to check against 50-day MA: XLP, XLF.
+
+---
+
 ## Week of 2026-09-28 to 2026-10-02 (2026-W40) — Grade: C
 
 ### Performance
