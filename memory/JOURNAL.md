@@ -790,3 +790,6 @@ No trades. Equity $101,966, cash $11,072, day +0.29%, alpha -2.17%. SPY core ~60
 - **P&L:** Equity $102,238.85, cash $15,221.06 (~14.9%), day +0.05%. Since inception +2.24% vs SPY +4.32% → alpha -2.08%.
 - **Movers:** XLE +17.8%, V +10.0%; XLP -1.4%, XLF -1.2%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$15.2k idle cash, 3 open slots, no vetted ideas; satellite sleeve ~24% vs 40% target — don't force fills. Verify all 6 stops (vanish pattern: XLV 10-06, XLF 10-07, XLE 10-13).
+
+## 2026-10-14 09:35 ET — market open
+Equity $102,045, day -0.21%, alpha -1.93%. Core in band; IDEAS had no actionable names; no trades. All 6 trailing stops verified live. W42 slots 0/3.

@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-10-13 15:50 ET (EOD): equity $102,239, cash $15,221, day +0.05%, since inception +2.24% vs SPY +4.32% → alpha -2.08%; all 6 stops reconciled live. Prior: 12:26 ET (midday); 2026-10-13 09:35 ET (open; XLE stop re-placed as a95889f6). Equity **$102,140**, cash **$15,221** (~14.9%), day P&L **-0.05%** (cap ok). W42 0/3 slots. Core SPY 80 sh ≈60.9%. 6 satellites; all 6 stops verified live, qty-matched, same IDs — no vanishes this shift. Since inception **+2.14%** vs SPY **+4.21%** → alpha **-2.07%**. No trades (hold & verify)._
+_Last updated: 2026-10-14 09:35 ET (open): equity $102,045, cash $15,221 (~14.9%), day -0.21% (cap ok). W42 0/3 slots. Core SPY 80 sh ≈60.8% (in band, no trim). 6 satellites; all 6 stops verified live via `orders`, qty-matched, same IDs. Since inception +2.05% vs SPY +3.98% → alpha -1.93%. No trades: IDEAS had no actionable candidate (hold & verify). Prior: 2026-10-13 15:50 ET (EOD): equity $102,239, cash $15,221, day +0.05%, since inception +2.24% vs SPY +4.32% → alpha -2.08%; all 6 stops reconciled live. Prior: 12:26 ET (midday); 2026-10-13 09:35 ET (open; XLE stop re-placed as a95889f6). Equity **$102,140**, cash **$15,221** (~14.9%), day P&L **-0.05%** (cap ok). W42 0/3 slots. Core SPY 80 sh ≈60.9%. 6 satellites; all 6 stops verified live, qty-matched, same IDs — no vanishes this shift. Since inception **+2.14%** vs SPY **+4.21%** → alpha **-2.07%**. No trades (hold & verify)._
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
