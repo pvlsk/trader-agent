@@ -1,14 +1,14 @@
-# IDEAS — 2026-10-13 pre-market (08:07 ET)
+# IDEAS — 2026-10-14 pre-market (08:06 ET)
 
-_Market closed at 08:07 ET; next open 09:30 ET. Equity $102,279.52, day P&L +0.09% (cap ok), 7 positions (SPY core + 6 satellites), **week 2026-W42, 0/3 slots used.** Cash ~$15.2k (~14.9%). **Actionable today: none.**_
+_Market closed at 08:06 ET; next open 09:30 ET. Equity $102,476.75, day P&L +0.21% (cap ok), 7 positions (SPY core + 6 satellites), **week 2026-W42, 0/3 slots used.** Cash ~$15.2k (~14.9%). Alpha vs SPY -1.83% (since inception +2.48% vs +4.31%). **Actionable today: none.**_
 
-## ⚠️ Priority for the open routine
-**XLE's trailing stop (`1b112315`, qty 70) is GONE from open orders** — `orders` shows only 5 stops (XLF, XLV, XLK, XLP, V). It was live at 10-12 EOD. No fill/position change (XLE still 70 sh, ~$4,648, +16.4%, last $66.03). 3rd vanished-stop incident (XLV 10-06, XLF 10-07). XLE is currently UNPROTECTED. At the open: re-verify with `orders`, then re-place `python3 scripts/alpaca.py stop XLE --trail-percent 10` (or tighter, ~8%, given +16% gain) if still absent.
+## Stop check
+`orders` at 08:06 ET: all 6 satellite trailing stops live, `new`, qty-matched, same IDs as STATE (XLE `a95889f6`, XLF `9d41c3f6`, XLV `f6e70576`, XLK `66aa7dde`, XLP `588fa70d`, V `36e05a68`). No vanishes overnight.
 
 ## Market read
-Indicative pre-market last prices: SPY $777.96 (flat/slightly down vs 10-12 pre $778.60), XLK $196.27, XLV $171.98 (leader, up), XLE $66.03 (up ~1.5%), XLF $55.05, XLP $84.40, XLI $169.12, XLY $112.28, XLU $41.62, XLB $49.44, XLRE $41.92, XLC $111.44. No fresh catalyst verified (no dated news fetched). Healthcare/energy lead among held names; staples/financials roughly flat vs entry. Ranking vs SPY unchanged from prior days: tech and healthcare leading, no new sector breaking out.
+Indicative pre-market last prices: SPY $778.03 (flat vs 10-13 pre $777.96), XLK $196.09, XLV $169.74 (down ~1.3% vs yesterday's pre), XLE $67.15 (up ~1.7%, extended winner), XLF $54.82, XLP $84.17, XLI $168.63, XLY $112.36, XLU $41.85, XLB $49.70, XLRE $41.82, XLC $112.27. No dated news fetched, so no verified catalyst. Held names XLE/XLK still lead; XLF/XLP soft but near entry. No sector is breaking out relative to SPY.
 
 ## Ranked candidates
-**None actionable.** No verified catalyst; leaders (XLK, XLV, XLE) already held. Keep all 3 W42 slots open. Cash is a position; satellite sleeve (~24%) below 40% target is a result of stop-outs, not a mandate to force fills.
+**None actionable.** No verified catalyst, and leaders are already held. Keep all 3 W42 slots open. Cash is a position; the satellite sleeve (~24%) being below its 40% target is a result of stop-outs, not a mandate to force fills.
 
-Conditional (low conviction, unchanged): XLU only if it confirms top-3 RS vs SPY after the open (needs written thesis, <=3-4% size, 10% trail).
+Conditional (low conviction, unchanged): XLU only if it confirms top-3 RS vs SPY after the open (needs a written thesis, <=3-4% size, 10% trail).
