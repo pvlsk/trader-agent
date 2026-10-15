@@ -800,3 +800,10 @@ Equity $102,045, day -0.21%, alpha -1.93%. Core in band; IDEAS had no actionable
 - **P&L:** Equity $101,566.73, cash $15,221.06 (~15.0%), day -0.68%. Since inception +1.57% vs SPY +3.13% → alpha -1.56%.
 - **Movers:** XLE +18.5%, V +9.2%; XLF -2.0%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$15.2k idle cash, 3 open slots, no vetted ideas; don't force fills. Verify all 6 stops (vanish pattern: XLV 10-06, XLF 10-07, XLE 10-13).
+
+## 2026-10-15 (Thu) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 6 satellites (V 11, XLE 70, XLF 71, XLK 19, XLP 48, XLV 24), all 6 trailing stops live (`new`), same IDs/qty, no vanishes. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L +0.30% vs -3% cap. No rejected orders. W42 slots 0/3 used.
+- **P&L:** Equity $101,929.85, cash $15,221.06 (~14.9%), day +0.30%. Since inception +1.93% vs SPY +3.44% → alpha -1.51%.
+- **Movers:** XLE +16.6%, V +11.7%, XLV +7.7%; XLF -0.6%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow:** ~$15.2k idle cash, 3 open slots, no vetted ideas; don't force fills. Verify all 6 stops.
