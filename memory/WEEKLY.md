@@ -4,6 +4,32 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-10-12 to 2026-10-16 (2026-W42) — Grade: B-
+
+### Performance
+- **Return this week:** portfolio **≈-0.85%** ($102,184.41 at 10-09 close → $101,311.06 at 10-16 post-close) vs **SPY ≈-1.96%** (since-inception SPY +4.39% → +2.34%) → **alpha ≈ +1.1%**, the first clearly positive week in a long while.
+- **Since inception:** **+1.31%** vs **SPY +2.34%** → **alpha -1.03%** (vs -2.20% last Friday). First Friday in nine that alpha *narrowed* instead of widening.
+- Honest read: the beat is mostly structural, not skill. SPY fell ~2% and we carried 60% SPY plus 15-18% idle cash, so we were under-exposed in a down week. In a rising week the same posture lags (see W40/W41). Only XLE (+19.5%), V (+12.5%), XLV (+7.2%) are real stock-picking contributors.
+- Winners since entry: XLE +19.5%, V +12.5%, XLV +7.2%, XLP +2.7%. Loser: XLF -0.1%.
+- **Two stop-outs, both via their own 10% trails:** AMD (10-12, pre-open) ≈+8.0% / ≈+$310; XLK (10-16) ≈-2.9% / ≈-$105. Net realized ≈+$205.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Worst day -0.68% (10-14) vs -3% cap. W42 new positions 0/3. Core SPY 80 sh ≈60%, in band.
+- **Stop vanishing continues:** XLE's stop vanished 10-13 (re-placed `a95889f6`), and at Friday's post-close check **V's stop was missing again** (EOD recap had logged 5/5 live). V (11 sh, ~$4.4k) was unprotected; I re-placed it at an 8% trail (`f583ac37`), which also tightens the +12.5% winner. That makes four vanishes in three weeks (XLV, XLF, XLE, V); cause still unknown. Exposure window was short but real.
+- The `scripts/alpaca.py` cancel/replace gap is unchanged (XLE +19.5% still cannot be tightened). Fifteenth consecutive weekly flag; needs the human operator. Note: placing a stop on a symbol with *no* live stop works fine, so tightening is possible whenever a stop vanishes.
+
+### Process
+- Disciplined: no revenge trade after the XLK stop-out, no boredom entries, journals accurate. One verification miss: the Friday EOD recap reported all stops live when V's was gone; stop checks must be re-run after the last fill/close, not before.
+- Weakness persists: idea generation produced no actionable candidate all week. Cash is now ~$18.7k (18.5%), satellite sleeve ~21% vs 40% target, 3 slots unused for the second straight week. Staying out is defensible but is the main reason the book trails SPY since inception.
+
+### Grade: B-
+Process and discipline were sound (no breaches, stops obeyed, no forced trades), and the week beat SPY by ~1.1%. It does not earn more because that beat came largely from being under-invested in a down tape, idea generation has produced nothing for two weeks, and a stop went unprotected through the EOD check.
+
+### Next week (2026-W43, opens Monday 2026-10-19)
+All 3 satellite slots available; ~$18.7k cash (max ~$5.1k per position). Only enter vetted momentum/RS leaders above their 50-day MA; do not deploy cash just to reduce drag. First action each shift: compare `orders` to `positions` (5 stops expected: V 8%, XLE, XLF, XLV, XLP). With a stop vanished and re-placed, consider re-placing XLE at a tighter trail the next time it vanishes. Weakest holders: XLF, XLP.
+
+---
+
 ## Week of 2026-10-05 to 2026-10-09 (2026-W41) — Grade: C+
 
 ### Performance
