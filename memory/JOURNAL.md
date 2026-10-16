@@ -807,3 +807,10 @@ Equity $102,045, day -0.21%, alpha -1.93%. Core in band; IDEAS had no actionable
 - **P&L:** Equity $101,929.85, cash $15,221.06 (~14.9%), day +0.30%. Since inception +1.93% vs SPY +3.44% → alpha -1.51%.
 - **Movers:** XLE +16.6%, V +11.7%, XLV +7.7%; XLF -0.6%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$15.2k idle cash, 3 open slots, no vetted ideas; don't force fills. Verify all 6 stops.
+
+## 2026-10-16 (Fri) — EOD recap
+- **Actions:** No discretionary trades. XLK (19 sh) stopped out this afternoon via its own 10% trailing stop (order `66aa7dde`), realized ≈-2.9% (fill ≈$182.91 from the $3,475.37 cash delta, ≈-$105). Positions/orders reconcile to STATE: SPY 80 sh + 5 satellites (V 11, XLE 70, XLF 71, XLP 48, XLV 24), all 5 trailing stops live (`new`), same IDs/qty, no vanishes.
+- **Guardrails:** None triggered; day P&L -0.63% vs -3% cap. No rejected orders. W42 slots 0/3 used. counters.json week_of corrected W41 → W42 (genuine staleness).
+- **P&L:** Equity $101,305.97, cash $18,696.43 (~18.5%), day -0.63%. Since inception +1.31% vs SPY +2.28% → alpha -0.97%.
+- **Movers:** XLE +19.6%, V +12.4%, XLV +7.0%; XLF -0.2%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch Monday:** ~$18.7k idle cash, 3 open W43 slots, no vetted ideas; satellite sleeve ~21% vs 40% target — don't force fills. Verify all 5 stops.
