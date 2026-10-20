@@ -821,3 +821,6 @@ Equity $102,045, day -0.21%, alpha -1.93%. Core in band; IDEAS had no actionable
 - **P&L:** Equity $101,560.33, cash $18,696.34 (~18.4%), day +0.21%. Since inception +1.56% vs SPY +2.82% → alpha -1.26%.
 - **Movers:** XLE +19.1%, V +12.7%, XLV +6.7%; XLF -0.9%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$18.7k idle cash, 3 open W43 slots, no vetted ideas; don't force fills. Verify all 5 stops.
+
+## 2026-10-20 09:35 ET — Open
+Equity $101,631, day +0.13%, alpha -0.99%. Core in band (60.3%), 5 stops verified live. No actionable ideas; no trades. W43 0/3.
