@@ -4,6 +4,31 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-10-19 to 2026-10-23 (2026-W43) — Grade: B-
+
+### Performance
+- **Return this week:** portfolio **≈+0.09%** ($101,311 at 10-16 post-close → $101,406 at 10-23 post-close) vs **SPY ≈-0.42%** (since-inception SPY +2.34% → +1.91%) → **alpha ≈ +0.5%**.
+- **Since inception:** **+1.41%** vs **SPY +1.91%** → **alpha -0.50%** (vs -1.03% last Friday). Second straight Friday that alpha narrowed.
+- Honest read: again mostly structural. SPY dipped, and with 60% core plus ~18% idle cash we were under-exposed; the mid-week alpha swung from -1.41% (Wed, SPY +3.7%) to -0.56% (Fri) purely on SPY's pullback. Real stock-level contributors: XLE (+21.5%), V (+13.9%), XLV (+8.9%); XLP +3.6%; XLF flat (+0.6%).
+- No trades, no stop-outs, no fills all week.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Worst day -0.51% (10-22) vs -3% cap. W43 new positions 0/3. Core SPY 80 sh ~60%, in band.
+- **No stop vanished this week** (first clean week since the vanishes began 10-06): all 5 stops verified live, qty-matched, same IDs at every shift including after the final close. Cause of the earlier four vanishes remains undiagnosed, so keep verifying.
+- `scripts/alpaca.py` cancel/replace gap unchanged: XLE (+21.5%) cannot be tightened. Sixteenth consecutive weekly flag; needs the human operator (fix specified in LESSONS 2026-07-24).
+
+### Process
+- Disciplined: no boredom entries, no averaging, accurate journals, stop checks re-run post-close as the W42 lesson required.
+- Weakness persists: idea generation produced no actionable candidate for a third straight week. Cash ~$18.7k (18.4%), satellite sleeve ~21.6% vs 40% target, 3 slots unused. Staying out is defensible but is the main reason the book trails SPY since inception.
+
+### Grade: B-
+Clean discipline and a clean operational week (no vanished stops, no breaches), and a positive weekly alpha, but the beat came from under-exposure in a soft tape rather than skill, and a third week of zero vetted ideas means the entry process is not producing. Holds at B- rather than rising.
+
+### Next week (2026-W44, opens Monday 2026-10-26)
+All 3 satellite slots available; ~$18.7k cash (max ~$5.07k per position). Verify 5 stops at the open. Research should widen the screen (RS leaders above 50-day MA beyond SPDR sectors) rather than lower the bar. Weakest holder: XLF. If any stop vanishes, re-place it at a tighter trail (XLE 7-8%).
+
+---
+
 ## Week of 2026-10-12 to 2026-10-16 (2026-W42) — Grade: B-
 
 ### Performance
