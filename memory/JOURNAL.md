@@ -845,3 +845,10 @@ Equity $101,631, day +0.13%, alpha -0.99%. Core in band (60.3%), 5 stops verifie
 - **P&L:** Equity $101,737.52, cash $18,696.34 (~18.4%), day -0.51%. Since inception +1.74% vs SPY +2.33% → alpha -0.59%. (Alpha improved vs yesterday's -1.41% only because SPY fell; not skill.)
 - **Movers:** XLE +18.6%, V +15.7%, XLV +10.1%; XLF +1.9%, XLP +5.4%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$18.7k idle cash, 3 open W43 slots, no vetted ideas; don't force fills. Verify all 5 stops. Friday review due.
+
+## 2026-10-23 (Fri) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 5 satellites (V 11, XLE 70, XLF 71, XLP 48, XLV 24), all 5 trailing stops live (`new`), same IDs/qty, no vanishes. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L -0.44% vs -3% cap. No rejected orders. W43 slots 0/3 used. counters.json week_of W43 correct.
+- **P&L:** Equity $101,343.08, cash $18,696.34 (~18.4%), day -0.44%. Since inception +1.34% vs SPY +1.90% → alpha -0.56%.
+- **Movers:** XLE +21.5%, V +13.9%, XLV +8.7%; XLF +0.7%, XLP +3.4%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch next week:** ~$18.7k idle cash, 3 open W44 slots, no vetted ideas; don't force fills. Verify all 5 stops Monday open. Friday weekly review follows this recap.
