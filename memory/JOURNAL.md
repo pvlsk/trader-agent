@@ -869,3 +869,10 @@ Equity $101,631, day +0.13%, alpha -0.99%. Core in band (60.3%), 5 stops verifie
 
 ## 2026-10-28 09:46 ET — open
 Market open. Equity $101,965, day +0.05%, alpha -1.33%. Core SPY 80 sh ≈60.5%, in band. IDEAS had no actionable candidate; all 5 stops verified live. No trades; W44 0/3.
+
+## 2026-10-28 (Wed) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 5 satellites (V 11, XLE 70, XLF 71, XLP 48, XLV 24), all 5 trailing stops live (`new`), same IDs/qty, no vanishes. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L +0.21% vs -3% cap. No rejected orders. W44 slots 0/3 used. (counters.json still reads week_of W43; script-managed rollover, no new entries so left untouched.)
+- **P&L:** Equity $102,126.83, cash $18,696.34 (~18.3%), day +0.21%. Since inception +2.13% vs SPY +3.48% → alpha -1.35% (cash/beta drag in an up tape).
+- **Movers:** XLE +20.0%, V +12.2%, XLV +9.1%; XLF +1.0%, XLP +1.8%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow:** ~$18.7k idle cash, 3 open W44 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open.
