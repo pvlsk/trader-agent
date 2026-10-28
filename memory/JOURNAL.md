@@ -866,3 +866,6 @@ Equity $101,631, day +0.13%, alpha -0.99%. Core in band (60.3%), 5 stops verifie
 - **P&L:** Equity $101,980.97, cash $18,696.34 (~18.3%), day +0.23%. Since inception +1.98% vs SPY +3.29% → alpha -1.31% (widened from -0.87% yesterday: SPY up more than us; cash/beta drag).
 - **Movers:** XLE +19.7%, V +12.0%, XLV +8.7%; XLF +0.7%, XLP +2.3%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow:** ~$18.7k idle cash, 3 open W44 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open.
+
+## 2026-10-28 09:46 ET — open
+Market open. Equity $101,965, day +0.05%, alpha -1.33%. Core SPY 80 sh ≈60.5%, in band. IDEAS had no actionable candidate; all 5 stops verified live. No trades; W44 0/3.
