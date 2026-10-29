@@ -1,6 +1,6 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-10-29 12:27 ET (midday): equity $102,188, cash $18,696 (~18.3%), day +0.04% (cap ok), alpha -0.94% (+2.19% vs SPY +3.13%); core SPY 80 sh ≈60.2% in band, no trim; all 5 satellite stops live via `orders`, qty-matched, same IDs (V 8% f583ac37; XLE/XLF/XLV/XLP 10%); W44 0/3; 6 positions; no trades (hold & verify). Prior shifts' per-run detail: `memory/JOURNAL.md`._
+_Last updated: 2026-10-29 15:52 ET (EOD): equity $102,195, cash $18,696 (~18.3%), day +0.05% (cap ok), alpha -0.90% (+2.20% vs SPY +3.09%); core SPY 80 sh ≈60.2% in band; all 5 satellite stops live via `orders`, qty-matched, same IDs; W44 0/3; 6 positions; no trades. Prior shifts' per-run detail: `memory/JOURNAL.md`._
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
