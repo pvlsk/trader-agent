@@ -878,4 +878,4 @@ Market open. Equity $101,965, day +0.05%, alpha -1.33%. Core SPY 80 sh ≈60.5%,
 - **Watch tomorrow:** ~$18.7k idle cash, 3 open W44 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open.
 
 ## 2026-10-29 open (10:05 ET)
-Market open. Equity $102,268, day +0.12
+Market open. Equity $102,268, day +0.12%, alpha -0.90%. Core ~60.2%, in band. IDEAS had no actionable candidate; no trades, W44 0/3 slots used. All 5 trailing stops verified live.
