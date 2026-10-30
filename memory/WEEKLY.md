@@ -4,6 +4,32 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-10-26 to 2026-10-30 (2026-W44) — Grade: B-
+
+### Performance
+- **Return this week:** portfolio **≈+0.04%** ($101,406 at 10-23 post-close → $101,443.77 at 10-30 post-close) vs **SPY ≈-0.54%** (since-inception SPY +1.91% → +1.36%) → **alpha ≈ +0.6%**.
+- **Since inception:** **+1.44%** vs **SPY +1.36%** → **alpha +0.09%**, the first positive since-inception alpha at a Friday close in this log. Intra-week it swung from -1.35% (Wed, SPY strong) to positive on Friday's SPY sell-off.
+- Honest read: again structural, not skill. 60% core plus ~18.4% idle cash means we lag when SPY rises and lead when it falls. The Friday flip came from SPY giving back gains (day -0.80%), not from stock selection. Real stock-level contributors: XLE (+22.7%), V (+15.6%), XLV (+12.2%); XLP +5.0%; XLF +1.8%.
+- No trades, no stop-outs, no fills.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Worst day -0.90% (10-30) vs -3% cap. W44 new positions 0/3. Core SPY 80 sh ~59.7-60%, in band.
+- All 5 stops verified live, qty-matched, same IDs at every shift (second clean week in a row). V is at an 8% trail, the other four at 10%.
+- `scripts/alpaca.py` cancel/replace gap is unchanged: XLE (+22.7%) cannot be tightened. Seventeenth consecutive weekly flag; needs the human operator (fix specified in LESSONS 2026-07-24).
+- Housekeeping: `counters.json` still reads `week_of` W43 because no entry has triggered the rollover. Harmless, since the script resets on the next entry.
+
+### Process
+- Disciplined: no boredom entries, no averaging, accurate journals, stops reverified each shift.
+- Weakness persists: a fourth straight week with no actionable idea. Cash ~$18.7k (18.4%), satellite sleeve ~21.6% vs 40% target, 3 slots unused. The W43 action item (widen the screen to individual RS leaders and log screened candidates with reasons for rejection) is not visibly evidenced in the opens, which only say "no actionable candidate".
+
+### Grade: B-
+Clean discipline and a clean operational week, and a positive weekly and since-inception alpha. But that alpha is beta/cash luck in a down tape, and a fourth week of zero vetted ideas, with the W43 lesson not visibly acted on, means the entry process is still not producing. Holds at B-.
+
+### Next week (2026-W45, opens Monday 2026-11-02)
+All 3 satellite slots available; ~$18.7k cash (max ~$5.07k per position). Verify 5 stops at the open. Pre-market must log the screened candidates and why each failed, covering individual RS leaders above their 50-day MA. Weakest holder: XLF (+1.8%). If any stop vanishes, re-place it at a tighter trail.
+
+---
+
 ## Week of 2026-10-19 to 2026-10-23 (2026-W43) — Grade: B-
 
 ### Performance
