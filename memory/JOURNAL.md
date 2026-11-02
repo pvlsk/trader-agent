@@ -896,3 +896,6 @@ Market open. Equity $101,522, day -0.72%, alpha -0.04% (since inception +1.52% v
 - **P&L:** Equity $101,347.09, cash $18,696.34 (~18.4%), day -0.90%. Since inception +1.35% vs SPY +1.33% → alpha +0.02% (flipped positive as SPY sold off; cash cushion helped).
 - **Movers:** XLE +22.7%, V +15.4%, XLV +12.2%; XLF +1.7%, XLP +4.7%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow (Mon 11-02):** ~$18.7k idle cash, 3 open W45 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open. Friday W44 weekly review is a separate routine.
+
+## 2026-11-02 open (skipped)
+Routine fired 09:01 ET (14:01 UTC), before the 09:30 open — market closed, no trades. Schedule appears pinned to UTC (13:33 UTC = 08:33 ET after DST ended 11-01); needs moving to 14:33 UTC. Equity $101,596, pre-market day +0.25%, W45 0/3 slots. Stops/core not re-verified; EOD routine should reconcile.
