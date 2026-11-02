@@ -899,3 +899,11 @@ Market open. Equity $101,522, day -0.72%, alpha -0.04% (since inception +1.52% v
 
 ## 2026-11-02 open (skipped)
 Routine fired 09:01 ET (14:01 UTC), before the 09:30 open — market closed, no trades. Schedule appears pinned to UTC (13:33 UTC = 08:33 ET after DST ended 11-01); needs moving to 14:33 UTC. Equity $101,596, pre-market day +0.25%, W45 0/3 slots. Stops/core not re-verified; EOD routine should reconcile.
+
+## 2026-11-02 (Mon) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 5 satellites (V 11, XLE 70, XLF 71, XLP 48, XLV 24), all 5 trailing stops live (`new`), same IDs/qty, no vanishes. No fills or stop-outs.
+- **Guardrails:** None triggered; day P&L -0.06% vs -3% cap. No rejected orders. W45 slots 0/3 used. (counters.json still reads week_of W43; script-managed, no new entries so untouched.)
+- **P&L (14:51 ET snapshot, shift ran ~1h before close):** Equity $101,283, cash $18,696 (~18.5%), day -0.06%. Since inception +1.28% vs SPY +1.02% → alpha +0.26%.
+- **Movers:** XLE +18.6%, V +19.1%, XLV +12.1%; XLF +3.6%, XLP +6.5%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
+- **Note:** Midday STATE entry showed alpha -0.08%; improvement is SPY weakness, not alpha generation. The morning open shift was skipped (fired pre-market, schedule pinned to UTC after DST change) — needs rescheduling.
+- **Watch tomorrow (Tue 11-03):** ~$18.7k idle cash, 3 open W45 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open.
