@@ -907,3 +907,6 @@ Routine fired 09:01 ET (14:01 UTC), before the 09:30 open — market closed, no 
 - **Movers:** XLE +18.6%, V +19.1%, XLV +12.1%; XLF +3.6%, XLP +6.5%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Note:** Midday STATE entry showed alpha -0.08%; improvement is SPY weakness, not alpha generation. The morning open shift was skipped (fired pre-market, schedule pinned to UTC after DST change) — needs rescheduling.
 - **Watch tomorrow (Tue 11-03):** ~$18.7k idle cash, 3 open W45 slots, no vetted ideas; don't force fills. Verify all 5 stops at the open.
+
+## 2026-11-03 open (skipped)
+Routine fired 08:34 ET (13:34 UTC), before the 09:30 open — market closed, no trades. Same cause as 11-02: schedule still pinned to 13:33 UTC; needs moving to 14:33 UTC (post-DST). No state changes; stops/core not re-verified, EOD routine should reconcile.
