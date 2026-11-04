@@ -920,3 +920,10 @@ Routine fired 08:34 ET (13:34 UTC), before the 09:30 open — market closed, no 
 
 ## 2026-11-04 open (skipped)
 Routine fired 08:33 ET (13:33 UTC), before the 09:30 open — market closed, no trades. Schedule still pinned to 13:33 UTC; needs 14:33 UTC (EST, post-DST). Read-only `orders` check: all 5 satellite stops live (XLP 9f108b55, V f583ac37, XLE a95889f6, XLF 9d41c3f6, XLV f6e70576). No state changes.
+
+## 2026-11-04 (Wed) — EOD recap
+- **Actions:** No trades by the desk. **XLE stopped out** via its own trailing stop (order `a95889f6`, 70 sh) between the 11:26 ET midday check (stop live) and this 14:51 ET shift. Fill ≈$63.11/sh derived from the cash delta ($18,696 → $23,114, +$4,418; no order-detail subcommand). Realized ≈**+10.7%** vs $57.01 entry (~+$424). Catalyst thesis (Hormuz premium) had peaked; stop locked in a double-digit gain. Remaining 4 satellite stops live, qty-matched, same IDs (V `f583ac37`, XLF `9d41c3f6`, XLV `f6e70576`, XLP `9f108b55`).
+- **Guardrails:** None triggered; day P&L +1.35% vs -3% cap. No rejected orders. W45 slots 0/3 used.
+- **P&L (14:51 ET snapshot, ~1h before close):** Equity $102,443, cash $23,114 (~22.6%), day +1.35%. Since inception +2.44% vs SPY +2.93% → alpha -0.49%.
+- **Positions:** SPY 80 sh +2.9% (~60%), V +21.2%, XLV +14.7%, XLP +8.0%, XLF +6.1%. Tighten still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow (Thu 11-05):** ~$23.1k idle cash, 3 open W45 slots, no vetted ideas; don't force fills. Satellite sleeve now ~16.5% vs 40% target. Verify the 4 stops at the open.
