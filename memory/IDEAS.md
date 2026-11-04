@@ -1,14 +1,20 @@
-# IDEAS — 2026-11-03 pre-market (07:08 ET)
+# IDEAS — 2026-11-04 pre-market (07:08 ET)
 
-_Market closed at 07:08 ET; next open 09:30 ET. Equity $100,983, day P&L -0.14% (cap ok), 6 positions (SPY core + 5 satellites), **week 2026-W45, 0/3 slots used.** Cash $18.7k (~18.5%). Since inception +0.98% vs SPY +0.98% (alpha 0.00%). **Actionable today: none.**_
+_Market closed; next open 09:30 ET. Equity $101,886, day P&L +0.79% (cap ok), 6 positions, **W45 0/3 slots used.** Cash $18.7k (~18.4%). Since inception +1.88% vs SPY +1.13% (alpha +0.75%). **Actionable today: none.**_
 
-## Stop check
-`orders` at 07:08 ET: all 5 satellite trailing stops live, `new`, qty-matched, same IDs (V `f583ac37` 8%, XLE `a95889f6`, XLF `9d41c3f6`, XLV `f6e70576`, XLP `588fa70d` at 10%). No vanishes.
+## Stop check — XLP stop VANISHED (4th vanish)
+`orders` at 07:08 ET showed only 4 stops (V, XLE, XLF, XLV); XLP's `588fa70d` was gone, no fill, position intact (48 sh). Re-protected pre-market with `stop XLP --trail-percent 10` -> new id `9f108b55`. All 5 stops now live and qty-matched. Open routine: re-verify all 5.
 
 ## Market read
-Indicative last: SPY $753.17, XLK $174.26, XLE $67.26, XLV $184.64, XLF $57.54, XLP $90.85, XLY $118.15, XLI $169.74, XLB $53.66, XLU $43.68, XLRE $43.64, XLC $100.29, V $425.37. Versus the 11-02 pre-market read: SPY -0.4%, XLK -3.0% (tech keeps bleeding), XLE -3.9% (energy giving back), while XLY +2.4%, XLF +1.8%, XLP +1.6%, XLB +1.7%, V +2.9% (consumer/financials/staples firm). Rotation out of tech and energy into financials/consumer. No news tooling, so no dated catalyst verified; no RS ranking claimed beyond this snapshot.
+Indicative last: SPY $754.29, XLK $176.48, XLY $117.34, XLI $171.33, XLB $52.57, XLU $43.43, XLRE $43.67, XLC $101.46, XLE $66.70, XLF $57.18, XLV $184.02, XLP $88.96, QQQ $688.14, SMH $518.43. Vs 11-03 pre-mkt: SPY +0.15%, XLK +1.3% (tech bouncing), XLP -2.1%, XLE -0.8%, XLB -2.0%, XLY -0.7%. No news tooling, so no catalyst verified and no RS ranking beyond this snapshot (no history/MA data available from the scripts).
 
 ## Ranked candidates
-**None actionable.** XLK is down hard but was stopped out 10-16 with no written thesis (falling-knife / revenge-trade risk). XLY bounce has no verified catalyst. Strength in XLF/XLP/V is already owned. Cash is a position; keep all 3 W45 slots open.
+**None actionable.** Screened (price only, no MA/news data available) and why each failed:
+- XLK $176.48: stopped out 10-16, no written thesis, one-day bounce = revenge-trade risk.
+- XLY $117.34, XLB $52.57, XLU $43.43, XLRE $43.67, XLC $101.46, XLI $171.33: no verified catalyst or confirmed uptrend; day moves flat-to-down.
+- QQQ / SMH / NVDA / MSFT / GOOGL: bounce only, no catalyst verified, tech trend unconfirmed.
+- COST $1019, LLY $1409, GLD $359: no catalyst verified, can't confirm above-50d trend.
+- XLF/XLV/XLP/XLE/V: already owned.
+Cash is a position; keep all 3 W45 slots open.
 
-Watch: XLE (+19%, -3.9% in a day) is the one to watch — its 10% trail is the exit; tightening still blocked by the cancel/replace gap.
+Watch: XLE ($66.70, +16.5%) is the one to tighten if the cancel/replace gap is ever fixed.
