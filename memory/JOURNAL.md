@@ -917,3 +917,6 @@ Routine fired 08:34 ET (13:34 UTC), before the 09:30 open — market closed, no 
 - **P&L (14:52 ET snapshot, shift ran ~1h before close):** Equity $101,170.84, cash $18,696 (~18.5%), day +0.04%. Since inception +1.17% vs SPY +1.19% → alpha -0.02%.
 - **Movers:** V +17.9%, XLE +17.2%, XLV +11.9%; XLF +3.1%, XLP +4.6%. Tighten/cut still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow (Wed 11-04):** ~$18.7k idle cash, 3 open W45 slots, no vetted ideas; don't force fills. Open shift schedule should now fire at 14:33 UTC; verify all 5 stops.
+
+## 2026-11-04 open (skipped)
+Routine fired 08:33 ET (13:33 UTC), before the 09:30 open — market closed, no trades. Schedule still pinned to 13:33 UTC; needs 14:33 UTC (EST, post-DST). Read-only `orders` check: all 5 satellite stops live (XLP 9f108b55, V f583ac37, XLE a95889f6, XLF 9d41c3f6, XLV f6e70576). No state changes.
