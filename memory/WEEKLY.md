@@ -4,6 +4,31 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-11-02 to 2026-11-06 (2026-W45) — Grade: B
+
+### Performance
+- **Return this week:** portfolio **≈-1.8%** ($101,443.77 at 10-30 close → ~$99,647 at 15:17 ET Fri, review run before the close) vs **SPY ≈-2.4%** (since-inception SPY +1.36% → -1.04%) → **alpha ≈ +0.6%**.
+- **Since inception:** **-0.35%** vs **SPY -1.04%** → **alpha +0.69%**. Equity slipped just below the $100k baseline Thursday (day -2.41%, close to the -3% cap) after a broad sell-off.
+- Honest read: again cushion, not skill. 60% core plus ~23% idle cash means we lose less in a down tape. The one real stock-level event was XLE stopping out Wed for ≈+10.7% (~+$424), a good, rule-driven exit. Open winners: V +18%, XLV +12%, XLP +5.7%, XLF +3.3%. SPY core -1.1%.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Worst day -2.41% (Thu) vs -3% cap, the closest call so far; no new entries were attempted. W45 new positions 0/3. Core SPY 80 sh ~59-60%.
+- Stops: XLE's stop executed as designed on 11-04; the remaining 4 stops verified live, qty-matched, same IDs. No vanishes.
+- `scripts/alpaca.py` cancel/replace gap unchanged (eighteenth weekly flag); winners such as V cannot be tightened. Needs the human operator.
+- Ops defect: the open-shift routine fired pre-market (13:33 UTC) all week after the DST change, so 5 of 5 open shifts were skipped. Needs rescheduling to 14:33 UTC.
+
+### Process
+- Disciplined: no boredom entries, no averaging down, no revenge trades, accurate journals.
+- Weakness persists: fifth straight week with no actionable idea, and the W44 rule (list symbols screened and the failing criterion) shows no trace in the open entries, which were skipped anyway. Cash ~$23.1k (23%), satellite sleeve ~16% vs 40% target, 3 slots unused.
+
+### Grade: B
+Clean risk discipline and a rule-driven profitable exit, with the book absorbing a -2.4% SPY week better than the benchmark. Held back from higher because the alpha is cash/beta cushion, the idea pipeline is still empty, and the open shift did not run all week.
+
+### Next week (2026-W46, opens Monday 2026-11-09)
+All 3 satellite slots available; ~$23.1k cash (max ~$4.98k per position). Verify the 4 stops at the open. Fix the open-routine schedule (14:33 UTC). Pre-market must record screened symbols and the failing criterion in IDEAS.md. Do not chase a rebound just to deploy cash.
+
+---
+
 ## Week of 2026-10-26 to 2026-10-30 (2026-W44) — Grade: B-
 
 ### Performance
