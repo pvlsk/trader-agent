@@ -940,3 +940,10 @@ Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open — market close
 
 ## 2026-11-06 open (skipped)
 Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open — market closed, no trades. Schedule still pinned to 13:33 UTC; needs 14:33 UTC (EST). No state changes.
+
+## 2026-11-06 (Fri) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 4 satellites (V 11, XLF 71, XLP 48, XLV 24), all 4 trailing stops live (`new`), same IDs/qty (V `f583ac37`, XLF `9d41c3f6`, XLV `f6e70576`, XLP `9f108b55`). No fills, stop-outs or vanishes.
+- **Guardrails:** None triggered; day P&L +0.33% vs -3% cap. No rejected orders. W45 slots 0/3 used.
+- **P&L (14:51 ET snapshot, ~1h before close):** Equity $99,634.68, cash $23,114 (~23.2%), day +0.33%. Since inception -0.37% vs SPY -1.09% → alpha +0.72%.
+- **Positions:** SPY -1.1%, V +18.3%, XLV +12.2%, XLP +5.8%, XLF +3.3%. Tighten still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch next week (Mon 11-09):** ~$23.1k cash, 3 open W46 slots, no vetted ideas; don't force fills. Verify 4 stops. W45 Friday review (WEEKLY.md) is owned by the Friday-review routine.
