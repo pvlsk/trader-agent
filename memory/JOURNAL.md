@@ -937,3 +937,6 @@ Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open — market close
 - **P&L (14:50 ET snapshot, ~1h before close):** Equity $99,960, cash $23,114 (~23.1%), day -2.41%. Since inception -0.04% vs SPY -0.79% → alpha +0.75%.
 - **Positions:** SPY -0.8% (~59.2%), V +19.0%, XLV +12.9%, XLP +7.3%, XLF +3.8%. Tighten still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow (Fri 11-06):** Broad selloff day; equity just under inception. ~$23.1k cash, 3 open W45 slots, no vetted ideas; don't force fills or average down. Open shift schedule still fires pre-market (13:33 UTC) — needs 14:33 UTC. W45 Friday review due after close.
+
+## 2026-11-06 open (skipped)
+Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open — market closed, no trades. Schedule still pinned to 13:33 UTC; needs 14:33 UTC (EST). No state changes.
