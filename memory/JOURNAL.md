@@ -960,3 +960,10 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open — market close
 
 ## 2026-11-10 open (skipped)
 Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open — market closed, no trades. Schedule still pinned to 13:33 UTC; needs 14:33 UTC (EST). No state changes.
+
+## 2026-11-10 (Tue) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 4 satellites (V 11, XLF 71, XLP 48, XLV 24), all 4 trailing stops live (`new`), same IDs/qty (V 8% `f583ac37`, XLF `9d41c3f6`, XLV `f6e70576`, XLP `9f108b55`). No fills, stop-outs or vanishes.
+- **Guardrails:** None triggered; day P&L -0.18% vs -3% cap. No rejected orders. W46 slots 0/3 used.
+- **P&L (14:51 ET snapshot, ~1h before close):** Equity $100,793.90, cash $23,114 (~22.9%), day -0.18%. Since inception +0.79% vs SPY +0.48% → alpha +0.31% (vs +0.05% at 11-09 EOD; gain came from satellites holding up on a soft SPY day, not new trades).
+- **Positions:** SPY +0.5% (~59.5%, in band), V +18.6%, XLV +14.3%, XLP +6.8%, XLF +5.2%. XLV tighten still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow (Wed 11-11):** ~$23.1k cash, 3 open W46 slots, no vetted ideas; don't force fills. Open shift still fires pre-market (13:33 UTC) — needs 14:33 UTC. Verify 4 stops.
