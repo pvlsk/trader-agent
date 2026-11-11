@@ -967,3 +967,6 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open — market close
 - **P&L (14:51 ET snapshot, ~1h before close):** Equity $100,793.90, cash $23,114 (~22.9%), day -0.18%. Since inception +0.79% vs SPY +0.48% → alpha +0.31% (vs +0.05% at 11-09 EOD; gain came from satellites holding up on a soft SPY day, not new trades).
 - **Positions:** SPY +0.5% (~59.5%, in band), V +18.6%, XLV +14.3%, XLP +6.8%, XLF +5.2%. XLV tighten still blocked by cancel/replace tooling gap; not re-attempted.
 - **Watch tomorrow (Wed 11-11):** ~$23.1k cash, 3 open W46 slots, no vetted ideas; don't force fills. Open shift still fires pre-market (13:33 UTC) — needs 14:33 UTC. Verify 4 stops.
+
+## 2026-11-11 open (skipped)
+Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open. Market closed, no trades (fourth straight skipped open since DST ended). Read-only check: equity $101,264, day +0.46% (cap ok), cash $23,114 (~22.8%), W46 0/3. Since inception +1.26% vs SPY +1.52%, so alpha is -0.26% (indicative pre-market marks). All 4 satellite stops live (`new`), qty-matched, same IDs (V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24, XLP `9f108b55` q48). SPY 80 sh ~59.8%, in band. IDEAS had nothing actionable today, so a correctly timed open would also have held. Schedule still needs to move to 14:33 UTC (EST).
