@@ -970,3 +970,10 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open — market close
 
 ## 2026-11-11 open (skipped)
 Routine fired 08:33 ET (13:33 UTC) again, before the 09:30 open. Market closed, no trades (fourth straight skipped open since DST ended). Read-only check: equity $101,264, day +0.46% (cap ok), cash $23,114 (~22.8%), W46 0/3. Since inception +1.26% vs SPY +1.52%, so alpha is -0.26% (indicative pre-market marks). All 4 satellite stops live (`new`), qty-matched, same IDs (V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24, XLP `9f108b55` q48). SPY 80 sh ~59.8%, in band. IDEAS had nothing actionable today, so a correctly timed open would also have held. Schedule still needs to move to 14:33 UTC (EST).
+
+## 2026-11-11 (Wed) — EOD recap
+- **Actions:** No trades. Positions/orders reconcile to STATE: SPY 80 sh + 4 satellites (V 11, XLF 71, XLP 48, XLV 24), all 4 trailing stops live (`new`), same IDs/qty (V 8% `f583ac37`, XLF `9d41c3f6`, XLV `f6e70576`, XLP `9f108b55`). No fills, stop-outs or vanishes. The open shift was skipped (fired pre-market again); midday held.
+- **Guardrails:** None triggered; day P&L +0.89% vs -3% cap (risk.py +0.88%, ok). No rejected orders. W46 slots 0/3 used.
+- **P&L (14:50 ET snapshot, ~1h before close):** Equity $101,696.01, cash $23,114 (~22.7%), day +0.89%. Since inception +1.70% vs SPY +1.98% → alpha **-0.28%** (vs +0.31% at 11-10 EOD). Alpha flipped negative because SPY rallied and ~23% cash lagged it. This is the cash drag LESSONS.md W45 warned about, the mirror of the down-week "alpha".
+- **Positions:** SPY +2.0% (~59.8%, in band), V +18.6%, XLV +14.4%, XLP +6.8%, XLF +5.4%. XLV tighten still blocked by cancel/replace tooling gap; not re-attempted.
+- **Watch tomorrow (Thu 11-12):** ~$23.1k cash, 3 open W46 slots, zero vetted ideas. Cash drag now costs alpha on up days, so pre-market should screen properly and log each failing criterion, but must not force fills. Open shift still fires at 13:33 UTC; it needs 14:33 UTC. Verify 4 stops.
