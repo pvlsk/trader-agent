@@ -998,3 +998,12 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **Positions:** V +18.5%, XLV +13.8%, XLP +7.5%, XLF +5.1%, SPY +0.4%, **LLY -1.3% ($1,430.47, ex-div today)**.
 - **LLY:** Still below line #1 ($1,437.29; ~$1,435.5 after adjusting for the dividend), and far above the $1,380 close line and the ~$1,305 trail. The pre-market HOLD call stands: exit only via the stop, and log the thesis as broken on a close below $1,380. No averaging down.
 - **Next:** Midday: verify the stops and watch LLY. EOD/Friday: W46 weekly review. Grade the LLY entry timing honestly.
+
+## 2026-11-13 (Fri) — EOD recap
+- **Actions:** No trades today. Open (10:27 ET, ran inside market hours for once) and midday both held, and so did this shift. Positions/orders reconcile to STATE: SPY 80 sh + 5 satellites (LLY 3, V 11, XLF 71, XLP 48, XLV 24). All 5 trailing stops live (`new`), qty-matched, same IDs (LLY 10% `43903482`, XLP `9f108b55`, V 8% `f583ac37`, XLF `9d41c3f6`, XLV `f6e70576`). No fills, stop-outs or vanishes.
+- **Guardrails:** None triggered. Day P&L -0.14% vs -3% cap, ok. No orders submitted, none rejected. W46 slots 1/3 used (LLY), 2 left unused into week end.
+- **P&L (14:51 ET snapshot, ~1h before close):** Equity $101,113.17, cash $18,767.67 (~18.6%), day -0.14%. Since inception +1.11% vs SPY +0.90%, so alpha is **+0.21%** (vs -0.21% at 11-12 EOD, +0.33% at midday). SPY was roughly flat-to-soft on the day, so the swing again comes mostly from the ~18.6% cash cushion and defensive satellites, not from stock-picking skill.
+- **Positions:** SPY ~$752.6, +0.9% (~59.5%, in band, no trim). V +19.0%, XLV +14.6%, XLP +7.9%, XLF +5.3%, **LLY -0.1% (~$1,447.7)**.
+- **LLY thesis check:** Recovered back **above** line #1 (the $1,437.29 11-11 close; ~$1,435.5 dividend-adjusted, ex-div today) and far above the $1,380 close line and the ~$1,305 trail. The HOLD call from pre-market/open/midday held up; thesis intact. Entry timing is still roughly flat after two sessions — grade that honestly in the W46 review.
+- **Standing issues:** XLV (+14.6%) and V tighten still blocked by the cancel/replace tooling gap (LESSONS 2026-07-24); not re-attempted. Open shift fired late (10:27 ET) today rather than pre-market; schedule still needs 14:33 UTC.
+- **Watch Monday (11-16):** LLY vs $1,437.29 / $1,380; XLE watch-only until pre-market cites a dated catalyst; ~$18.8k cash and a fresh W47 (3 slots) — screen properly, don't force fills. Verify 5 stops. W46 Friday review runs after the close.
