@@ -1,50 +1,57 @@
-# IDEAS — 2026-11-12 pre-market (07:07 ET)
+# IDEAS — 2026-11-13 pre-market (07:07 ET, Friday)
 
-_Market closed; next open 09:30 ET, close 16:00 ET. Equity $101,486, day P&L -0.18% (cap ok), 5 positions, **W46 0/3 slots used.** Cash $23,114 (~22.8%). Since inception +1.49% vs SPY +1.91% → alpha -0.43%. **Actionable today: 1 (LLY, medium conviction, conditional on the open).**_
+_Market closed; next open 09:30 ET, close 16:00 ET. Equity $101,447, day P&L +0.19% (cap ok), 6 positions, **W46 1/3 slots used (2 left).** Cash $18,768 (~18.5%). Since inception +1.45% vs SPY +1.54% → alpha -0.10%. **Actionable today: 0. Best move is to do nothing new.** The one live decision is LLY (see below)._
 
 ## Stop check
-`orders` at ~07:07 ET: all 4 satellite stops are live, `new` and qty-matched (V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24, XLP `9f108b55` q48). No vanishes.
+`orders` at ~07:07 ET: all 5 satellite stops are live, `new` and qty-matched (LLY 10% `43903482` q3, XLP `9f108b55` q48, V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24). No vanishes.
 
 ## Market read
-Futures are mixed and lean lower: Nasdaq-100 -0.6% to -0.8%, S&P -0.3% to -0.4%, Dow about flat. The driver is **Nvidia, down >6% premarket** on WSJ/Reuters reports that its board is meeting to discuss Jensen Huang's future as CEO. No decision has been announced, so this is an open binary event risk for the AI/semis complex. CoreWeave/Nebius are -5 to -7%, while AMD (+3%) and AVGO (+2.5%) are catching a rotation bid. On the other side, **Eli Lilly is +2.8–3% premarket after China approved orforglipron (Foundayo)**, the first GLP-1 weight-loss pill approved there, ahead of Novo. Indicative lasts: SPY $760.13, QQQ $689.28, SMH $507.98, IWM $283.05, GLD $365.20, XLE $63.36. Tape: defensives/healthcare leading, AI complex in turmoil. This is no day to add semis.
+Futures are roughly flat to slightly up (S&P +0.1–0.2%, Dow +0.1–0.2%, Nasdaq-100 -0.1% to +0.1%). The Nvidia story resolved into a leadership change: Jensen Huang is out, and former CFO Colette Kress is interim CEO. NVDA is bouncing a little premarket ($167.10) after Thursday's drop, but the AI/semis complex is still an open governance story. Microsoft is the only Mag-7 name lower premarket, after a major Outlook/Teams/Copilot outage. Macro focus is inflation and PPI data. Notable premarket movers are all outside our universe (Cerebras +19% on Q3 and a Microsoft deal, Nu +3%, Modine). Indicative lasts: SPY $757.37, QQQ $689.38, SMH $504.43, IWM $278.42, GLD $354.83 (down from $365 two days ago), XLE $64.31. It's a Friday before a weekend, with no fresh catalyst in our universe, so there's no reason to force an entry.
 
-Sources: [CNBC live updates 11-11](https://www.cnbc.com/2026/11/11/stock-market-today-live-updates.html) · [Globe and Mail: Nasdaq futures fall as Nvidia turmoil rattles AI stocks](https://theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks) · [Investing.com: Premarket movers — Nvidia sinks; Lilly gains on China approval](https://in.investing.com/news/stock-market-news/premarket-movers-nvidia-sinks-lilly-gains-on-china-approval-5699023) · [Reuters via Investing.com: China approves Lilly's orforglipron](https://www.investing.com/news/stock-market-news/china-approves-eli-lillys-weight-loss-pill-orforglipron-5020481) · [MarketScreener](https://www.marketscreener.com/news/china-approves-eli-lilly-s-weight-loss-pill-orforglipron-ce785ed8d88eff2d) · [TradingKey: AMD +24% in five days](https://www.tradingkey.com/analysis/stocks/us-stocks/262301807-stock-amd-a-microsoft-meta-oracle-nvda-coreweave-tradingkey)
+Sources: [Yahoo Finance live, Fri 11-13: futures edge higher as Nvidia tumult deepens](https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html) · [Globe and Mail premarket: Nasdaq futures dip as Nvidia tumult keeps investors on edge](https://www.theglobeandmail.com/investing/markets/inside-the-market/market-news/article-premarket-world-shares-log-modest-losses-as-investors-assess-impact-on/) · [Investing.com premarket movers: Modine surges; Cerebras jumps on Microsoft deal](https://www.investing.com/news/stock-market-news/premarket-movers-modine-surges-cerebras-jumps-on-microsoft-deal-5024934) · [Benzinga: Cerebras +19% premarket](https://www.benzinga.com/markets/equities/26/11/63230833/cerebras-stock-surges-premarket-q3-results-microsoft-deal) · [CNBC live 11-12](https://cnbc.com/2026/11/12/stock-market-today-live-updates.html)
+
+## LLY — explicit hold/cut call (requested by the 11-12 EOD)
+- **Facts:** Indicative $1,430.99 premarket (position mark $1,427, -1.5% vs the $1,448.79 entry). That is **below the $1,437.29 11-11 close, its thesis line #1** ("gives back the whole approval gap"). LLY goes **ex-dividend today** (~$1.7/sh quarterly, amount not re-verified), which explains roughly $1.7 of the gap. Ex-div adjusted, line #1 sits at about $1,435.5, and LLY is still below it. It is far above line #2 (close below ~$1,380) and the trail (~$1,305, 10% off the high-water mark).
+- **Honest read:** Line #1 is breached, so the thesis is weakened. The catalyst itself (China approval) is intact and nothing new has gone against it. The breach is about 0.3–0.5% on a price giveback in a soft tape, not a catalyst failure.
+- **Call: HOLD, with an explicit line.** A discretionary cut is blocked anyway, because the stop holds all 3 shares (cancel/replace gap, `LESSONS.md` 2026-07-24), so the exit is the stop. Pre-commitment for the open, midday and EOD shifts: **if LLY *closes* below ~$1,380 (line #2), log the thesis as fully broken. If the tooling gap is ever fixed, cut it that day.** Do not average down, and don't add a 3rd healthcare name. If LLY reclaims ~$1,437 on a close, line #1 is restored. Grade the entry timing honestly in the W46 review: we bought the fade of a gap.
 
 ## Sector RS proxy (anchor → today's indicative last)
 | Sector | Anchor → now | Read |
 |---|---|---|
-| XLV | $164.87 (07-07) → $188.98, +14.6% | Leader (held) |
-| XLE | $57.01 (07-14) → $63.36, +11.1% | Strong; **now just above the 11-04 exit (~$63.11)** pre-market |
-| XLP | $85.34 (08-05) → $91.44, +7.1% | Leader (held) |
-| XLF | $55.55 (07-08) → $58.61, +5.5% | Modest leader (held) |
-| SPY | $745.87 (07-07) → $760.13, +1.9% | Benchmark |
-| XLB | $53.29 (09-03) → $53.00, -0.5% | Lagging |
-| XLI | $182.04 (07-13) → $170.94, -6.1% | Lagging |
-| XLK | $188.34 (09-08) → $174.35, -7.4% | Lagging (bounced from $168.95 yesterday) |
-| XLY/XLU/XLRE/XLC | no anchor | 120.98 / 43.83 / 44.58 / 108.63, roughly flat vs yesterday |
+| XLV | $164.87 (07-07) → $187.83, +13.9% | Leader (held) |
+| XLE | $57.01 (07-14) → $64.31, +12.8% | Strong; **2nd session above the ~$63.11 11-04 exit** (11-12 EOD snapshot $64.75) |
+| XLP | $85.34 (08-05) → $91.07, +6.7% | Leader (held) |
+| XLF | $55.55 (07-08) → $58.20, +4.8% | Modest leader (held), soft |
+| SPY | $745.87 (07-07) → $757.37, +1.5% | Benchmark |
+| XLB | $53.29 (09-03) → $52.32, -1.8% | Lagging |
+| XLI | $182.04 (07-13) → $169.42, -6.9% | Lagging |
+| XLK | $188.34 (09-08) → $173.73, -7.8% | Lagging |
+| XLY/XLU/XLRE/XLC | no anchor | 120.44 / 43.82 / 44.34 / 107.58, all slightly lower vs yesterday |
 
 ## Ranked candidates
 | # | Symbol | Edge | One-line falsifiable thesis | Suggested entry | Trail | Conviction |
 |---|---|---|---|---|---|---|
-| 1 | **LLY** | Catalyst + momentum | China's approval of orforglipron (first GLP-1 pill there, ahead of Novo) is a real, durable demand catalyst on a stock already above its prior record (~$1,321) and in the leading sector (healthcare). Thesis breaks if LLY gives back the whole approval gap (trades below yesterday's close) or closes below ~$1,380. | **3 sh (~4.2%, ~$4.3k)** at the open via `buy LLY --pct 4 --trail-percent 10` (dry-run first; 5% cap = $5,074 ≈ 3 sh). **Conditions:** take it only if the opening gain vs the prior close is **≤ ~+5%** (the premarket read is +2.8–3%) and it isn't fading below the prior close in the first minutes. **Skip if it gaps >+5%** (blow-off; same rule that skipped LLY on 08-05). | 10% | Medium |
-| — | XLE | RS rotation (watch) | Re-entry trigger is a **close** above ~$63.1 (11-04 exit) plus a real catalyst. Pre-market $63.36 is above the level, but there's no close confirmation and no catalyst found (oil news searches returned nothing dated). **Not actionable at the open.** Re-check at EOD: if it closes above $63.1, flag it for tomorrow's pre-market. | — | 8% if taken | Watch |
-
-Healthcare concentration note: LLY is a top XLV holding, so LLY + XLV ≈ 8.7% of equity in healthcare. That's acceptable given healthcare is the #1 RS sector, but don't add a third healthcare name this week.
+| — | **None actionable** | — | No new name clears the bar today. Holding cash is the call. | — | — | — |
+| W1 | XLE | RS rotation (watch) | Price now confirms (above the ~$63.1 exit for 2 sessions; #2 RS sector by our anchor proxy), but the **catalyst leg is still unverified**: oil-price searches returned only stale results (latest dated Brent ~$115 on 10-28; OPEC+ reported preparing to stop raising output targets, undated). **Not actionable today** (Friday, weekend gap risk, half the trigger missing). If Monday's pre-market can cite a dated oil/OPEC catalyst and XLE still holds > $63.1, it becomes a ~4% entry with an 8% trail. | Mon pre-market re-check | 8% if taken | Watch |
 
 ## Screened and rejected (per the W44 lesson: why each failed)
-- **NVDA ($168):** -6% premarket on the CEO-removal reports, with an unresolved binary event. Fails: no trend, event risk.
-- **AMD ($554):** +24% in 5 days and +3% more premarket on rotation from NVDA. That's a blow-off chase, still below our 10-12 exit (~$593). Fails: extended/blow-off.
-- **AVGO ($346), SMH ($508), QQQ, XLK, MSFT:** the semis/AI complex is in event turmoil and XLK RS still lags (-7% from the Sept anchor). Fails: RS plus event risk.
-- **XLE:** see the watch row. No close confirmation and no catalyst.
-- **GLD ($365):** down from $369 yesterday, no catalyst, no trend data. Fails: no evidence.
-- **JPM ($343):** still below the 09-03 entry and the prior stop-out. Fails: trend.
-- **COST, AAPL, AMZN, GOOGL, META, TSLA, NFLX ($64.55, appears split-adjusted):** no verified catalyst found today and no history to confirm trend. Fails: no evidence.
-- **IWM, XBI, XLI, XLB, XLY, XLU, XLRE, XLC:** lagging or flat RS, no anchor uptrend. Fails: RS.
+- **NVDA ($167):** CEO exit, Kress interim CEO. That's an unresolved governance event, and there's no trend. Fails: event risk.
+- **AMD ($585):** +24%+ in a week on rotation, just below our 10-12 exit (~$593). Fails: extended/blow-off chase.
+- **SMH ($504), AVGO, QQQ, XLK:** the semis/AI complex is still in NVDA turmoil, and XLK RS is -7.8% vs its anchor. Fails: RS plus event risk.
+- **MSFT:** down premarket on a major Outlook/Teams/Copilot outage, a negative catalyst. Fails: catalyst against.
+- **GLD ($354.8):** -2.8% in two sessions, falling. Fails: trend.
+- **LLY (add):** already held, below thesis line #1. No averaging down. Fails: rule.
+- **XBI, other healthcare:** a 3rd healthcare name breaks the concentration note. Fails: concentration.
+- **JPM, V-adjacent financials:** XLF is soft (-0.7% vs yesterday's mark), and JPM is below its prior stop-out. Fails: trend.
+- **AAPL, AMZN, GOOGL, META, TSLA, NFLX, COST:** no dated catalyst found today. Fails: no evidence.
+- **IWM ($278, down from $283 two days ago), XLI, XLB, XLY, XLU, XLRE, XLC:** lagging or slipping RS. Fails: RS.
+- **CBRS, NU, MOD (premarket movers):** outside the universe, and these are earnings gaps (blow-off risk). Fails: universe plus gap rule.
 
 ## Bottom line for the open
-1. Verify the 4 stops (orders vs positions) first.
-2. LLY is the only candidate, conditional on the gap rules above. If the conditions fail, do nothing and keep cash. That's fine.
-3. No averaging down. No semis today. 2 W46 slots stay in reserve after LLY.
-4. Open shift is still reported as firing pre-market (needs 14:33 UTC). If it fires while the market is closed again, the LLY idea rolls to midday only if the gap conditions still hold.
+1. Verify the 5 stops (orders vs positions) first.
+2. **No new entries today.** Keep the 2 W46 slots unused. Going into the weekend in cash is fine.
+3. LLY: hold to the stop, watch the ~$1,380 close line. No averaging down.
+4. The open shift is still reported as firing pre-market (needs 14:33 UTC). Nothing is lost today if it skips again, since nothing is actionable.
+5. EOD/Friday: W46 weekly review due after the close.
 
-Tooling gap (still open): there's no `bars` subcommand, so the 50/200-day checks rely on web search. LLY's trend was confirmed against its prior record (~$1,321, FXEmpire) and the June 52-week high ($1,166, MarketBeat), not computed MAs.
+Tooling gaps (still open): there is no `bars` subcommand (so 50/200-day checks rely on web search) and no `cancel` subcommand (blocks discretionary cuts and tightening; `LESSONS.md` 2026-07-24).
