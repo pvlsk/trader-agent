@@ -989,3 +989,12 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **LLY thesis check, honestly:** LLY is at $1,434.56, **below the $1,437.29 11-11 close**. That is the first falsifiable line written into its thesis ("gives back the whole approval gap"). It is only ~$2.7 below, intraday, on the entry day, and well above the ~$1,380 close line and the ~$1,305 trail level. The entry looks poorly timed: we bought the post-gap fade and it kept fading. Not acted on here (EOD is the journalist shift; a discretionary sell is also blocked by the cancel/replace gap while the stop holds all 3 shares). Ex-div 11-13.
 - **XLE watch:** $64.75, above the ~$63.1 11-04 exit. That's a re-entry watch item only. No catalyst has been logged, and pre-market needs to vet it before any entry.
 - **Watch tomorrow (Fri 11-13):** **LLY**: if it closes or opens below $1,437.29, the thesis's first break line holds. The next shift must decide explicitly whether to cut or hold to the $1,380 / stop, and log the reasoning. Don't let it drift. Verify 5 stops. Open shift still fires at 13:33 UTC; it needs 14:33 UTC. W46 Friday review is due.
+
+## 2026-11-13 (Fri) — Market open (fired 10:27 ET; scheduled 13:33 UTC, ran late)
+- **Actions:** None. The market was open, so this shift actually ran inside market hours, unlike the last five opens. IDEAS had 0 actionable candidates (XLE is watch-only until Monday's pre-market can cite a dated catalyst), so no entries. Core SPY 80 sh ≈59.5%, inside the band, so no top-up or trim.
+- **Stops:** `orders` shows all 5 trailing stops `new` and qty-matched to positions (LLY 10% `43903482` q3, XLP `9f108b55` q48, V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24). No fills or vanishes.
+- **Guardrails:** Day P&L -0.58% vs -3% cap, ok. W46 1/3 slots used. No orders were submitted, so none were rejected.
+- **P&L (10:27 ET):** Equity $100,666.93, cash $18,767.67. Since inception +0.67% vs SPY +0.35%, so alpha is **+0.32%**. Most of that is the cash cushion on a down morning, not skill (W45 lesson).
+- **Positions:** V +18.5%, XLV +13.8%, XLP +7.5%, XLF +5.1%, SPY +0.4%, **LLY -1.3% ($1,430.47, ex-div today)**.
+- **LLY:** Still below line #1 ($1,437.29; ~$1,435.5 after adjusting for the dividend), and far above the $1,380 close line and the ~$1,305 trail. The pre-market HOLD call stands: exit only via the stop, and log the thesis as broken on a close below $1,380. No averaging down.
+- **Next:** Midday: verify the stops and watch LLY. EOD/Friday: W46 weekly review. Grade the LLY entry timing honestly.

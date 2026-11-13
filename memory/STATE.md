@@ -1,11 +1,11 @@
 # STATE — live portfolio (source of truth for what we hold and why)
 
-_Last updated: 2026-11-12 14:51 ET (EOD): equity $101,391, cash $18,768 (~18.5%), day -0.27% (cap ok), alpha -0.21% (+1.39% vs SPY +1.60%); core SPY 80 sh ~59.8% (in band). 5 satellites, all 5 stops live and qty-matched, no fills/vanishes. **LLY $1,434.56 (-1.0%) is below its $1,437.29 thesis line #1 on entry day. Next shift must make an explicit cut/hold call.** W46 1/3, 2 slots left. Per-run detail: `memory/JOURNAL.md`._
+_Last updated: 2026-11-13 10:27 ET (open): equity $100,667, cash $18,768 (~18.6%), day -0.58% (cap ok), alpha +0.32% (+0.67% vs SPY +0.35%); core SPY 80 sh ~59.5% (in band). 5 satellites, all 5 stops live and qty-matched, no fills/vanishes. **LLY $1,430.47 (-1.3%, ex-div today): still below $1,437.29 line #1, far above the $1,380 close line. Pre-market call stands: HOLD to the stop / $1,380 close line.** No new entries (0 actionable). W46 1/3, 2 slots left. Per-run detail: `memory/JOURNAL.md`._
 
 ## Core
 | Symbol | Target % | Actual % | Notes |
 |---|---|---|---|
-| SPY | 60% | ~59.8% | 80 sh @ $745.88 avg ($60,626 mkt val, 2026-11-12 EOD). Buy-and-hold, no trailing stop. Established 2026-07-07; trimmed toward 60% target (set 2026-08-28) on 08-31 and 09-01. Essentially at target — no further trim needed absent renewed drift. |
+| SPY | 60% | ~59.5% | 80 sh @ $745.88 avg ($59,889 mkt val, 2026-11-13 open). Buy-and-hold, no trailing stop. Established 2026-07-07; trimmed toward 60% target (set 2026-08-28) on 08-31 and 09-01. Essentially at target — no further trim needed absent renewed drift. |
 
 ## Satellite positions
 | Symbol | Entry date | Size % | Entry $ | Trail % | Edge | One-line thesis | Status |
