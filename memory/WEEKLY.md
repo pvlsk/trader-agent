@@ -4,6 +4,33 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-11-09 to 2026-11-13 (2026-W46) — Grade: B
+
+### Performance
+- **Return this week:** portfolio **≈+1.55%** ($99,634.68 at the 11-06 EOD snapshot → $101,177.99 at 15:16 ET Fri; review ran ~45 min before the close) vs **SPY ≈+2.1%** (since-inception SPY -1.09% → +1.02%) → **weekly alpha ≈ -0.6%**.
+- **Since inception:** **+1.18%** vs **SPY +1.02%** → **alpha +0.16%** (down from +0.72% at the W45 close).
+- Honest read: this is the W45 cushion running in reverse. W45 "beat" a -2.4% SPY week by ~0.6% on ~23% idle cash; W46 lagged a +2.1% SPY week by ~0.6% on ~19-23% idle cash. Across the two weeks the cash posture nets to roughly zero, so stock selection contributed close to nothing net either way. Stock-level: V +18.9%, XLV +14.7%, XLP +7.9%, XLF +5.3% (all held, steady, no new information). The only new trade, LLY, is -0.2% after two sessions. Wins/losses on closed trades this week: none (no exits).
+
+### Risk discipline
+- Zero guardrail breaches and zero rejected orders. No options, leveraged/inverse ETFs or crypto. Worst day -0.58% intraday (Fri open) vs the -3% cap. No near-misses.
+- W46 new positions **1/3** (LLY, 3 sh ~4.3%, under the 5% cap = $5,059). Core SPY 80 sh ≈59.5-59.9% all week, in band, no trim.
+- Stops: all 5 satellite trailing stops re-verified live at 15:16 ET Fri (`new`, qty-matched, same IDs: LLY `43903482` q3, XLP `9f108b55` q48, V 8% `f583ac37` q11, XLF `9d41c3f6` q71, XLV `f6e70576` q24). No vanishes this week, the first clean week since the 10-06 vanish series began.
+- Healthcare concentration LLY + XLV ≈ 8.7% of equity. That was acknowledged at entry, and a 3rd healthcare name was ruled out.
+- Standing gaps, both needing the human operator: (1) the `scripts/alpaca.py` cancel/replace gap still blocks tightening V/XLV and any discretionary cut (nineteenth weekly flag); (2) **the open-shift schedule is still unfixed**: it fired pre-market (13:33 UTC) Mon-Thu, so 4 of 5 opens were skipped, and only ran Friday because it fired late (10:27 ET). That's the second straight week. The W45 review asked for 14:33 UTC and nothing changed.
+
+### Process
+- **The W44/W45 rule finally shows up in the record:** pre-market IDEAS now lists screened symbols with the failing criterion for each (NVDA event risk, AMD extended, SMH/AVGO/QQQ/XLK RS + event risk, XLE missing catalyst leg). The idea drought produced one real, catalyst-backed candidate (LLY) instead of a forced fill.
+- **LLY entry:** a real, verifiable catalyst (China approval of orforglipron), a written falsifiable thesis, a pre-set gap rule (≤ +5% and holding above the prior close) that was checked before buying, a dry-run first, and the stop verified live afterwards. The midday-entry exception was written in advance by pre-market because the open shift was not running, so it was planned, not improvised. Weakness: the first break line ($1,437.29, the prior close) sat only 0.8% under the entry. It was breached intraday on entry day and on ex-div morning, which cost three shifts of hold/cut deliberation over normal noise. The thesis was never really in doubt. The line was badly placed.
+- XLE re-entry correctly held to watch-only without a dated catalyst, despite price confirmation and a Friday weekend gap risk. No averaging down, no revenge trades, no boredom entries. Journals were accurate and honest about cash-cushion alpha.
+
+### Grade: B
+Clean discipline, one well-documented catalyst entry that followed its own pre-set rules, and the first visible application of the screening-log lesson. That's better process than W45. It isn't higher because the week lagged SPY by ~0.6% (cash drag on an up week, the same structural posture as last week), the LLY break line was set inside one-day noise, and the open-shift schedule defect, which is outside the desk's control but is real operational risk, went unfixed for a second week.
+
+### Next week (2026-W47, opens Monday 2026-11-16)
+All **3 satellite slots** reset on the ISO-week rollover. Cash ~$18.8k (~18.6%); max ~$5.06k per position, so up to 3 full-size entries are fundable without trimming the core. Satellite sleeve ~22% vs the 40% target. Watch: LLY vs the ~$1,380 close line (line #1 is retired as noise per the new LESSONS rule; ~$1,305 trail); XLE stays watch-only until pre-market cites a dated catalyst. Verify 5 stops every shift. Operator asks, still open: move the open routine to 14:33 UTC, and add a cancel/replace subcommand to `scripts/alpaca.py`.
+
+---
+
 ## Week of 2026-11-02 to 2026-11-06 (2026-W45) — Grade: B
 
 ### Performance

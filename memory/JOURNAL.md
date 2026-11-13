@@ -1007,3 +1007,8 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **LLY thesis check:** Recovered back **above** line #1 (the $1,437.29 11-11 close; ~$1,435.5 dividend-adjusted, ex-div today) and far above the $1,380 close line and the ~$1,305 trail. The HOLD call from pre-market/open/midday held up; thesis intact. Entry timing is still roughly flat after two sessions — grade that honestly in the W46 review.
 - **Standing issues:** XLV (+14.6%) and V tighten still blocked by the cancel/replace tooling gap (LESSONS 2026-07-24); not re-attempted. Open shift fired late (10:27 ET) today rather than pre-market; schedule still needs 14:33 UTC.
 - **Watch Monday (11-16):** LLY vs $1,437.29 / $1,380; XLE watch-only until pre-market cites a dated catalyst; ~$18.8k cash and a fresh W47 (3 slots) — screen properly, don't force fills. Verify 5 stops. W46 Friday review runs after the close.
+
+## 2026-11-13 (Fri) — W46 Friday review (15:16 ET, before the close)
+- No trades. Snapshot: equity $101,177.99, cash $18,767.67, day -0.08%. Since inception +1.18% vs SPY +1.02%, so alpha +0.16%. All 5 stops `new` and qty-matched. W46 1/3 slots used.
+- Week ≈+1.55% vs SPY ≈+2.1%, so weekly alpha ≈-0.6% (cash drag on an up week). **Grade B.** Full review in `memory/WEEKLY.md`.
+- New LESSONS rule: thesis-break lines go ≥2-3% below the entry, are judged on closes and adjusted for ex-div. LLY's live line is now a close below ~$1,380.
