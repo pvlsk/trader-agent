@@ -1012,3 +1012,11 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - No trades. Snapshot: equity $101,177.99, cash $18,767.67, day -0.08%. Since inception +1.18% vs SPY +1.02%, so alpha +0.16%. All 5 stops `new` and qty-matched. W46 1/3 slots used.
 - Week ≈+1.55% vs SPY ≈+2.1%, so weekly alpha ≈-0.6% (cash drag on an up week). **Grade B.** Full review in `memory/WEEKLY.md`.
 - New LESSONS rule: thesis-break lines go ≥2-3% below the entry, are judged on closes and adjusted for ex-div. LLY's live line is now a close below ~$1,380.
+
+## 2026-11-16 (Mon) — Market-open shift (fired 08:35 ET, market CLOSED, no trades)
+- **Skipped execution:** `clock` showed is_open=False at 08:35 ET (next open 09:30 ET). Per the routine, no orders were placed. This is the same scheduling fault as before: the 13:33 UTC trigger is 08:33 ET now that DST has ended, so it needs to move to **14:33 UTC**. Nothing was lost today because pre-market had already called **0 actionable entries** (hold cash through NVDA Tue AMC).
+- **Read-only check (08:35 ET pre-market marks):** Equity $100,995.22, cash $18,767.67 (~18.6%), day -0.26% vs -3% cap, ok. Since inception +1.00% vs SPY +0.39%, so alpha is +0.60% (pre-market marks, flattered by cash on a soft tape). W47 0/3 slots used.
+- **Core:** SPY 80 sh, $59,952 ≈ 59.4%. In band, no top-up or trim.
+- **Stops:** All 5 are live (`new`) with quantities matching positions and the same IDs: LLY 10% `43903482` q3, XLP 10% `9f108b55` q48, V 8% `f583ac37` q11, XLF 10% `9d41c3f6` q71, XLV 10% `f6e70576` q24. No vanishes.
+- **Positions:** V +19.5%, XLV +15.7%, XLP +9.1%, XLF +5.7%, LLY +0.2% (~$1,452, above $1,437.29 and well above the ~$1,380 close line). Hold all.
+- **Midday:** run the open's job if the market is open. Still nothing actionable per IDEAS. Verify the stops and keep the W47 slots for the Wednesday post-NVDA re-screen (XLU/XLC watch).
