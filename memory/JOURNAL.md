@@ -1029,3 +1029,11 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **LLY check:** Slightly below the $1,437.29 approval-gap close again. Under the W46 rule, the only live break line is a **close below ~$1,380** (~3.8% lower), and the trail sits near $1,305. Thesis intact, HOLD, no averaging down.
 - **Counters:** `counters.json` still said W46 / 1 position. `risk.py` rolls the week in memory but never wrote it back, so I corrected the file to `2026-W47` / 0, which matches `risk.py status`.
 - **Watch tomorrow (Tue 11-17):** NVDA reports after the close. That's binary risk for the tape, so keep all 3 W47 slots and the cash through the print. XLU/XLC re-screen is Wednesday pre-market. Watch XLF drifting toward its 50-day line and LLY vs the $1,380 close line. Verify all 5 stops. Operator ask still open: move the open trigger to 14:33 UTC. The cancel/replace gap still blocks tightening V/XLV.
+
+## 2026-11-17 (Tue) — Market-open shift (fired 08:34 ET, market CLOSED, no trades)
+- **Skipped execution:** `clock` showed is_open=False at 08:34 ET (next open 09:30 ET), so no orders were placed. This is the third weekday running that the 13:33 UTC trigger has fired at 08:33 ET since DST ended. **It still needs moving to 14:33 UTC.** Nothing was lost today because pre-market called **0 actionable entries** (hold cash through NVDA tonight AMC).
+- **Read-only check (08:34 ET pre-market marks):** Equity $99,752.78, cash $18,767.67 (~18.8%), day -0.28% vs the -3% cap, ok. Since inception -0.25% vs SPY -0.88%, so alpha +0.63% (cash cushion, not skill). W47 0/3 slots used.
+- **Core:** SPY 80 sh, $59,120 ≈ 59.3%. In band, no top-up or trim.
+- **Stops:** All 5 are live (`new`) with quantities matching positions and the same IDs: LLY 10% `43903482` q3, XLP 10% `9f108b55` q48, V 8% `f583ac37` q11, XLF 10% `9d41c3f6` q71, XLV 10% `f6e70576` q24. No vanishes.
+- **Positions:** V +18.2%, XLV +12.8%, XLP +7.6%, XLF +4.1%, LLY -2.6% (~$1,411, above the ~$1,380 close break line, trail ~$1,305). Hold all.
+- **Midday:** if the market is open, run the open's job. Nothing is actionable per IDEAS, so verify the stops and keep the W47 slots for Wednesday's post-NVDA re-screen (XLU watch).
