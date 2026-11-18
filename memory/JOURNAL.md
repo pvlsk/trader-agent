@@ -1046,3 +1046,10 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **LLY check:** Weakest name, now ~1.8% above the only live break line (a **close below ~$1,380**); trail ~$1,305. China orforglipron catalyst intact. HOLD, no averaging down. If it closes below $1,380 the thesis is logged broken; the exit is still the trailing stop (cancel/replace gap blocks a discretionary sell while a live stop holds the shares).
 - **Counters:** `counters.json` = W47 / 0, matches `risk.py status`. No correction needed.
 - **Watch tomorrow (Wed 11-18):** NVDA reports tonight AMC, so Wednesday's tape is set by that reaction. Pre-market: post-NVDA re-screen (XLU watch), log screened names and failing criteria; 3 W47 slots and ~$18.8k cash available (max ~$4.94k/position). Watch LLY vs the $1,380 close line and XLF vs its 50-day. Re-verify all 5 stops. Operator asks still open: move the open trigger to 14:33 UTC (and the EOD trigger, now firing 14:50 ET, an hour early); cancel/replace subcommand to tighten V/XLV.
+
+
+## 2026-11-18 (Wed, W47): market-open shift, 08:34 ET, market CLOSED, no trades
+- Early trigger again (4th day running): `clock` is_open False, next open 09:30 ET. No orders placed, per the routine.
+- Equity $99,111.22, cash $18,767.67, day +0.03%. Since inception -0.89% vs SPY -1.62%, alpha +0.73%. W47 0/3 slots, loss cap ok.
+- All 5 satellite stops verified live, `new`, qty-matched, same IDs. Core SPY ~59.3%, in band.
+- Nothing was actionable in IDEAS (NVDA watch-only, re-screen Fri pre-market), so the skip cost nothing today. Operator ask still open: move the open trigger to 14:33 UTC.
