@@ -4,6 +4,35 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-11-16 to 2026-11-20 (2026-W47) — Grade: B
+
+### Performance
+- **Return this week:** portfolio **≈-5.7%** ($101,177.99 at last Friday's 15:16 ET review snapshot → $95,394.80 at 15:16 ET today; the trigger fired again ~45 min before the close, so this is not the 16:00 print) vs **SPY ≈-7.9%** (since-inception SPY +1.02% → -6.92%, ≈$753.5 → ≈$694.3) → **weekly alpha ≈ +2.1%**.
+- **Since inception:** **-4.61%** vs **SPY -6.92%** → **alpha +2.32%** (up from +0.16% at the W46 close). This is the best since-inception alpha in the log, and the deepest absolute drawdown. Equity is ~$4.6k under the $100k baseline.
+- **Where the ≈-$5,783 came from:** the SPY core (80 sh) lost ≈-$4,740, which is about 82% of the loss. The satellites lost ≈-$1,045: LLY ≈-$277, V ≈-$208 (11-13 mark to its stop fill), XLV ≈-$261, XLF ≈-$248, XLP ≈-$53. Cash (~19-24%) lost nothing.
+- **Honest read:** most of the +2.1% weekly alpha is the cash cushion in a 7-straight-down-day tape, the mirror of W46's cash drag. The satellites did fall less than SPY (≈-5% vs -7.9%) because they lean defensive (XLP, XLV), so the sleeve made a small relative contribution of about +0.6% of equity, but not stock-picking upside. Per the W46 rule, judge the sleeve over multi-week windows: across W45–W47 the book is ≈-6.0% vs SPY ≈-8.2%.
+- **Closed trades this week: 1 win, 0 losses.** V stopped out Thu via its 8% trail at ≈+13.6% (≈+$536 realized), the best realized trade to date. **Biggest open loser:** LLY -6.6% (thesis broken). **Biggest open winner:** XLV +8.1%.
+
+### Risk discipline
+- Zero guardrail breaches and zero rejected orders. No options, leveraged/inverse ETFs or crypto. Worst day was Fri at ≈-1.74% vs the -3% cap, so no near-miss under the >2% flag even though SPY fell ≈-2.9% that day.
+- W47 new positions **0/3**, by choice: no vetted idea into an NVDA binary print, then a 7-day losing streak and hawkish FOMC minutes. Core SPY 80 sh fell from ≈59.5% to ≈58.2% on the selloff. That is in the 50–70% band, slightly under target, and was never trimmed.
+- Stops: V's executed as designed. The remaining 4 (LLY `43903482` q3, XLP `9f108b55` q48, XLF `9d41c3f6` q71, XLV `f6e70576` q24) were re-verified live, `new` and qty-matched at 15:16 ET Fri. There were no vanishes, the second clean week in a row.
+- **Standing defects, both need the human operator, neither fixed:** (1) the cancel/replace gap in `scripts/alpaca.py` (twentieth weekly flag). This week it went from a nuisance to a real problem, because LLY's thesis formally broke on Thu's close (≈$1,351 < $1,380) and the desk had no way to exit except the 10% trail (~$1,309). XLV/XLP could not be tightened either. (2) **Schedules still fire an hour early.** The open shift fired with the market closed on all 5 days (third straight week). The EOD shift fired ~14:50 ET, and this review fired at 15:16 ET, both before the close.
+
+### Process
+- **Sound:** no forced trades. Pre-market logged screened names and failing criteria (NVDA watch with a written $152 cancel line that was honoured, XLU/XLC/XLE watch-only). The desk held cash through NVDA's print and the selloff, didn't average down LLY, didn't re-attempt the known-rejected sell, and didn't rush to replace V. Journals were honest that the alpha is cushion, not skill.
+- **The W46 thesis-line rule worked as written:** LLY's ~$1,380 line was judged on closes. It held on 11-18 (≈$1,382.7) and broke on 11-19 (≈$1,351.1), which gave a clean, unambiguous verdict instead of three shifts of intraday deliberation.
+- **Weakness:** the verdict was *decorative*. With the stop set 10% under entry (~$1,304) and the break line only ~4.7% under it, there was a ~5-point band where the thesis was dead and the position was still held with no tool to exit. So far it has cost ≈$0 (LLY is flat since the break), but that's luck. This is a design flaw in how entry stops were sized, and it's fixable inside the desk without waiting on the operator (see LESSONS).
+- Satellite sleeve ≈20% vs the 40% target. That's defensible this week, but the pipeline has produced one entry in seven weeks.
+
+### Grade: B
+Discipline was clean through the worst SPY week since inception: no breaches, no forced or revenge trades, a rule-driven +13.6% realized exit on V, and a thesis line that was judged exactly as the W46 lesson said. It isn't higher because the +2.1% alpha is mostly the cash cushion, not skill, the one live entry (LLY) broke its thesis and was left with no way to act on it, and both operator defects (early triggers, no cancel/replace) went unfixed for another week.
+
+### Next week (2026-W48, opens Monday 2026-11-23; Thanksgiving week: closed Thu 11-26, half-day Fri 11-27)
+All **3 satellite slots** reset on the ISO-week rollover. Cash ≈$23.2k (~24%); max ≈$4.77k per position. Satellite sleeve ≈20% vs 40%. The core is ≈58.2%, under the 60% target, so the open shift may top up toward 60% under the rebalance rule, not as a dip-chase. Watch: LLY vs its ~$1,309 trail (thesis broken, no re-entry), XLF now below entry (check its 50-day on a close), and XLV/XLP giving back. Any new entry must size its trail to its thesis line (new LESSONS rule). Verify 4 stops every shift. Operator asks, still open: move the open trigger to 14:33 UTC and the EOD/Friday triggers to after 16:00 ET (e.g. 21:15 UTC), and add a cancel/replace subcommand to `scripts/alpaca.py`.
+
+---
+
 ## Week of 2026-11-09 to 2026-11-13 (2026-W46) — Grade: B
 
 ### Performance
