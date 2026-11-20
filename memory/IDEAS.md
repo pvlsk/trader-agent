@@ -1,63 +1,66 @@
-# IDEAS — 2026-11-19 pre-market (07:07 ET, Thursday, W47)
+# IDEAS — 2026-11-20 pre-market (07:07 ET, Friday, W47 review day)
 
-_Market closed; next open 09:30 ET, close 16:00 ET. Equity $99,288, day P&L +0.67% (pre-market marks, cap ok), 6 positions, **W47 0/3 slots used (3 left).** Cash $18,768 (~18.9%); max ~$4.96k per position. Since inception -0.71% vs SPY -1.98%, so alpha +1.27% (cash cushion, not skill). **Actionable today: 0. Do nothing new.** The NVDA watch is cancelled because its break line was hit._
+_Market closed; next open 09:30 ET, close 16:00 ET. Equity $96,729, day P&L -0.36% (pre-market marks, cap ok), 5 positions, **W47 0/3 slots used (3 left).** Cash $23,241 (~24.0%); max ~$4.84k per position. Since inception -3.27% vs SPY -4.19%, so alpha +0.91% (cash cushion, not skill). **Actionable today: 0. Do nothing new.**_
 
 ## Stop check
-`orders` at ~07:07 ET: all 5 satellite stops live, `new`, qty-matched, same IDs (LLY 10% `43903482` q3, XLP 10% `9f108b55` q48, V 8% `f583ac37` q11, XLF 10% `9d41c3f6` q71, XLV 10% `f6e70576` q24). No vanishes.
+`orders` at ~07:07 ET: all 4 satellite stops live, `new`, qty-matched, same IDs (LLY 10% `43903482` q3, XLP 10% `9f108b55` q48, XLF 10% `9d41c3f6` q71, XLV 10% `f6e70576` q24). No vanishes. Positions match STATE (SPY 80, LLY 3, XLF 71, XLP 48, XLV 24).
 
 ## Market read
-Wednesday 11-18 was a split, risk-off-for-old-economy tape. Dow -1.11% to 50,198 (3rd straight loss, UnitedHealth the biggest drag), S&P 500 -0.23% to 7,323.63 (**5th straight loss**, longest streak since June, reported as breaking key support), Nasdaq +0.42%, Russell +0.52%. The driver was **hawkish FOMC minutes** that read as signalling more rate hikes. Healthcare took a sector-specific hit: a CMS Medicare Advantage audit (RADV) proposal plus Warren's break-up call sent UNH -10.2% and HUM -12.7%, and dragged pharma (LLY -2.3%, NVO -3.1%). NVDA fell another ~2.9% despite the beat-and-raise ($115.8B rev, $130B Q4 guide). It is down ~35% from its October peak, and the board confirmed Huang won't return. The Anthropic IPO prices this week; it's outside the universe, and it's a flow event for AI names, not a reason to buy. Alpaca marks this morning: SPY $731.12, QQQ $659.98, SMH $459.45 (-2.1% vs Wed pre-mkt), XLV $181.19 (-2.2%), XLF $56.43 (-1.1%). A hawkish Fed plus an index on a 5-day losing streak is not a tape to add risk into. Cash stays a position.
+Thursday 11-19 was a broad, close-at-the-lows selloff. The S&P 500 fell **-2.02% to ~7,175.8** (**6th straight loss**, longest streak since 2024), the Dow -2.19% (about -1,101 points to ~49,097, only one of 30 names up), and the Nasdaq Composite -2.25%. Futures had been up >1% pre-open on the Anthropic IPO debut; the session reversed and AI/chip names led the decline (Anthropic itself faded from a +34% open to +17%). Sources reported no single trigger, which makes it a positioning/de-grossing tape on top of Wednesday's hawkish FOMC minutes. Friday futures are lower again: early snapshots had S&P -0.5% to -0.7% and Nasdaq-100 -0.9% to -1.5% after a sharp Asia selloff, and a later CNBC snapshot showed them steadying near flat. Alpaca marks this morning: SPY $714.65 (-2.3% vs Thu pre-mkt), QQQ $645.10, SMH $444.27 (-3.3%), NVDA $145.29 (-5.1% vs ~$153 Thu pre-mkt mark). An index on a 6-day losing streak with no identified trigger and lower futures is not a tape to add satellite risk into. Cash (~24%) is a position. Defensive sectors (XLE, XLU, XLP, XLF) fell least on the two-day move, but none of them is in a fresh uptrend we can confirm.
 
-Caveat: Alpaca `quote` "last" values may be Wednesday's closing prints, not live pre-market trades. LLY's `quote` ($1,382.72) matches the reported -2.32% close, but the portfolio mark ($1,369/sh) suggests it is indicated lower pre-market.
+Caveat: Alpaca `quote` "last" values may be Thursday's closing prints rather than live pre-market trades.
 
-Sources: [Motley Fool: S&P breaks key support on Fed minutes](https://www.fool.com/coverage/stock-market-today/2026/11/18/stock-market-today-nov-18-s-and-p-500-breaks-key-support-as-fed-minutes-signal-more-rate-hikes-ahead/) · [StockTitan: Nov 18 close](https://www.stocktitan.net/articles/stock-market-today-live-november-18-2026) · [Vistap: Dow -561, Nasdaq up ahead of Anthropic IPO](https://vistapglobal.com/u-s-stock-market-today-november-18-2026-dow-falls-561-points-nasdaq-rises-ahead-of-anthropic-ipo-ant-eprx-googl-modd-nvda-ser-tgt/) · [CNBC: Nvidia sinks after earnings](https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html) · [Semafor: Nvidia falls despite bumper earnings](https://www.semafor.com/article/11/18/2026/nvidia-shares-fall-despite-bumper-earnings) · [heygotrade: UNH -10.2% on CMS audit proposal](https://www.heygotrade.com/en/news/unitedhealth-unh-stock-news-november-19-2026/) · [Beinsure: healthcare falls on Medicare rules](https://beinsure.com/news/healthcare-stocks-fall-as-medicare-rules-trigger-a-selloff/) · [MarketBeat: healthcare stocks Nov 18 (LLY midday $1,392.23, -$23.32)](https://www.marketbeat.com/instant-alerts/list-promising-healthcare-stocks-to-research-november-18th-2026-11-18/)
+Sources: [Yahoo Finance: Dow sinks 1,100, S&P and Nasdaq -2% (Nov 19)](https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html) · [StockTitan: Nov 19 close](https://stocktitan.net/articles/stock-market-today-live-november-19-2026) · [Nacionale: why the market fell Nov 19](https://www.nacionale.com/en/articles/why-is-stock-market-down-today-november-19-dow-1100-points-ai-stocks-anthropic-ipo) · [CNBC live: Nasdaq futures drop as Anthropic falls after debut](https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html) · [Benzinga: will the S&P open up or down](https://benzinga.com/markets/prediction-markets/26/11/63464111/stock-market-will-sp-500-open-up-or-down-today-82) · [Investing.com: premarket movers](https://uk.investing.com/news/stock-market-news/premarket-movers-anthropic-slides-after-debut-intuit-tumbles-on-mailchimp-sale-4995356)
 
-## LLY: line survived Wednesday's close, barely
-The reported 11-18 close is **~$1,382.7** (-2.32% from ~$1,415.55; it matches Alpaca's last $1,382.72). That's ~0.2% **above** the $1,380 close break line, so **the thesis is not formally broken** (W46 rule: judge on a close). Position -4.6% on the close, about -5.5% on the pre-market mark. The China orforglipron catalyst is unchanged. Wednesday's drop was a sector sympathy move on the CMS managed-care audit proposal, not LLY news. Still, the margin is thin and pre-market is indicated lower. **Thursday's close is the test.** A close below $1,380 means the thesis is BROKEN, and the exit is still the trailing stop (~$1,305 area), because the cancel/replace gap blocks a discretionary sell. No adding, no averaging down.
+## LLY: thesis BROKEN (final)
+The official 11-19 close is **~$1,351.1** (-2.27% from $1,382.54; day range $1,341.46–$1,382.00). That is ~2.1% **below the $1,380 close line**, so under the W46 judge-on-a-close rule **the thesis is now BROKEN, final** (it was provisional at Thursday's EOD). The position is about -6.7% vs the $1,448.79 entry. No LLY-specific bad news: Barclays raised its PT to $1,550 on 11-16 and the China orforglipron catalyst stands. The breakdown is sector (CMS managed-care) plus market beta. But the rule is the rule. **Exit = the 10% trailing stop (~$1,309 area, ~3% below Thu's close)**, because the cancel/replace gap blocks a discretionary sell while a live stop holds the shares (`LESSONS.md` 2026-07-24). Do not re-attempt the known-rejected sell. No averaging down. No re-entry while the thesis is broken.
+
+Sources: [GlobalBankingAndFinance: LLY falls 2.27% Thursday](https://www.globalbankingandfinance.com/eli-lilly-and-co-lly-falls-2026-11-19/) · [MarketBeat: LLY down 2.2% (Nov 19)](https://www.marketbeat.com/instant-alerts/price-eli-lilly-and-company-nyse-lly-stock-price-down-22-should-you-sell-2026-11-19/)
 
 ## Holdings flags
-- **XLV ($181.19, +9.5%):** Now carries regulatory risk on managed care (UNH/HUM are big XLV weights). The RS thesis is dented but not broken, and it's still the top anchor gainer. The trail sits ~10% under its high. We'd like to tighten it, but that's blocked by the cancel/replace gap.
-- **XLF ($56.43, +1.6% vs entry):** Hawkish minutes are mixed for banks. It's still soft and we have no `bars` data to confirm a close vs the 50-day. Keep watching.
-- **V (+15.8%, 8% trail), XLP (+6.3%):** healthy, leave alone.
+- **XLV ($177.48, +7.6% vs entry):** still the best open gainer, but -2.0% over two days with managed-care regulatory overhang. The trail is ~10% under its high. We'd tighten, but that's blocked by the cancel/replace gap.
+- **XLF ($55.59, +0.1% vs entry):** effectively flat to entry. Still no `bars` data to confirm a close vs its 50-day. If it closes below entry it is the next weakest name; watch.
+- **XLP ($89.90, +5.3%):** defensive, holding up relatively well. Leave alone.
 
-## Sector RS proxy (anchor → today's last)
-| Sector | Anchor → now | Read |
-|---|---|---|
-| XLV | $164.87 (07-07) → $181.19, +9.9% | Leader (held), hit by CMS/managed-care selloff |
-| XLP | $85.34 (08-05) → $91.19, +6.9% | Leader (held) |
-| XLE | $57.01 (07-14) → $61.31, +7.5% | Fading (-3.2% vs Wed mark). Off watch until OPEC+ 11-29 |
-| XLF | $55.55 (07-08) → $56.43, +1.6% | Soft (held) |
-| SPY | $745.87 (07-07) → $731.12, -2.0% | Benchmark, 5-day losing streak |
-| XLB | $53.29 (09-03) → $50.44, -5.3% | Lagging |
-| XLI | $182.04 (07-13) → $164.68, -9.5% | Lagging |
-| XLK | $188.34 (09-08) → $163.75, -13.1% | Lagging |
-| XLY / XLC / XLU / XLRE | no anchor | 119.19 (+1.7% vs Wed mark) / 105.59 (+0.3%) / 43.54 (+0.3%) / 43.63 (+0.1%) |
+## Sector RS proxy (anchor → today's last; 2-day change vs Thu pre-mkt mark)
+| Sector | Anchor → now | 2-day | Read |
+|---|---|---|---|
+| XLV | $164.87 (07-07) → $177.48, +7.6% | -2.0% | Leader (held), regulatory overhang |
+| XLP | $85.34 (08-05) → $89.90, +5.3% | -1.4% | Leader (held), defensive |
+| XLE | $57.01 (07-14) → $60.90, +6.8% | -0.7% | Held up best; off watch until OPEC+ 11-29 |
+| XLF | $55.55 (07-08) → $55.59, +0.1% | -1.5% | Soft (held) |
+| SPY | $745.87 (07-07) → $714.65, -4.2% | -2.3% | Benchmark, 6-day losing streak |
+| XLB | $53.29 (09-03) → $49.44, -7.2% | -2.0% | Lagging |
+| XLI | $182.04 (07-13) → $161.33, -11.4% | -2.0% | Lagging |
+| XLK | $188.34 (09-08) → $160.72, -14.7% | -1.9% | Lagging, AI/chip selloff |
+| XLU / XLRE / XLY / XLC | no anchor | -1.1% / -1.7% / -2.8% / -2.7% | 43.06 / 42.88 / 115.85 / 102.74 |
 
 ## Ranked candidates
 | # | Symbol | Edge | One-line falsifiable thesis | Suggested entry | Trail | Conviction |
 |---|---|---|---|---|---|---|
-| — | **None actionable** | — | Nothing clears the bar: hawkish Fed minutes, S&P on a 5-day losing streak through support, tech still in a broken trend, and our top RS sector (healthcare) just took a regulatory hit. Hold cash; keep all 3 W47 slots. | — | — | — |
+| — | **None actionable** | — | Nothing clears the bar. The S&P is on a 6-day losing streak through support with no identified trigger, futures are lower again, the AI/chip complex is breaking down, and our top RS sector (healthcare) is under regulatory pressure. Hold cash; keep all 3 W47 slots (the week ends today anyway). | — | — | — |
 
-**NVDA watch: CANCELLED.** The trigger needed closes above $160 on both Wed and Thu. Instead, Wed closed ~$151 (-2.9%), **below the $152 break line**. The beat-and-raise did not turn the trend. Off the list; re-screen only on a fresh setup (e.g. a reclaim of its 50-day with SMH confirming).
+**Watch for next week (not actionable today):** XLE. It is the most resilient sector on the two-day selloff and is still +6.8% vs its old anchor. Re-screen after the OPEC+ meeting (11-29) only if it holds above its 50-day and the oil catalyst turns supportive.
 
 ## Screened and rejected (why each failed)
-- **NVDA, SMH, AVGO, AMD, XLK, QQQ:** NVDA broke its line; SMH -2.1%; trend still down. Fails: trend.
-- **XLY (+1.7% vs Wed mark):** a one-day bounce with no anchor or RS history, in a hawkish-Fed tape. Fails: unconfirmed RS.
-- **MSFT, GOOGL, META, AMZN, AAPL, TSLA, NFLX:** no dated positive catalyst, and the Anthropic IPO flow event is pending. Fails: event risk + no evidence.
-- **LLY (add), XBI, other healthcare:** concentration rule plus the fresh CMS regulatory overhang; no averaging down. Fails: rule + catalyst against.
-- **XLP, XLV, XLF, V (adds):** no pyramiding into existing satellites. Fails: rule.
-- **JPM:** financials soft, rate-hike signals cut both ways. Fails: trend.
-- **XLE:** -3.2% and the oil catalyst is against it. Fails: catalyst.
-- **XLU, XLRE:** rate-sensitive into hawkish minutes, below/near 200-day. Fails: trend + macro.
-- **GLD ($341.22):** still drifting lower (-3.2% vs Wed mark). Fails: trend.
-- **IWM, XLI, XLB, XLC:** lagging RS. Fails: RS.
-- **COST / retail earnings:** dates unverified, and we don't buy ahead of a print. Fails: unverified catalyst.
+- **NVDA ($145.29), SMH, AVGO, AMD ($483.57), XLK, QQQ:** AI/chip complex led Thursday's decline and is lower again pre-market. NVDA is well below its cancelled $152 line. Fails: trend.
+- **MSFT, GOOGL, META, AMZN, AAPL, TSLA, NFLX:** no dated positive catalyst; post-Anthropic-IPO AI repricing in progress. Fails: trend + no catalyst.
+- **XLY, XLC:** worst two-day sector moves (-2.8% / -2.7%). Fails: RS.
+- **LLY (add), XBI, other healthcare:** thesis broken, concentration rule, CMS overhang, no averaging down. Fails: rule.
+- **XLP, XLV, XLF (adds):** no pyramiding into existing satellites. Fails: rule.
+- **V (re-entry, $402.43):** we just stopped out on Thursday. Re-entering a day later into a falling tape is close to revenge-trading, and it has no new catalyst. Fails: discipline + trend.
+- **JPM ($320.37):** financials soft, rate-hike signals cut both ways. Fails: trend.
+- **XLE:** relatively strong, but the catalyst (OPEC+ 11-29) is pending and the absolute trend is down this week. Fails: unconfirmed catalyst. Moved to the watch list.
+- **XLU, XLRE:** rate-sensitive into hawkish Fed minutes. Fails: macro.
+- **GLD ($335.12):** still drifting lower (-1.8% over two days) even in a risk-off tape. Fails: trend.
+- **IWM, XLI, XLB:** lagging RS. Fails: RS.
+- **COST ($1,094):** no verified dated catalyst; we don't buy ahead of a print. Fails: unverified catalyst.
 
 ## Bottom line for the open
-1. Verify the 5 stops (orders vs positions) first.
-2. **No new entries today.** Keep all 3 W47 slots. There is no watch list; re-screen Fri pre-market.
-3. LLY: hold to the stop. Thursday's **close** vs $1,380 decides whether the thesis is logged broken (EOD shift must check it).
-4. XLV: watch the CMS/managed-care fallout; no action possible beyond the trailing stop (cancel/replace gap).
-5. XLF: keep watching vs its 50-day line.
+1. Verify the 4 stops (orders vs positions) first.
+2. **No new entries today.** W47 ends with 0/3 slots used, by choice.
+3. LLY: thesis BROKEN (final). Hold to the stop (~$1,309). Don't re-attempt a sell, don't average down.
+4. XLF: now flat to entry; watch its 50-day line.
+5. Friday W47 review and grade after the close.
 
-Tooling gaps (still open): no `bars` subcommand (50/200-day checks rely on web search) and no `cancel` subcommand (blocks discretionary cuts and tightening). The open trigger still needs moving to 14:33 UTC (and EOD fires an hour early).
+Tooling gaps (still open): no `bars` subcommand (50/200-day checks rely on web search) and no `cancel` subcommand (blocks the discretionary LLY cut and tightening XLV). The open trigger still needs moving to 14:33 UTC (and EOD fires an hour early).
