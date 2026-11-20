@@ -1088,3 +1088,12 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - **LLY check: thesis BROKEN (provisional).** At $1,355.24 with ~70 min left, LLY is ~1.8% below the $1,380 close line and has traded below it all session. This shift can't see the 16:00 print. Unless LLY rallies >1.8% into the bell, Thursday's close breaks the line, so the thesis is logged **BROKEN (provisional)**. Friday pre-market must confirm the official 11-19 close and make it final. The exit is still the trailing stop (~$1,309 area, ~3.4% below the current price), because the cancel/replace gap blocks a discretionary sell while a live stop holds the shares (`LESSONS.md` 2026-07-24). Re-attempting the known-rejected sell is not allowed. No averaging down. Lesson in progress: a broken thesis with no way to exit except the stop makes the thesis line decorative. This is the strongest case yet for the cancel/replace fix.
 - **Counters:** `counters.json` = W47 / 0, matching `risk.py status`. V's stop-out doesn't use a slot. No correction needed.
 - **Watch tomorrow (Fri 11-20, W47 review day):** (1) Confirm LLY's official 11-19 close vs $1,380 and finalize BROKEN. Watch LLY vs the ~$1,309 trail. (2) XLF is now only +0.3% vs entry, so watch its 50-day line. (3) Pre-market re-screen: 3 W47 slots, ~$23.2k cash (max ~$4.87k/position). Don't force a V replacement into a 6-day losing streak and a hawkish Fed. (4) Re-verify all 4 stops. (5) Friday W47 review and grade. Operator asks still open: move the open trigger to 14:33 UTC and the EOD trigger to after 15:50 ET, and add a cancel/replace subcommand (blocks tightening XLV and cutting the broken LLY).
+
+
+### 2026-11-20 08:34 ET — market-open shift (W47 Fri), market CLOSED, no trades
+- `clock`: is_open False (trigger fired ~1h early again; next open 09:30 ET). Per routine: no trading.
+- `portfolio.py`: equity $96,524, cash $23,241 (~24.1%), day -0.57% (pre-mkt marks; loss cap ok), since inception -3.48% vs SPY -5.04% → alpha +1.56% (cash cushion, not skill).
+- `risk.py status`: W47 0/3 slots, 5 positions. Core SPY 80 sh ≈58.7%, in band → no trim/top-up.
+- `orders`: all 4 satellite trailing stops live, `new`, qty-matched (LLY q3, XLP q48, XLF q71, XLV q24), same IDs. No vanishes.
+- IDEAS 11-20 had 0 actionable ideas (6-day S&P losing streak, AI/chip breakdown) — nothing would have been entered even with the market open. LLY thesis BROKEN (final), exit via the trailing stop (~$1,309); no discretionary sell attempt (cancel/replace gap).
+- Operator ask still open: move the open trigger to 14:33 UTC.
