@@ -1114,3 +1114,9 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 ## 2026-11-23 (Mon) — W48 market-open shift (SKIPPED: market closed)
 - Trigger fired 08:35 ET (13:35 UTC); `clock` showed is_open False, next_open 09:30 ET. Per routine, no trading. No portfolio changes; STATE/IDEAS unchanged (IDEAS: none actionable, keep 3 slots / ~$23k cash).
 - Trigger still fires ~1h before the open (operator ask open: move to 14:33 UTC). Optional SPY top-up toward 60% not done; midday shift can reconsider.
+
+## 2026-11-23 (Mon) — W48 EOD journalist shift (14:50 ET, market OPEN, trigger ~1h early again)
+- No trades. Equity $97,591, cash $23,241 (~23.8%), day **+2.79%** (SPY bounce after 7 straight down days; cap ok). Since inception **-2.41%** vs SPY **-3.36%**, alpha **+0.95%** (cash/defensive cushion, not skill).
+- Reconciled: 5 positions (SPY 80 sh ≈59.1%, XLV +8.8%, XLP +6.0%, XLF +0.2%, LLY -6.0%). All 4 trailing stops `new`, qty-matched, same IDs (LLY 43903482 q3, XLP 9f108b55 q48, XLF 9d41c3f6 q71, XLV f6e70576 q24); no fills, no vanished stops. W48 0/3 slots used; counters correct (script auto-resets week to W48).
+- LLY thesis stays BROKEN (final); exit via ~$1,309 trail only (cancel/replace gap blocks discretionary sell). No new entries; IDEAS had none actionable.
+- Watch tomorrow: XLF vs its 50-day on a close; core top-up toward 60% is optional. Thanksgiving: closed Thu 11-26, half-day Fri 11-27. Operator asks open: move triggers off ~1h-early firing; add cancel/replace subcommand.
