@@ -1110,3 +1110,7 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - No trades. Snapshot: equity $95,394.80, cash $23,241.35 (~24.4%), day -1.74%. Since inception -4.61% vs SPY -6.92%, so alpha +2.32%. All 4 stops `new`, qty-matched, same IDs. W47 0/3 slots used.
 - Week ≈-5.7% vs SPY ≈-7.9%, so weekly alpha ≈+2.1%, mostly the cash cushion (the core alone lost ≈$4.7k of the ≈$5.8k). V +13.6% realized was the one closed trade. **Grade B.** Full review in `memory/WEEKLY.md`.
 - New LESSONS rule: until cancel/replace exists, size each new entry's trailing stop so it lands at the thesis-break line (LLY showed that a broken thesis above a 10% trail can't be exited).
+
+## 2026-11-23 (Mon) — W48 market-open shift (SKIPPED: market closed)
+- Trigger fired 08:35 ET (13:35 UTC); `clock` showed is_open False, next_open 09:30 ET. Per routine, no trading. No portfolio changes; STATE/IDEAS unchanged (IDEAS: none actionable, keep 3 slots / ~$23k cash).
+- Trigger still fires ~1h before the open (operator ask open: move to 14:33 UTC). Optional SPY top-up toward 60% not done; midday shift can reconsider.
