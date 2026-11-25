@@ -1137,3 +1137,8 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - Equity $97,649, cash $23,241 (~23.8%), day P&L -0.07% (cap ok). Since inception -2.35% vs SPY -3.86% -> alpha +1.51% (cash cushion, not skill).
 - Reconciled: SPY 80 sh (~58.7%, in band), LLY 3 sh -2.5% (thesis BROKEN final, exit = ~$1,309 trail only), XLF 71 sh +0.8%, XLP 48 sh +7.4%, XLV 24 sh +12.0%. 4 trailing stops live, qty-matched, same IDs (43903482, 9f108b55, 9d41c3f6, f6e70576). W48 0/3 slots.
 - Watch: Wed open optional core top-up toward 60%; XLF vs 50-day on a close; Thanksgiving Thu closed, Fri half-day. Open operator asks: shift triggers off the ~1h-early firing; add cancel/replace subcommand.
+
+## 2026-11-25 (Wed, W48) — open shift (SKIPPED: market closed)
+- Open trigger fired ~08:34 ET, ~1h early; clock `is_open False`, next open 09:30. Per routine: no trading, journal the skip.
+- Read-only check: equity ~$96,581 (day -1.24% pre-mkt marks, cap ok), 5 positions unchanged (SPY 80 sh, LLY 3, XLF 71, XLP 48, XLV 24), 4 trailing stops live and qty-matched, same IDs. W48 0/3 slots. No fills.
+- Core top-up toward 60% deferred (not chasing pre-market); next open-capable shift can weigh it. Operator asks still open: move open trigger to 14:33 UTC; add cancel/replace subcommand.
