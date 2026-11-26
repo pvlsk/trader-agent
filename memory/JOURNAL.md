@@ -1154,3 +1154,7 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - No trades today across shifts; no fills, no guardrail events. Equity **$97,546**, cash $23,241 (~23.8%), day P&L **-0.25%** (cap -3% ok; recovered from the -1.63% midday mark). Since inception **-2.45%** vs SPY **-4.07%** -> alpha **+1.61%** (cash cushion, not skill).
 - Reconciled: SPY 80 sh ($57,240, ~58.7%, in band), LLY 3 sh -3.5% (thesis BROKEN final, exit = ~$1,309 trail only), XLF 71 sh +1.7%, XLP 48 sh +8.3%, XLV 24 sh +11.7%. All 4 trailing stops live/`new`/qty-matched, same IDs (43903482, 9f108b55, 9d41c3f6, f6e70576); none vanished. W48 0/3 slots. counters.json week_of field stale (W47) but risk.py rolls the week correctly (shows W48 0/3) - left as is.
 - Watch: Thu 11-26 closed (Thanksgiving); Fri 11-27 half-day open shift - re-verify stops, weigh core top-up toward 60%, XLF vs 50-day on a close. Open operator asks: shift triggers off ~1h-early firing; add cancel/replace subcommand.
+
+## 2026-11-26 (Thu, W48) — open shift (SKIPPED: market closed, Thanksgiving)
+- Clock `is_open False`, next open Fri 11-27 09:30 ET (half-day, close 13:00). Per routine: no trading. No state changes; positions/stops unchanged from the 07:05 pre-market check (SPY 80, LLY 3, XLF 71, XLP 48, XLV 24; 4 trailing stops live). W48 0/3 slots.
+- Next open-capable shift (Fri half-day): re-verify stops; optional core top-up toward 60% only without chasing.
