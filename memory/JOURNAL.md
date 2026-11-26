@@ -1158,3 +1158,8 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 ## 2026-11-26 (Thu, W48) — open shift (SKIPPED: market closed, Thanksgiving)
 - Clock `is_open False`, next open Fri 11-27 09:30 ET (half-day, close 13:00). Per routine: no trading. No state changes; positions/stops unchanged from the 07:05 pre-market check (SPY 80, LLY 3, XLF 71, XLP 48, XLV 24; 4 trailing stops live). W48 0/3 slots.
 - Next open-capable shift (Fri half-day): re-verify stops; optional core top-up toward 60% only without chasing.
+
+## 2026-11-26 (Thu, W48) — midday risk-manager shift (SKIPPED: market closed, Thanksgiving)
+- Clock `is_open False`, next open Fri 11-27 09:30 ET (half-day, close 13:00). Per routine: market closed → no de-risking actions, no new entries, journal the skip and stop. Risk status confirms equity **$97,604.94**, day P&L **+0.00%** (cap -3% ok), 5 open positions, W48 **0/3** slots — all consistent with today's 07:05 pre-market check and the open-shift skip; no fills, no guardrail events, nothing to manage while closed.
+- Book unchanged: SPY 80 sh (core), + satellites XLF 71, XLP 48, XLV 24, LLY 3 (thesis BROKEN final, exit = ~$1,309 trail only). All 4 trailing stops verified live/qty-matched earlier today, same IDs (43903482 LLY, 9f108b55 XLP, 9d41c3f6 XLF, f6e70576 XLV); no changes while market is closed.
+- Next open-capable shift: Fri 11-27 half-day — re-verify `orders` vs `positions` (one live trailing stop per satellite) first, then weigh an optional SPY top-up toward the 60% core target (currently ~59%, in band) without chasing. No midday de-risk needed today.
