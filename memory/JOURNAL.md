@@ -1164,5 +1164,5 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 - Book unchanged: SPY 80 sh (core), + satellites XLF 71, XLP 48, XLV 24, LLY 3 (thesis BROKEN final, exit = ~$1,309 trail only). All 4 trailing stops verified live/qty-matched earlier today, same IDs (43903482 LLY, 9f108b55 XLP, 9d41c3f6 XLF, f6e70576 XLV); no changes while market is closed.
 - Next open-capable shift: Fri 11-27 half-day — re-verify `orders` vs `positions` (one live trailing stop per satellite) first, then weigh an optional SPY top-up toward the 60% core target (currently ~59%, in band) without chasing. No midday de-risk needed today.
 
-## 2026-11-26 (Thu)
-Market closed (US Thanksgiving). No trading; no changes. Equity $97,604.94, since inception -2.40
+## 2026-11-26 (Thu) — EOD
+Market closed (US Thanksgiving). No trading, no changes. Equity $97,604.94, since inception -2.40% vs SPY -3.91% (alpha +1.52%). Trailing stops intact on LLY/XLP/XLF/XLV. Watch: Fri 11-27 half-day, closes 13:00 ET.
