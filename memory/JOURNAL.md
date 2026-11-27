@@ -1170,3 +1170,9 @@ Market closed (US Thanksgiving). No trading, no changes. Equity $97,604.94, sinc
 ## 2026-11-27 (Fri, W48) — open shift (SKIPPED: fired before open)
 - Fired 08:34 ET; clock `is_open False`, next open 09:30 ET (half-day, close 13:00). Per routine: no trading, no state changes. Positions/stops unchanged (SPY 80, LLY 3, XLF 71, XLP 48, XLV 24; 4 trailing stops live as of 07:05 check). W48 0/3 slots.
 - Pre-market verdict stands: no actionable ideas; optional SPY top-up toward 60% not done. Recurring issue: shift fires ~1h early (operator ask still open).
+
+## 2026-11-27 (Fri, W48) — EOD
+- Half-day session (closed 13:00 ET); no trades by any shift today (open shift fired pre-open, midday was hold & verify). No fills, no stops triggered, no guardrail events.
+- Equity **$98,665.21**, cash $23,241 (~23.6%). Day **+1.09%**. Since inception **-1.33%** vs SPY **-2.35%** → alpha **+1.01%** (mostly cash cushion in a down tape, not skill). Today vs SPY not separately computed.
+- Reconciled: SPY 80 sh (~59.1%), XLF 71 (+3.1%), XLP 48 (+8.6%), XLV 24 (+11.6%), LLY 3 (-3.8%, thesis broken, exits only via trail). 4 trailing stops live and qty-matched to positions. counters.json correct (W48 0/3 new positions).
+- Watch: Mon 11-30 open — optional SPY top-up toward 60% without chasing; XLF vs 50-day; LLY trail only. Friday weekly review is separate.
