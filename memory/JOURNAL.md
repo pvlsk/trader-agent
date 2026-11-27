@@ -1166,3 +1166,7 @@ Routine fired 08:34 ET (13:34 UTC) again, before the 09:30 open. Market closed, 
 
 ## 2026-11-26 (Thu) — EOD
 Market closed (US Thanksgiving). No trading, no changes. Equity $97,604.94, since inception -2.40% vs SPY -3.91% (alpha +1.52%). Trailing stops intact on LLY/XLP/XLF/XLV. Watch: Fri 11-27 half-day, closes 13:00 ET.
+
+## 2026-11-27 (Fri, W48) — open shift (SKIPPED: fired before open)
+- Fired 08:34 ET; clock `is_open False`, next open 09:30 ET (half-day, close 13:00). Per routine: no trading, no state changes. Positions/stops unchanged (SPY 80, LLY 3, XLF 71, XLP 48, XLV 24; 4 trailing stops live as of 07:05 check). W48 0/3 slots.
+- Pre-market verdict stands: no actionable ideas; optional SPY top-up toward 60% not done. Recurring issue: shift fires ~1h early (operator ask still open).
