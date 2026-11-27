@@ -4,6 +4,32 @@ Each entry: portfolio return vs SPY (week + since inception), win/loss count, bi
 
 ---
 
+## Week of 2026-11-23 to 2026-11-27 (2026-W48) — Grade: B
+
+### Performance
+- **Return this week:** portfolio **≈+3.4%** ($95,394.80 at the W47 Friday review → $98,672.40 at 15:15 ET today, after the 13:00 ET half-day close) vs **SPY ≈+4.9%** (≈$694.3 → ≈$728.3) → **weekly alpha ≈ -1.5%**.
+- **Since inception:** **-1.33%** vs **SPY -2.35%** → **alpha +1.02%** (down from +2.32% at the W47 close).
+- **Honest read:** this is W47's cash cushion running in reverse again. The ~24% idle cash dragged in the rebound week, the same mirror as W45/W46. The core (80 sh SPY) made essentially all of the gain. Satellites: XLV +11.8%, XLP +8.2%, XLF +2.9% (all up, defensive-leaning); LLY -3.8% (thesis broken). The sleeve was a small net positive, not a source of alpha. Judge the sleeve over multi-week windows.
+- **Closed trades this week:** none. Biggest open winner XLV +11.8%; biggest open loser LLY -3.8%.
+
+### Risk discipline
+- Zero guardrail breaches, zero rejected orders, no options/leveraged/crypto. Worst day was Wed midday at -1.63% intraday (EOD -0.25%), never near the -3% cap. Mon's +2.79% was the bounce.
+- W48 new positions **0/3**. SPY core 80 sh stayed ≈58-59%, in the 50-70% band, slightly under the 60% target; no top-up was made.
+- All 4 trailing stops (LLY 43903482, XLP 9f108b55, XLF 9d41c3f6, XLV f6e70576) were verified live, qty-matched, same IDs, every shift; no vanished stops, no fills.
+- **Standing operator defects, still unfixed (not new):** (1) no cancel/replace subcommand in `scripts/alpaca.py` — LLY (thesis broken since 11-19) can only exit via its ~$1,309 trail, and XLV/XLP can't be tightened; (2) schedules still fire ~1h early (open shift fired with the market closed every day; EOD ~14:50 ET). The Friday review ran after the half-day close this time only because of the short session.
+
+### Process
+- **Sound:** a holiday-shortened week with no forced trades; IDEAS listed 0 actionable candidates, so cash was held rather than a marginal trade taken. Holiday closures were handled correctly (Thu skipped, journaled). No averaging down LLY, no re-attempt of the known-rejected sell, no revenge or boredom trades. Journals correctly attributed the alpha to cash, not skill.
+- **Weakness:** the optional SPY top-up toward 60% was deferred all week (five shifts "weighing" it, none acting), and the satellite sleeve stayed ~17-20% vs a 40% target with the pipeline producing no entries for the second straight week. Defensible given the tape, but it's passivity, and the open-shift timing bug removed the one shift that could have rebalanced.
+
+### Grade: B
+Discipline was clean (no breaches, stops verified every shift, no forced trades, honest attribution), and the account held a positive since-inception alpha. It isn't higher because the week lagged SPY by ~1.5% on idle cash, the satellite pipeline is empty, the core was never rebalanced to target, and both operator defects went unfixed for another week.
+
+### Next week (2026-W49, opens Monday 2026-11-30)
+All **3 satellite slots** reset (ISO-week rollover). Cash ≈$23.2k (~23.6%); max ≈$4.9k per position. Core ≈59%, so the open shift may top up toward 60% under the rebalance rule (not a chase). Watch: LLY vs ~$1,309 trail (no re-entry), XLF vs its 50-day on a close, XLV/XLP extended. Any new entry must size its trail to its thesis-break line (W47 rule). Operator asks, still open: move the open trigger to 14:33 UTC and EOD/Friday triggers to after 16:00 ET; add a cancel/replace subcommand.
+
+---
+
 ## Week of 2026-11-16 to 2026-11-20 (2026-W47) — Grade: B
 
 ### Performance

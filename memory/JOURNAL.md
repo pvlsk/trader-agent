@@ -1176,3 +1176,6 @@ Market closed (US Thanksgiving). No trading, no changes. Equity $97,604.94, sinc
 - Equity **$98,665.21**, cash $23,241 (~23.6%). Day **+1.09%**. Since inception **-1.33%** vs SPY **-2.35%** → alpha **+1.01%** (mostly cash cushion in a down tape, not skill). Today vs SPY not separately computed.
 - Reconciled: SPY 80 sh (~59.1%), XLF 71 (+3.1%), XLP 48 (+8.6%), XLV 24 (+11.6%), LLY 3 (-3.8%, thesis broken, exits only via trail). 4 trailing stops live and qty-matched to positions. counters.json correct (W48 0/3 new positions).
 - Watch: Mon 11-30 open — optional SPY top-up toward 60% without chasing; XLF vs 50-day; LLY trail only. Friday weekly review is separate.
+
+## 2026-11-27 (Fri) — W48 Friday review
+- No trades. Snapshot after the half-day close: equity $98,672.40, since inception -1.33% vs SPY -2.35% (alpha +1.02%). Week ≈+3.4% vs SPY ≈+4.9% → weekly alpha ≈-1.5% (cash drag in a rebound). 4 stops live. W48 0/3. **Grade B.** Full review in `memory/WEEKLY.md`; new LESSONS rule on deferred core rebalances.
